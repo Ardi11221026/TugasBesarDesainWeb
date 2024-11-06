@@ -49,7 +49,7 @@ const Berau = () => {
                   description:
                     "Pulau yang eksotis dengan keindahan bawah laut yang luar biasa, cocok untuk penyelaman.",
                 },
-                // Tambahkan tempat lain di sini jika perlu...
+                // Tambahkan tempat lain di sini
               ].map((place, index) => (
                 <li key={index} className="mt-5 font-bold">
                   <strong>{place.title}</strong>
