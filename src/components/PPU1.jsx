@@ -35,24 +35,36 @@ const PPU = () => {
   <ul className="list-none p-0">
     {[
       {
-        title: "Taman Bunga Rozeline",
-        imgSrc: "img/taman bunga rozeline.jpg",
-        address: "Alamat: Jalan Provinsi KM. 9, Kelurahan Nipah-nipah, Kabupaten Penajam Paser Utara.",
-        link: "https://maps.app.goo.gl/i9gQLwVasEUdq7iC9",
+        title: "Pantai Sipakario Nipah-nipah",
+        imgSrc: "img/pantai nipah-nipah.jpg",
+        address: "Alamat: Jalan Coastal Road KM. 7, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
+        link: "https://maps.app.goo.gl/yYXy5RNyTkBV1Lx9A",
+      },
+      {
+        title: "Pantai Saloloang",
+        imgSrc: "img/pantai tanjung jumlai.jpg",
+        address: "Alamat: Jalan Pariwisata, Kelurahan Saloloang, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
+        link: "https://maps.app.goo.gl/dPK3Kis7qKn8fXxD9",
       },
       {
         title: "Taman Alun-alun",
         imgSrc: "img/taman alun-alun.jpg",
-        address: "Alamat: Jalan Provinsi KM. 9 Depan Kantor Bupati, Kelurahan Nipah-nipah, Kabupaten Penajam Paser Utara.",
+        address: "Alamat: Jalan Provinsi KM. 9 Depan Kantor Bupati, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/fvduXnvb4vH2Df6P9",
       },
       {
-        title: "Pantai Sipakario Nipah-nipah",
-        imgSrc: "img/pantai nipah-nipah.jpg",
-        address: "Alamat: Jalan Coastal Road KM. 7 Kelurahan Nipah-nipah, Kabupaten Penajam Paser Utara.",
-        link: "https://maps.app.goo.gl/yYXy5RNyTkBV1Lx9A",
+        title: "Taman Bunga Rozeline",
+        imgSrc: "img/taman bunga rozeline.jpg",
+        address: "Alamat: Jalan Provinsi KM. 9, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
+        link: "https://maps.app.goo.gl/i9gQLwVasEUdq7iC9",
       },
-    ].map((place, index) => (
+      {
+        title: "Wisata Sawah Gunung Mulia",
+        imgSrc: "img/wisata sawah gunung mulia.jpg",
+        address: "Alamat: Desa Gunung Mulia, Kecamatan Babulu, Kabupaten Penajam Paser Utara.",
+        link: "https://maps.app.goo.gl/2S93zyQbQuK9XtbK7",
+      },
+    ].sort((a, b) => a.title.localeCompare(b.title)).map((place, index) => (
       <li key={index} className="mt-5 font-bold">
         <strong>{place.title}</strong>
         <div className="img-container my-2 text-center">
