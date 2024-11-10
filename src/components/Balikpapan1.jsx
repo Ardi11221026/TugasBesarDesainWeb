@@ -34,7 +34,6 @@ const Balikpapan = () => {
           </p>
 
           <div className="wisata">
-<<<<<<< HEAD
             <ul className="list-none p-0">
               {[{
                   title: "Hutan Mangrove Margomulyo",
@@ -46,13 +45,13 @@ const Balikpapan = () => {
                   title: "Monumen Perjuangan Rakyat",
                   imgSrc: "img/monumen perjuangan balikpapan.jpg",
                   description:
-                    "Monumen ini merupakan monumen untuk memperingati perjuangan rakyat Indonesia dalam mempertahankan kemerdekaan. Ini adalah tempat bersejarah yang sangat dihormati oleh masyarakat Balikpapan.",
+                    "Monumen ini memperingati perjuangan rakyat Indonesia dalam mempertahankan kemerdekaan. Ini adalah tempat bersejarah yang sangat dihormati oleh masyarakat Balikpapan.",
                 },
                 {
                   title: "Pantai Kemala",
                   imgSrc: "img/pantai kemala.jpeg",
                   description:
-                    "Pantai ini terkenal dengan pasir putihnya dan pemandangan matahari terbenam yang menakjubkan. Cocok untuk bersantai dan menikmati aktivitas pantai.",
+                    "Pantai ini terkenal dengan pasir putihnya serta pemandangan matahari terbenam yang menakjubkan. Cocok untuk bersantai sambil menikmati aktivitas di pinggir pantai.",
                 },
               ].map((place, index) => (
                 <li key={index} className="mt-5 font-bold">
@@ -68,62 +67,7 @@ const Balikpapan = () => {
                 </li>
               ))}
             </ul>
-=======
-  <ul className="list-none p-0">
-    {[
-      {
-        title: "Kebun Raya Balikpapan",
-        imgSrc: "img/krb.jpg",
-        address: "Alamat: Jalan Soekarno Hatta KM. 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/nbsm5SzxsvYXoMBb7",
-      },
-      {
-        title: "Pantai BSB",
-        imgSrc: "img/pantai bsb.jpg",
-        address: "Alamat: Jalan Jenderal Sudirman, Kelurahan Gunung Bahagia, Kecamatan Balikpapan Selatan, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/GX2Y49RnroeAVEgcA",
-      },
-      {
-        title: "Pantai Manggar",
-        imgSrc: "img/pantai manggar.jpg",
-        address: "Alamat: Jalan Pantai Manggar Segarasari, Kelurahan Manggar Baru, Kecamatan Balikpapan Timur, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/n9VFFZ3J8jUqKuSf8",
-      },
-      {
-        title: "Pantai Melawai",
-        imgSrc: "img/pantai melawai.jpg",
-        address: "Alamat: Jalan Pelabuhan Semayang, Prapatan , Kecamatan Balikpapan Kota, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/EuPBdoBUYdmkXAKN7",
-      },
-      {
-        title: "Wisata Bamboe Wanadesa",
-        imgSrc: "img/wisata bamboe wanadesa.jpeg",
-        address: "Alamat: Jalan Giri Rejo, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/NDPgsvNQQCu6UFWD6",
-      },
-    ]
-      .sort((a, b) => a.title.localeCompare(b.title))
-      .map((place, index) => (
-        <li key={index} className="mt-5 font-bold">
-          <strong>{place.title}</strong>
-          <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
->>>>>>> a32925cc1ae725585d989fce844277ac77ebaa76
           </div>
-          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
-          <p className="mb-5 text-blue-600">
-            <a href={place.link} target="_blank" rel="noopener noreferrer">
-              Lihat di Maps
-            </a>
-          </p>
-        </li>
-      ))}
-  </ul>
-</div>
         </div>
 
         {/* Profile Card */}
