@@ -30,43 +30,49 @@ const Bontang = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Bontang Kuala",
-                  imgSrc: "img/bontang kuala.jpg",
-                  description:
-                    " ",
-                },
-                {
-                  title: "Pulau Beras Basah",
-                  imgSrc: "img/pulau beras basah.jpg",
-                  description:
-                    " ",
-                },
-                {
-                  title: "Pantai Marina",
-                  imgSrc: "img/pantai marina.jpg",
-                  description:
-                    " ",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Bontang Kuala",
+        imgSrc: "img/bontang kuala.jpg",
+        address: "Alamat: Kelurahan Bontang Kuala, Kecamatan Bontang Utara, Kota Bontang.",
+        link: "https://maps.app.goo.gl/sgqPCP3YdHu7ziSH9", // Replace with actual link
+      },
+      {
+        title: "Pulau Beras Basah",
+        imgSrc: "img/pulau beras basah.jpg",
+        address: "Alamat: Pulau Beras Basah, Kelurahan Bontang Lestari, Kecamatan Bontang Selatan, Kota Bontang.",
+        link: "https://maps.app.goo.gl/DV6XE2VpgcE4mTJ39", // Replace with actual link
+      },
+      {
+        title: "Pantai Marina",
+        imgSrc: "img/pantai marina.jpg",
+        address: "Alamat: Jalan Pelabuhan Marina, Kelurahan Satimpo, Kecamatan Bontang Selatan , Kota Bontang.",
+        link: "https://maps.app.goo.gl/x45yLGz55Z6xTxmy8", // Replace with actual link
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <img
+              src={place.imgSrc}
+              alt={place.title}
+              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+            />
           </div>
-        </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
+</div>
   
         {/* Profile Card */}
         <ProfileCardBontang />

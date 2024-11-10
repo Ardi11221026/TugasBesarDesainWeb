@@ -29,42 +29,60 @@ const Paser = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Pantai Pasir Mayang",
-                  imgSrc: "img/pantai_pasir_mayang.png",
-                  description:
-                    "Pantai yang indah dan alami dengan pasir putih, cocok untuk rekreasi dan menikmati sunset.",
-                },
-                {
-                  title: "Air Terjun Tembinus",
-                  imgSrc: "img/air_terjun_tembinus.png",
-                  description:
-                    "Air terjun yang terletak di kawasan hutan, menawarkan pemandangan alam dan suasana yang asri.",
-                },
-                {
-                  title: "Bukit Batu Engau",
-                  imgSrc: "img/bukit_batu_engau.png",
-                  description:
-                    "Bukit dengan pemandangan menakjubkan yang cocok untuk trekking dan fotografi alam.",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Air Terjun Doyam Seriam",
+        imgSrc: "img/air terjun doyam seriam.jpg",
+        address: "Alamat: Desa Modang, Kecamatan Kuaro, Kabupaten Paser.",
+        link: "https://maps.app.goo.gl/qt6BZtLwV1st2YMv9",
+      },
+      {
+        title: "Gunung Embun",
+        imgSrc: "img/gunung embun.jpg",
+        address: "Alamat: Desa Luan, Kecamatan Muara Samu, Kabupaten Paser.",
+        link: "https://maps.app.goo.gl/H9Ah2wedyxgew5YJ7",
+      },
+      {
+        title: "Museum Sadurengas",
+        imgSrc: "img/museum sadurengas.jpeg",
+        address: "Alamat: Jalan Jenderal Sudirman No. 1, Tanah Grogot, Kabupaten Paser.",
+        link: "https://maps.app.goo.gl/XrihCFgw6EE38niW8",
+      },
+      {
+        title: "Pantai Pasir Mayang",
+        imgSrc: "img/pantai pasir mayang.jpg",
+        address: "Alamat: Desa Pasir Mayang, Kecamatan Kuaro, Kabupaten Paser.",
+        link: "https://maps.app.goo.gl/JXPQMZ4bGTdwkfTh6",
+      },
+      {
+        title: "Telaga Ungu",
+        imgSrc: "img/telaga ungu.jpg",
+        address: "Alamat: Desa Tepian Batang, Kecamatan Tanah Grogot, Kabupaten Paser.",
+        link: "https://maps.app.goo.gl/EPmHZ4NC3CMW3kXc6",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <img
+              src={place.imgSrc}
+              alt={place.title}
+              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+            />
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}

@@ -30,42 +30,48 @@ const KutaiKartanegara = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Pulau Kumala",
-                  imgSrc: "img/pulau_kumala.png",
-                  description:
-                    "Pulau rekreasi di tengah Sungai Mahakam yang menawarkan berbagai wahana permainan dan wisata alam.",
-                },
-                {
-                  title: "Museum Mulawarman",
-                  imgSrc: "img/museum_mulawarman.png",
-                  description:
-                    "Museum yang menyimpan koleksi sejarah Kerajaan Kutai, termasuk benda-benda peninggalan kerajaan.",
-                },
-                {
-                  title: "Bukit Bangkirai",
-                  imgSrc: "img/bukit_bangkirai.png",
-                  description:
-                    "Area hutan dengan canopy bridge yang menawarkan pemandangan alam serta pengalaman menyusuri hutan tropis.",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Bukit Bangkirai",
+        imgSrc: "img/bukit bangkirai.jpg",
+        address: "Alamat: Kelurahan Karya Merdeka, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
+        link: "https://maps.app.goo.gl/M1RSLwDgQTwDnnAp7",
+      },
+      {
+        title: "Museum Mulawarman",
+        imgSrc: "img/museum mulawarman.jpg",
+        address: "Alamat: Jalan Diponegoro, Kelurahan Panji, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
+        link: "https://maps.app.goo.gl/68XtAV8mc3vUsWfN6",
+      },
+      {
+        title: "Pulau Kumala",
+        imgSrc: "img/pulau kumala.jpeg",
+        address: "Alamat: Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
+        link: "https://maps.app.goo.gl/8ZUA5SH4dZysQiJGA",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <img
+              src={place.imgSrc}
+              alt={place.title}
+              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+            />
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}
