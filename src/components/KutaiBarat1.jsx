@@ -30,42 +30,48 @@ const KutaiBarat = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Danau Jempang",
-                  imgSrc: "img/danau_jempang.png",
-                  description:
-                    "Danau alami yang luas dengan pemandangan indah, menjadi tempat favorit untuk berwisata alam.",
-                },
-                {
-                  title: "Air Terjun Gemuruh",
-                  imgSrc: "img/air_terjun_gemuruh.png",
-                  description:
-                    "Air terjun yang menawan di tengah hutan, menawarkan pengalaman trekking dan keindahan alam.",
-                },
-                {
-                  title: "Taman Budaya Sendawar",
-                  imgSrc: "img/taman_budaya_sendawar.png",
-                  description:
-                    "Pusat budaya yang menampilkan berbagai kerajinan, seni, dan budaya suku Dayak lokal.",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Air Terjun Jantur Inar",
+        imgSrc: "img/air terjun jantur inar.jpg",
+        address: "Alamat: Kampung Terajuk, Kecamatan Nyuatan, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/wcPCTi46UtyEtDnRA",
+      },
+      {
+        title: "Danau Aco",
+        imgSrc: "img/danau aco.jpg",
+        address: "Alamat: Kampung Linggang Melapeh, Kecamatan Linggang Bingung, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/YEev8hhPamgn9ch99",
+      },
+      {
+        title: "Lamin Eheng",
+        imgSrc: "img/lamin eheng.jpg",
+        address: "Alamat: Kampung Pepas Eheng, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/UyM4ovpceKVFtsAh7",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <img
+              src={place.imgSrc}
+              alt={place.title}
+              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+            />
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}

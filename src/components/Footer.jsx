@@ -40,6 +40,7 @@ const Footer = () => {
                             'Bontang',
                             'Kutai Barat',
                             'Kutai Kartanegara',
+                            'Kutai Timur',
                             'Mahakam Ulu',
                             'Paser',
                             'Penajam Paser Utara',

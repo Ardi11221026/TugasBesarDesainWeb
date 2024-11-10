@@ -38,7 +38,7 @@ const Balikpapan = () => {
     {[
       {
         title: "Kebun Raya Balikpapan",
-        imgSrc: "img/kebun raya balikpapan.jpg",
+        imgSrc: "img/krb.jpg",
         address: "Alamat: Jalan Soekarno Hatta KM. 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/nbsm5SzxsvYXoMBb7",
       },
@@ -62,7 +62,7 @@ const Balikpapan = () => {
       },
       {
         title: "Wisata Bamboe Wanadesa",
-        imgSrc: "img/wisata bamboe wanadesa.jpg",
+        imgSrc: "img/wisata bamboe wanadesa.jpeg",
         address: "Alamat: Jalan Giri Rejo, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/NDPgsvNQQCu6UFWD6",
       },
@@ -75,10 +75,10 @@ const Balikpapan = () => {
             <img
               src={place.imgSrc}
               alt={place.title}
-              className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
+              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
             />
           </div>
-          <p className="mb-1 text-gray-700 leading-6 font-normal">{place.address}</p>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">
             <a href={place.link} target="_blank" rel="noopener noreferrer">
               Lihat di Maps

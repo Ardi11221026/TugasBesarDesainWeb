@@ -42,7 +42,7 @@ const PPU = () => {
       },
       {
         title: "Pantai Saloloang",
-        imgSrc: "img/pantai tanjung jumlai.jpg",
+        imgSrc: "img/pantai saloloang.jpg",
         address: "Alamat: Jalan Pariwisata, Kelurahan Saloloang, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/dPK3Kis7qKn8fXxD9",
       },
@@ -71,10 +71,10 @@ const PPU = () => {
           <img
             src={place.imgSrc}
             alt={place.title}
-            className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
+            className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
           />
         </div>
-        <p className="mb-1 text-gray-700 leading-6 font-normal">{place.address}</p>
+        <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
         <p className="mb-5 text-blue-600">
           <a href={place.link} target="_blank" rel="noopener noreferrer">
             Lihat di Maps

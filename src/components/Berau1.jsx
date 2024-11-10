@@ -31,36 +31,42 @@ const Berau = () => {
           <div className="wisata">
             <ul className="list-none p-0">
               {[
-                {
-                  title: "Pulau Derawan",
-                  imgSrc: "img/pulau_derawan.png",
-                  description:
-                    "Pulau dengan pantai berpasir putih dan air laut jernih, terkenal untuk aktivitas diving dan snorkeling.",
-                },
-                {
-                  title: "Pulau Kakaban",
-                  imgSrc: "img/pulau_kakaban.png",
-                  description:
-                    "Pulau yang memiliki danau ubur-ubur tanpa sengat, tempat unik yang menarik banyak wisatawan.",
-                },
-                {
-                  title: "Pulau Maratua",
-                  imgSrc: "img/pulau_maratua.png",
-                  description:
-                    "Pulau yang eksotis dengan keindahan bawah laut yang luar biasa, cocok untuk penyelaman.",
-                },
+                    {
+                      title: "Pulau Derawan",
+                      imgSrc: "img/pulau derawan.jpg",
+                      address: "Alamat: Kepulauan Derawan, Kecamatan Derawan, Kabupaten Berau.",
+                      link: "https://maps.app.goo.gl/vv6ykPkCW1GgHY1MA",
+                    },
+                    {
+                      title: "Pulau Kakaban",
+                      imgSrc: "img/pulau kakaban.jpg",
+                      address: "Alamat: Kepulauan Kakaban, Kecamatan Derawan, Kabupaten Berau, Kalimantan Timur.",
+                      link: "https://maps.app.goo.gl/yF2jgXGL2YKQ5f8q6",
+                    },
+                    {
+                      title: "Pulau Maratua",
+                      imgSrc: "img/pulau maratua.jpeg",
+                      address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
+                      link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
+                    },
                 // Tambahkan tempat lain di sini
-              ].map((place, index) => (
+              ].sort((a, b) => a.title.localeCompare(b.title))
+              .map((place, index) => (
                 <li key={index} className="mt-5 font-bold">
                   <strong>{place.title}</strong>
                   <div className="img-container my-2 text-center">
                     <img
                       src={place.imgSrc}
                       alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
+                      className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
                     />
                   </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
+                  <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+                  <p className="mb-5 text-blue-600">
+                    <a href={place.link} target="_blank" rel="noopener noreferrer">
+                      Lihat di Maps
+                    </a>
+                  </p>
                 </li>
               ))}
             </ul>
