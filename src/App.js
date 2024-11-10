@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About1';
+import Blog from './components/Blog1';
 import Balikpapan from './components/Balikpapan1';
 import Berau from './components/Berau1';
 import Bontang from './components/Bontang1';
@@ -22,6 +23,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/blog" element={<Blog />} />
                     <Route path="/balikpapan" element={<Balikpapan />} />
                     <Route path="/berau" element={<Berau />} />
                     <Route path="/bontang" element={<Bontang />} />
