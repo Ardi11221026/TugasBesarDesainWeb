@@ -45,7 +45,7 @@ const Balikpapan = () => {
                   title: "Monumen Perjuangan Rakyat",
                   imgSrc: "img/monumen perjuangan balikpapan.jpg",
                   description:
-                    "Monumen ini memperingati perjuangan rakyat Indonesia dalam mempertahankan kemerdekaan. Ini adalah tempat bersejarah yang sangat dihormati oleh masyarakat Balikpapan.",
+                    "Monumen ini merupakan monumen untuk memperingati perjuangan rakyat Indonesia dalam mempertahankan kemerdekaan. Ini adalah tempat bersejarah yang sangat dihormati oleh masyarakat Balikpapan.",
                 },
                 {
                   title: "Pantai Kemala",
