@@ -39,7 +39,7 @@ const Balikpapan = () => {
                   title: "Hutan Mangrove Margomulyo",
                   imgSrc: "img/mangrove margo mulyo.png",
                   description:
-                    "Ekosistem mangrove yang menakjubkan ini dapat menjadi tempat yang sempurna untuk berwisata alam dan mengamati keanekaragaman hayati.",
+                    "Ekosistem mangrove yang menakjubkan ini dapat menjadi tempat yang sempurna untuk berwisata alam serta mengamati keanekaragaman hayati.",
                 },
                 {
                   title: "Monumen Perjuangan Rakyat",
