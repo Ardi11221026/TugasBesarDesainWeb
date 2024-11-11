@@ -37,19 +37,19 @@ const Samarinda = () => {
               {[
                 {
                   title: "Masjid Islamic Center Samarinda",
-                  imgSrc: "img/islamic center.jpg",
+                  imgSrc: "img/smd/islamic center.jpg",
                   description:
                     "Salah satu masjid terbesar di Asia Tenggara dengan arsitektur megah yang menjadi ikon wisata religi di Samarinda.",
                 },
                 {
                   title: "Tepian Mahakam",
-                  imgSrc: "img/taman tepian mahakam.jpg",
+                  imgSrc: "img/smd/taman tepian mahakam.jpg",
                   description:
                     "Kawasan tepi sungai yang indah, populer untuk bersantai dan menikmati pemandangan Sungai Mahakam yang membentang luas.",
                 },
                 {
                   title: "Air Terjun Tanah Merah",
-                  imgSrc: "img/air terjun tanah merah.jpg",
+                  imgSrc: "img/smd/air terjun tanah merah.jpg",
                   description:
                     "Objek wisata alam yang menawarkan keindahan air terjun dan suasana alami di sekitar hutan tropis Samarinda.",
                 },
@@ -86,7 +86,7 @@ const Samarinda = () => {
           <p className="mt-1 text-lg text-gray-700">Mahakam River City</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo samarinda.png"
+              src="img/smd/logo samarinda.png"
               alt="Lambang Kota Samarinda"
               className="mx-auto max-w-[150px] h-auto"
             />

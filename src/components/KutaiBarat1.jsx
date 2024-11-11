@@ -34,19 +34,19 @@ const KutaiBarat = () => {
     {[
       {
         title: "Air Terjun Jantur Inar",
-        imgSrc: "img/air terjun jantur inar.jpg",
+        imgSrc: "img/kubar/air terjun jantur inar.jpg",
         address: "Alamat: Kampung Terajuk, Kecamatan Nyuatan, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/wcPCTi46UtyEtDnRA",
       },
       {
         title: "Danau Aco",
-        imgSrc: "img/danau aco.jpg",
+        imgSrc: "img/kubar/danau aco.jpg",
         address: "Alamat: Kampung Linggang Melapeh, Kecamatan Linggang Bingung, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/YEev8hhPamgn9ch99",
       },
       {
         title: "Lamin Eheng",
-        imgSrc: "img/lamin eheng.jpg",
+        imgSrc: "img/kubar/lamin eheng.jpg",
         address: "Alamat: Kampung Pepas Eheng, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/UyM4ovpceKVFtsAh7",
       },
@@ -89,7 +89,7 @@ const KutaiBarat = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo kutai barat.png"
+              src="img/kubar/logo kutai barat.png"
               alt="Lambang Kabupaten Kutai Barat"
               className="mx-auto max-w-[150px] h-auto"
             />

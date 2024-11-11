@@ -34,19 +34,19 @@ const KutaiKartanegara = () => {
     {[
       {
         title: "Bukit Bangkirai",
-        imgSrc: "img/bukit bangkirai.jpg",
+        imgSrc: "img/kukar/bukit bangkirai.jpg",
         address: "Alamat: Kelurahan Karya Merdeka, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
         link: "https://maps.app.goo.gl/M1RSLwDgQTwDnnAp7",
       },
       {
         title: "Museum Mulawarman",
-        imgSrc: "img/museum mulawarman.jpg",
+        imgSrc: "img/kukar/museum mulawarman.jpg",
         address: "Alamat: Jalan Diponegoro, Kelurahan Panji, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
         link: "https://maps.app.goo.gl/68XtAV8mc3vUsWfN6",
       },
       {
         title: "Pulau Kumala",
-        imgSrc: "img/pulau kumala.jpeg",
+        imgSrc: "img/kukar/pulau kumala.jpeg",
         address: "Alamat: Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
         link: "https://maps.app.goo.gl/8ZUA5SH4dZysQiJGA",
       },
@@ -89,7 +89,7 @@ const KutaiKartanegara = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo kutai kartanegara.png"
+              src="img/kukar/logo kutai kartanegara.png"
               alt="Lambang Kabupaten Kutai Kartanegara"
              className="mx-auto max-w-[150px] h-auto"
             />
