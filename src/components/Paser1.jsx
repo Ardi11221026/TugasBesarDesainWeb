@@ -33,31 +33,31 @@ const Paser = () => {
     {[
       {
         title: "Air Terjun Doyam Seriam",
-        imgSrc: "img/air terjun doyam seriam.jpg",
+        imgSrc: "img/paser/air terjun doyam seriam.jpg",
         address: "Alamat: Desa Modang, Kecamatan Kuaro, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/qt6BZtLwV1st2YMv9",
       },
       {
         title: "Gunung Embun",
-        imgSrc: "img/gunung embun.jpg",
+        imgSrc: "img/paser/gunung embun.jpg",
         address: "Alamat: Desa Luan, Kecamatan Muara Samu, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/H9Ah2wedyxgew5YJ7",
       },
       {
         title: "Museum Sadurengas",
-        imgSrc: "img/museum sadurengas.jpeg",
+        imgSrc: "img/paser/museum sadurengas.jpeg",
         address: "Alamat: Jalan Jenderal Sudirman No. 1, Tanah Grogot, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/XrihCFgw6EE38niW8",
       },
       {
         title: "Pantai Pasir Mayang",
-        imgSrc: "img/pantai pasir mayang.jpg",
+        imgSrc: "img/paser/pantai pasir mayang.jpg",
         address: "Alamat: Desa Pasir Mayang, Kecamatan Kuaro, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/JXPQMZ4bGTdwkfTh6",
       },
       {
         title: "Telaga Ungu",
-        imgSrc: "img/telaga ungu.jpg",
+        imgSrc: "img/paser/telaga ungu.jpg",
         address: "Alamat: Desa Tepian Batang, Kecamatan Tanah Grogot, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/EPmHZ4NC3CMW3kXc6",
       },
@@ -100,7 +100,7 @@ const Paser = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo paser.jpeg"
+              src="img/paser/logo paser.jpeg"
               alt="Lambang Kabupaten Paser"
              className="mx-auto max-w-[150px] h-auto"
             />

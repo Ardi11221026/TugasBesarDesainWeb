@@ -34,19 +34,19 @@ const KutaiTimur = () => {
               {[
                 {
                   title: "Sangkulirang Karst",
-                  imgSrc: "img/sangkulirang_karst.png",
+                  imgSrc: "img/kutim/sangkulirang_karst.png",
                   description:
                     "Formasi karst yang menakjubkan dengan gua-gua alami dan lukisan purba, sangat cocok untuk aktivitas caving dan hiking.",
                 },
                 {
                   title: "Pantai Sekerat",
-                  imgSrc: "img/pantai_sekerat.png",
+                  imgSrc: "img/kutim/pantai_sekerat.png",
                   description:
                     "Pantai yang indah dan sepi, menawarkan pemandangan laut yang tenang dan pasir putih yang luas.",
                 },
                 {
                   title: "Taman Nasional Kutai",
-                  imgSrc: "img/taman_nasional_kutai.png",
+                  imgSrc: "img/kutim/taman_nasional_kutai.png",
                   description:
                     "Habitat alami orangutan dan berbagai spesies endemik lainnya, populer untuk ekowisata dan pengamatan satwa.",
                 },
@@ -83,7 +83,7 @@ const KutaiTimur = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo kutai timur.png"
+              src="img/kutim/logo kutai timur.png"
               alt="Lambang Kabupaten Kutai Timur"
               className="mx-auto max-w-[150px] h-auto"
             />

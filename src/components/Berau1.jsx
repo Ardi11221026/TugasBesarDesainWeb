@@ -33,19 +33,19 @@ const Berau = () => {
               {[
                     {
                       title: "Pulau Derawan",
-                      imgSrc: "img/pulau derawan.jpg",
+                      imgSrc: "img/berau/pulau derawan.jpg",
                       address: "Alamat: Kepulauan Derawan, Kecamatan Derawan, Kabupaten Berau.",
                       link: "https://maps.app.goo.gl/vv6ykPkCW1GgHY1MA",
                     },
                     {
                       title: "Pulau Kakaban",
-                      imgSrc: "img/pulau kakaban.jpg",
+                      imgSrc: "img/berau/pulau kakaban.jpg",
                       address: "Alamat: Kepulauan Kakaban, Kecamatan Derawan, Kabupaten Berau, Kalimantan Timur.",
                       link: "https://maps.app.goo.gl/yF2jgXGL2YKQ5f8q6",
                     },
                     {
                       title: "Pulau Maratua",
-                      imgSrc: "img/pulau maratua.jpeg",
+                      imgSrc: "img/berau/pulau maratua.jpeg",
                       address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
                       link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
                     },
@@ -88,7 +88,7 @@ const Berau = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo berau.png"
+              src="img/berau/logo berau.png"
               alt="Lambang Kabupaten Berau"
               className="mx-auto max-w-[150px] h-auto"
             />
