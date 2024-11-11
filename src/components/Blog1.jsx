@@ -43,8 +43,8 @@ const Blog = () => {
         },
         {
             name: 'Mahakam Ulu',
-            description: 'Kota diujung sungai mahakam.',
-            image: '/img/mahulu/taman nasional kutai.jpg',
+            description: 'Batu yang sangat besar dan tinggi.',
+            image: '/img/mahulu/batu dinding.jpg',
             link: '/',
         },
         {
