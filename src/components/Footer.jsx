@@ -60,13 +60,11 @@ const Footer = () => {
                         {[
                             'Discovery East Borneo',
                             'Terms & Conditions',
-                            'How to Order & Payment',
                             'Testimonial',
                             'Privacy Policy',
                             'Work For Us',
                             'Write For Us',
                             'Term of Site',
-                            'Term of Rent',
                             'Sitemap',
                         ].map((aboutItem, index) => (
                             <li key={index} className="mb-2">
