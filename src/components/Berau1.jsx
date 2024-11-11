@@ -12,20 +12,21 @@ const Berau = () => {
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
           <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-            Kabupaten Berau terletak di Provinsi Kalimantan Timur. 
-            Berau memiliki sejarah panjang sebagai pusat pemerintahan lokal yang dikenal sejak masa kerajaan-kerajaan lokal hingga sekarang. 
-            Wilayah ini dikenal dengan sumber daya alamnya yang melimpah, khususnya di sektor perikanan, pertambangan, dan pariwisata.
+          Kabupaten Berau, yang terletak di Provinsi Kalimantan Timur, memiliki sejarah panjang sebagai pusat pemerintahan lokal yang telah dikenal sejak era kerajaan-kerajaan lokal. 
+          Saat ini, Berau dikenal luas berkat kekayaan sumber daya alamnya yang melimpah, terutama di sektor perikanan, pertambangan, dan pariwisata.
+           Keindahan alam dan potensi ekonomi daerah ini menjadikannya sebagai salah satu wilayah yang penuh dengan peluang dan daya tarik, baik bagi penduduk lokal maupun wisatawan.
           </p>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Geografis</h2>
           <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-            Berau memiliki luas wilayah sekitar 34.127 km² yang terdiri dari wilayah daratan dan kepulauan. 
-            Dengan iklim tropis, Berau memiliki banyak area pesisir yang mendukung perikanan serta hutan tropis yang menjadi rumah bagi keanekaragaman hayati yang tinggi.
+          Kabupaten Berau memiliki luas wilayah sekitar 34.127 km², yang mencakup daratan luas dan kepulauan yang menakjubkan. 
+          Dengan iklim tropis yang khas, Berau dikelilingi oleh pesisir yang subur, mendukung sektor perikanan yang berkembang pesat, serta hutan tropis yang menjadi rumah bagi beragam spesies flora dan fauna. 
+          Keanekaragaman hayati yang tinggi menjadikan wilayah ini kaya akan keindahan alam yang tak ternilai.
           </p>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Wisata di Berau</h2>
           <p className="leading-relaxed mb-8">
-            Berau terkenal dengan wisata baharinya, di antaranya:
+          Berau dikenal luas dengan wisata baharinya yang memukau. Beberapa destinasi unggulannya antara lain:
           </p>
   
           <div className="wisata">
@@ -48,6 +49,8 @@ const Berau = () => {
                       imgSrc: "img/berau/pulau maratua.jpeg",
                       address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
                       link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
+                      description:
+                    "Pantai ini terkenal dengan pasir putihnya serta pemandangan matahari terbenam yang menakjubkan. Cocok untuk bersantai sambil menikmati aktivitas di pinggir pantai.",
                     },
                 // Tambahkan tempat lain di sini
               ].sort((a, b) => a.title.localeCompare(b.title))
