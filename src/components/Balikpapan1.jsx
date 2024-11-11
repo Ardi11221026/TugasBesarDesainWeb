@@ -38,31 +38,31 @@ const Balikpapan = () => {
     {[
       {
         title: "Kebun Raya Balikpapan",
-        imgSrc: "img/krb.jpg",
+        imgSrc: "img/bpp/krb.jpg",
         address: "Alamat: Jalan Soekarno Hatta KM. 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/nbsm5SzxsvYXoMBb7",
       },
       {
         title: "Pantai BSB",
-        imgSrc: "img/pantai bsb.jpg",
+        imgSrc: "img/bpp/pantai bsb.jpg",
         address: "Alamat: Jalan Jenderal Sudirman, Kelurahan Gunung Bahagia, Kecamatan Balikpapan Selatan, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/GX2Y49RnroeAVEgcA",
       },
       {
         title: "Pantai Manggar",
-        imgSrc: "img/pantai manggar.jpg",
+        imgSrc: "img/bpp/pantai manggar.jpg",
         address: "Alamat: Jalan Pantai Manggar Segarasari, Kelurahan Manggar Baru, Kecamatan Balikpapan Timur, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/n9VFFZ3J8jUqKuSf8",
       },
       {
         title: "Pantai Melawai",
-        imgSrc: "img/pantai melawai.jpg",
+        imgSrc: "img/bpp/pantai melawai.jpg",
         address: "Alamat: Jalan Pelabuhan Semayang, Prapatan , Kecamatan Balikpapan Kota, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/EuPBdoBUYdmkXAKN7",
       },
       {
         title: "Wisata Bamboe Wanadesa",
-        imgSrc: "img/wisata bamboe wanadesa.jpeg",
+        imgSrc: "img/bpp/wisata bamboe wanadesa.jpeg",
         address: "Alamat: Jalan Giri Rejo, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/NDPgsvNQQCu6UFWD6",
       },
