@@ -33,23 +33,18 @@ const MahakamUlu = () => {
             <ul className="list-none p-0">
               {[
                 {
-                  title: "Long Apari",
-                  imgSrc: "img/mahulu/long_apari.png",
+                  title: "Batu Dinding Long Melaham",
+                  imgSrc: "img/mahulu/batu dinding.jpg",
                   description:
                     "Desa di hulu Sungai Mahakam yang menyajikan kehidupan tradisional Suku Dayak dan pemandangan alam yang asri.",
                 },
                 {
-                  title: "Air Terjun Riam Haloq",
-                  imgSrc: "img/mahulu/riam_haloq.png",
+                  title: "Batu Lataq",
+                  imgSrc: "img/mahulu/batu lataq.jpg",
                   description:
                     "Air terjun yang terletak di tengah hutan yang masih alami, menjadi tempat favorit untuk menikmati keindahan alam Mahakam Ulu.",
                 },
-                {
-                  title: "Festival Hudoq",
-                  imgSrc: "img/mahulu/festival_hudoq.png",
-                  description:
-                    "Festival tahunan suku Dayak dengan tarian khas dan topeng unik yang melambangkan doa untuk kesuburan tanah.",
-                },
+            
                 // Tambahkan tempat lain di sini jika perlu...
               ].map((place, index) => (
                 <li key={index} className="mt-5 font-bold">
