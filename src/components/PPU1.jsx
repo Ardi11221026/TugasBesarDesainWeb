@@ -36,31 +36,31 @@ const PPU = () => {
     {[
       {
         title: "Pantai Sipakario Nipah-nipah",
-        imgSrc: "img/pantai nipah-nipah.jpg",
+        imgSrc: "img/ppu/pantai nipah-nipah.jpg",
         address: "Alamat: Jalan Coastal Road KM. 7, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/yYXy5RNyTkBV1Lx9A",
       },
       {
         title: "Pantai Saloloang",
-        imgSrc: "img/pantai saloloang.jpg",
+        imgSrc: "img/ppu/pantai saloloang.jpg",
         address: "Alamat: Jalan Pariwisata, Kelurahan Saloloang, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/dPK3Kis7qKn8fXxD9",
       },
       {
         title: "Taman Alun-alun",
-        imgSrc: "img/taman alun-alun.jpg",
+        imgSrc: "img/ppu/taman alun-alun.jpg",
         address: "Alamat: Jalan Provinsi KM. 9 Depan Kantor Bupati, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/fvduXnvb4vH2Df6P9",
       },
       {
         title: "Taman Bunga Rozeline",
-        imgSrc: "img/taman bunga rozeline.jpg",
+        imgSrc: "img/ppu/taman bunga rozeline.jpg",
         address: "Alamat: Jalan Provinsi KM. 9, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/i9gQLwVasEUdq7iC9",
       },
       {
         title: "Wisata Sawah Gunung Mulia",
-        imgSrc: "img/wisata sawah gunung mulia.jpg",
+        imgSrc: "img/ppu/wisata sawah gunung mulia.jpg",
         address: "Alamat: Desa Gunung Mulia, Kecamatan Babulu, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/2S93zyQbQuK9XtbK7",
       },
@@ -101,7 +101,7 @@ const ProfileCard = () => {
         <p className="mt-1 text-lg text-gray-700">Benuo Taka</p>
         <figure className="text-center my-4">
           <img
-            src="img/logo ppu.jpeg"
+            src="img/ppu/logo ppu.jpeg"
             alt="Lambang Kabupaten Penajam Paser Utara"
             className="mx-auto max-w-[150px] h-auto" 
           />
