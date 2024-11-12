@@ -45,10 +45,22 @@ const KutaiBarat = () => {
         link: "https://maps.app.goo.gl/YEev8hhPamgn9ch99",
       },
       {
+        title: "Danau Jempang",
+        imgSrc: "img/kubar/danau jempang.jpg",
+        address: "Alamat: Kampung Tanjung Isuy, Kecamatan Jempang, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/dFnD3hQEosh8b61CA",
+      },
+      {
         title: "Lamin Eheng",
         imgSrc: "img/kubar/lamin eheng.jpg",
         address: "Alamat: Kampung Pepas Eheng, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/UyM4ovpceKVFtsAh7",
+      },
+      {
+        title: "Taman Budaya Sentawar",
+        imgSrc: "img/kubar/taman budaya sentawar.jpeg",
+        address: "Alamat: Jalan Sendawar Raya, Kelurahan Barong Tongkok, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/HnagYGeKDsbXjfmW9",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))

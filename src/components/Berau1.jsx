@@ -33,6 +33,18 @@ const Berau = () => {
             <ul className="list-none p-0">
               {[
                     {
+                      title: "Air Terjun Bawan Batu",
+                      imgSrc: "img/berau/air terjun bawan batu.jpeg",
+                      address: "Alamat: Desa Long Lanuk, Kecamatan Sambaliung, Kabupaten Berau.",
+                      link: "https://maps.app.goo.gl/HYkHG98WGye7rKP97",
+                    },
+                    {
+                      title: "Danau Labuan Cermin",
+                      imgSrc: "img/berau/danau labuan cermin.jpg",
+                      address: "Alamat: Desa Biduk-biduk, Kecamatan Biduk-biduk, Kabupaten Berau.",
+                      link: "https://maps.app.goo.gl/Vrh8nHD8CJgy7ARc9",
+                    },
+                    {
                       title: "Pulau Derawan",
                       imgSrc: "img/berau/pulau derawan.jpg",
                       address: "Alamat: Kepulauan Derawan, Kecamatan Derawan, Kabupaten Berau.",

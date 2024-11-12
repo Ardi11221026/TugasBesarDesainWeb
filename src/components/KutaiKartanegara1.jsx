@@ -45,10 +45,22 @@ const KutaiKartanegara = () => {
         link: "https://maps.app.goo.gl/68XtAV8mc3vUsWfN6",
       },
       {
+        title: "Pantai Ambalat",
+        imgSrc: "img/kukar/pantai ambalat.jpeg",
+        address: "Alamat: Kelurahan Amborawang Laut, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
+        link: "https://maps.app.goo.gl/aV3qhXzTCPU63Rts5",
+      },
+      {
         title: "Pulau Kumala",
         imgSrc: "img/kukar/pulau kumala.jpeg",
         address: "Alamat: Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
         link: "https://maps.app.goo.gl/8ZUA5SH4dZysQiJGA",
+      },
+      {
+        title: "Taman Kota Raja",
+        imgSrc: "img/kukar/taman kota raja.jpg",
+        address: "Alamat: Jalan Robert Wolter Mongisidi, Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
+        link: "https://maps.app.goo.gl/ptYPc8juWzaJ6aRg9",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))

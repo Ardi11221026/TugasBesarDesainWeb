@@ -49,16 +49,16 @@ const Balikpapan = () => {
         link: "https://maps.app.goo.gl/GX2Y49RnroeAVEgcA",
       },
       {
+        title: "Pantai Kemala",
+        imgSrc: "img/bpp/pantai kemala.jpeg",
+        address: "Alamat: Kelurahan Klandasan Ulu, Kecamatan Balikpapan Kota, Kota Balikpapan.",
+        link: "https://maps.app.goo.gl/EuPBdoBUYdmkXAKN7",
+      },
+      {
         title: "Pantai Manggar",
         imgSrc: "img/bpp/pantai manggar.jpg",
         address: "Alamat: Jalan Pantai Manggar Segarasari, Kelurahan Manggar Baru, Kecamatan Balikpapan Timur, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/n9VFFZ3J8jUqKuSf8",
-      },
-      {
-        title: "Pantai Melawai",
-        imgSrc: "img/bpp/pantai melawai.jpg",
-        address: "Alamat: Jalan Pelabuhan Semayang, Prapatan , Kecamatan Balikpapan Kota, Kota Balikpapan.",
-        link: "https://maps.app.goo.gl/EuPBdoBUYdmkXAKN7",
       },
       {
         title: "Wisata Bamboe Wanadesa",
