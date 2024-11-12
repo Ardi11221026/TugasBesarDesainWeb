@@ -32,11 +32,23 @@ const Bontang = () => {
           <div className="wisata">
   <ul className="list-none p-0">
     {[
+       {
+        title: "Pantai Tanjung Laut",
+        imgSrc: "img/bontang/pantai tanjung laut.jpg",
+        address: "Alamat: Jalan Pelabuhan III, Kelurahan Tanjung Laut Indah, Kec. Bontang Selatan, Kota Bontang.",
+        link: "https://maps.app.goo.gl/6fVcC4tKxAFCyKku6", // Replace with actual link
+      },
       {
         title: "Bontang Kuala",
         imgSrc: "img/bontang/bontang kuala.jpg",
         address: "Alamat: Kelurahan Bontang Kuala, Kecamatan Bontang Utara, Kota Bontang.",
         link: "https://maps.app.goo.gl/sgqPCP3YdHu7ziSH9", // Replace with actual link
+      },
+      {
+        title: "Bontang Mangrove Park",
+        imgSrc: "img/bontang/bontang mangrove park.jpg",
+        address: "Alamat: Jalan Cut Nyak Dien, Kelurahan Bontang Baru, Kecamatan Bontang Utara, Kota Bontang.",
+        link: "https://maps.app.goo.gl/VdhVqoE2dPBPucu6A", // Replace with actual link
       },
       {
         title: "Pulau Beras Basah",
