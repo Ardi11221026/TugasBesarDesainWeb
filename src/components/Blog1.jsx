@@ -8,38 +8,62 @@ const Blog = () => {
         {
             name: 'Balikpapan',
             description: 'Pantai BSB, pantai dekat Mall BSB.',
-            image: '/img/pantai bsb.jpg',
-            link: '/balikpapan',
+            image: '/img/bpp/pantai bsb.jpg',
+            link: '/',
         },
         {
             name: 'Berau',
             description: 'Pulau Derawan, pulau yang indah di Berau.',
-            image: '/img/pulau derawan.jpg',
-            link: '/berau',
+            image: '/img/berau/pulau derawan.jpg',
+            link: '/',
         },
         {
             name: 'Bontang',
             description: 'Pantai Marina, pantai yang indah.',
-            image: '/img/pantai marina.jpg',
-            link: '/bontang',
+            image: '/img/bontang/pantai marina.jpg',
+            link: '/',
         },
         {
             name: 'Kutai Barat',
-            description: 'Destinasi wisata dan budaya Dayak yang autentik.',
-            image: '/img/logo kutai barat.png',
-            link: '/kutai-barat',
+            description: 'Air terjun yang deras.',
+            image: '/img/kubar/air terjun jantur inar.jpg',
+            link: '/',
         },
         {
             name: 'Kutai Kartanegara',
             description: 'Pusat warisan sejarah Kesultanan Kutai Kartanegara.',
-            image: '/img/logo kutai kartanegara.png',
-            link: '/kutai-kartanegara',
+            image: '/img/kukar/museum mulawarman.jpg',
+            link: '/',
         },
         {
             name: 'Kutai Timur',
             description: 'Rumah bagi Taman Nasional Kutai dan wisata alam.',
-            image: '/img/logo kutai timur.png',
-            link: '/kutai-timur',
+            image: '/img/kutim/taman nasional kutai.jpg',
+            link: '/',
+        },
+        {
+            name: 'Mahakam Ulu',
+            description: 'Batu yang sangat besar dan tinggi.',
+            image: '/img/mahulu/batu dinding.jpg',
+            link: '/',
+        },
+        {
+            name: 'Paser',
+            description: 'Pantai Pasir yang putih.',
+            image: '/img/paser/pantai pasir mayang.jpg',
+            link: '/',
+        },
+        {
+            name: 'Penajam Paser Utara',
+            description: 'Alun-alun yang ramai ketika malam minggu.',
+            image: '/img/ppu/taman alun-alun.jpg',
+            link: '/',
+        },
+        {
+            name: 'Samarinda',
+            description: 'Masjid yang megah.',
+            image: '/img/smd/islamic center.jpg',
+            link: '/',
         },
         // Add 24 more entries here
     ];
@@ -48,9 +72,9 @@ const Blog = () => {
         <section id="blogs" className="py-16 bg-gray-100">
             {/* Heading Section */}
             <div className="text-center">
-                <h1 className="text-2xl font-bold text-red-600">JELAJAHI RAGAM KALTIM</h1>
+                <h1 className="text-2xl font-bold text-red-600">RAGAM KALTIM'S BLOG</h1>
                 <h2 className="text-2xl font-semibold text-black mt-4">
-                    <span className="text-black">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
+                    <span className="text-black">Tempat Wisata yang terkenal di setiap Kota dan Kabupaten di Kalimantan Timur</span>
                 </h2>
             </div>
 

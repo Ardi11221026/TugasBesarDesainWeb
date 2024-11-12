@@ -34,21 +34,33 @@ const KutaiBarat = () => {
     {[
       {
         title: "Air Terjun Jantur Inar",
-        imgSrc: "img/air terjun jantur inar.jpg",
+        imgSrc: "img/kubar/air terjun jantur inar.jpg",
         address: "Alamat: Kampung Terajuk, Kecamatan Nyuatan, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/wcPCTi46UtyEtDnRA",
       },
       {
         title: "Danau Aco",
-        imgSrc: "img/danau aco.jpg",
+        imgSrc: "img/kubar/danau aco.jpg",
         address: "Alamat: Kampung Linggang Melapeh, Kecamatan Linggang Bingung, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/YEev8hhPamgn9ch99",
       },
       {
+        title: "Danau Jempang",
+        imgSrc: "img/kubar/danau jempang.jpg",
+        address: "Alamat: Kampung Tanjung Isuy, Kecamatan Jempang, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/dFnD3hQEosh8b61CA",
+      },
+      {
         title: "Lamin Eheng",
-        imgSrc: "img/lamin eheng.jpg",
+        imgSrc: "img/kubar/lamin eheng.jpg",
         address: "Alamat: Kampung Pepas Eheng, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/UyM4ovpceKVFtsAh7",
+      },
+      {
+        title: "Taman Budaya Sentawar",
+        imgSrc: "img/kubar/taman budaya sentawar.jpeg",
+        address: "Alamat: Jalan Sendawar Raya, Kelurahan Barong Tongkok, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
+        link: "https://maps.app.goo.gl/HnagYGeKDsbXjfmW9",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))
@@ -89,7 +101,7 @@ const KutaiBarat = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo kutai barat.png"
+              src="img/kubar/logo kutai barat.png"
               alt="Lambang Kabupaten Kutai Barat"
               className="mx-auto max-w-[150px] h-auto"
             />

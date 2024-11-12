@@ -32,21 +32,33 @@ const Bontang = () => {
           <div className="wisata">
   <ul className="list-none p-0">
     {[
+       {
+        title: "Pantai Tanjung Laut",
+        imgSrc: "img/bontang/pantai tanjung laut.jpg",
+        address: "Alamat: Jalan Pelabuhan III, Kelurahan Tanjung Laut Indah, Kec. Bontang Selatan, Kota Bontang.",
+        link: "https://maps.app.goo.gl/6fVcC4tKxAFCyKku6", // Replace with actual link
+      },
       {
         title: "Bontang Kuala",
-        imgSrc: "img/bontang kuala.jpg",
+        imgSrc: "img/bontang/bontang kuala.jpg",
         address: "Alamat: Kelurahan Bontang Kuala, Kecamatan Bontang Utara, Kota Bontang.",
         link: "https://maps.app.goo.gl/sgqPCP3YdHu7ziSH9", // Replace with actual link
       },
       {
+        title: "Bontang Mangrove Park",
+        imgSrc: "img/bontang/bontang mangrove park.jpg",
+        address: "Alamat: Jalan Cut Nyak Dien, Kelurahan Bontang Baru, Kecamatan Bontang Utara, Kota Bontang.",
+        link: "https://maps.app.goo.gl/VdhVqoE2dPBPucu6A", // Replace with actual link
+      },
+      {
         title: "Pulau Beras Basah",
-        imgSrc: "img/pulau beras basah.jpg",
+        imgSrc: "img/bontang/pulau beras basah.jpg",
         address: "Alamat: Pulau Beras Basah, Kelurahan Bontang Lestari, Kecamatan Bontang Selatan, Kota Bontang.",
         link: "https://maps.app.goo.gl/DV6XE2VpgcE4mTJ39", // Replace with actual link
       },
       {
         title: "Pantai Marina",
-        imgSrc: "img/pantai marina.jpg",
+        imgSrc: "img/bontang/pantai marina.jpg",
         address: "Alamat: Jalan Pelabuhan Marina, Kelurahan Satimpo, Kecamatan Bontang Selatan , Kota Bontang.",
         link: "https://maps.app.goo.gl/x45yLGz55Z6xTxmy8", // Replace with actual link
       },
@@ -89,7 +101,7 @@ const Bontang = () => {
           <p className="mt-1 text-lg text-gray-700">Kalimantan Timur</p>
           <figure className="text-center my-4">
             <img
-              src="img/logo bontang.png"
+              src="img/bontang/logo bontang.png"
               alt="Lambang Kota Bontang"
              className="mx-auto max-w-[150px] h-auto"
             />
