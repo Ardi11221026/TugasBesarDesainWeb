@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
-import Footer from './Footer'; 
+import Footer from './Footer';
 
 const MahakamUlu = () => {
     return (
@@ -8,6 +9,12 @@ const MahakamUlu = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/mahakam-ulu" className="hover:underline font-semibold">Mahakam Ulu</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Mahakam Ulu</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>

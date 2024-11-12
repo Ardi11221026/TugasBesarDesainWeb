@@ -13,8 +13,11 @@ import MahakamUlu from './components/MahakamUlu1';
 import Paser from './components/Paser1';
 import PPU from './components/PPU1';
 import Samarinda from './components/Samarinda1';
-import SearchResults from './components/SearchResults';
-
+import PantaiBSB from './components/PantaiBSB';
+import PulauDerawan from './components/PulauDerawan';
+import PantaiMarina from './components/PantaiMarina';
+import AirTerjunJanturInar from './components/AirTerjunJanturInar';
+import MuseumMulawarman from './components/MuseumMulawarman';
 
 const App = () => {
     return (
@@ -34,7 +37,12 @@ const App = () => {
                     <Route path="/paser" element={<Paser />} />
                     <Route path="/penajam-paser utara" element={<PPU />} />
                     <Route path="/samarinda" element={<Samarinda />} />
-                    <Route path="/search" element={<SearchResults />} />
+                    <Route path="/pantai-bsb" element={<PantaiBSB />} />
+                    <Route path="/pulau-derawan" element={<PulauDerawan />} />
+                    <Route path="/pantai-marina" element={<PantaiMarina />} />
+                    <Route path="/air-terjun-jantur-inar" element={<AirTerjunJanturInar />} />
+                    <Route path="/museum-mulawarman" element={<MuseumMulawarman />} />
+            
                 </Routes>
             </div>
         </Router>
