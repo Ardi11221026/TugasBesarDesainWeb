@@ -68,8 +68,6 @@ const Berau = () => {
                       imgSrc: "img/berau/pulau maratua.jpeg",
                       address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
                       link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
-                      description:
-                    "Pantai ini terkenal dengan pasir putihnya serta pemandangan matahari terbenam yang menakjubkan. Cocok untuk bersantai sambil menikmati aktivitas di pinggir pantai.",
                     },
                 // Tambahkan tempat lain di sini
               ].sort((a, b) => a.title.localeCompare(b.title))
