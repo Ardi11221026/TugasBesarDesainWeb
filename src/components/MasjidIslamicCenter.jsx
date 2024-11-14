@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogRandom from './BlogRandom';
 
-const PantaiMarina = () => {
+const MasjidIslamicCenter = () => {
     return (
         <div>
             <Header />
@@ -16,30 +16,30 @@ const PantaiMarina = () => {
                         <nav className="text-sm mb-5 text-gray-600">
                             <Link to="/" className="hover:underline">Home</Link> 
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/bontang" className="hover:underline">Bontang</Link>
+                            <Link to="/samarinda" className="hover:underline">Samarinda</Link>
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/pantai-marina" className="hover:underline font-semibold">Pantai Marina</Link>
+                            <Link to="/masjid-islamic-center" className="hover:underline font-semibold">Masjid Islamic Center</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Marina, Tempat Wisata Alam Bontang</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Masjid Islamic Center, Ikon Kota Samarinda</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bontang/pantai marina.jpg' 
-                            alt="Pantai Marina"
+                            src='img/smd/masjid islamic center.jpg' 
+                            alt="Masjid Islamic Center"
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina terletak di Bontang, Kalimantan Timur. Pantai ini merupakan salah satu destinasi wisata yang menarik dengan pasir putih yang bersih, air laut yang jernih, dan suasana yang tenang. Cocok untuk menikmati hari santai, berenang, atau menikmati pemandangan matahari terbenam.
+                            Masjid Islamic Center Samarinda adalah salah satu masjid terbesar dan termegah di Indonesia, terletak di tepi Sungai Mahakam, Samarinda, Kalimantan Timur. Masjid ini menjadi landmark penting dan tempat beribadah utama bagi umat Muslim di Samarinda, dengan arsitektur yang megah dan fasilitas yang lengkap.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pengunjung Pantai Marina dapat menikmati berbagai aktivitas seperti berjemur, berenang, atau bermain voli pantai. Fasilitas seperti warung makan dan gazebo juga tersedia di sepanjang pantai.
+                            Pengunjung Masjid Islamic Center dapat beribadah, mengikuti pengajian, atau hanya menikmati keindahan arsitektur dan suasana tenang masjid. Tersedia fasilitas seperti tempat parkir yang luas, ruang ibadah yang nyaman, dan aula untuk berbagai acara keagamaan.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina mudah diakses dari pusat kota Bontang. Anda dapat menggunakan kendaraan pribadi atau transportasi umum untuk mencapai lokasi ini. Pantai ini menjadi pilihan utama bagi wisatawan yang mencari ketenangan di alam terbuka.
+                            Masjid ini berlokasi di pusat Kota Samarinda, menjadikannya mudah diakses baik dengan kendaraan pribadi maupun transportasi umum. Lokasinya yang strategis di tepi Sungai Mahakam membuatnya menjadi daya tarik tersendiri bagi wisatawan yang berkunjung ke Samarinda.
                         </p>
                     </div>
 
@@ -52,4 +52,4 @@ const PantaiMarina = () => {
     );
 };
 
-export default PantaiMarina;
+export default MasjidIslamicCenter;

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
-
 const Samarinda = () => {
     return (
       <div className="bg-gray-100"> {/* Corrected className */}
@@ -40,42 +39,48 @@ const Samarinda = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Masjid Islamic Center Samarinda",
-                  imgSrc: "img/smd/islamic center.jpg",
-                  description:
-                    "Salah satu masjid terbesar di Asia Tenggara dengan arsitektur megah yang menjadi ikon wisata religi di Samarinda.",
-                },
-                {
-                  title: "Tepian Mahakam",
-                  imgSrc: "img/smd/taman tepian mahakam.jpg",
-                  description:
-                    "Kawasan tepi sungai yang indah, populer untuk bersantai dan menikmati pemandangan Sungai Mahakam yang membentang luas.",
-                },
-                {
-                  title: "Air Terjun Tanah Merah",
-                  imgSrc: "img/smd/air terjun tanah merah.jpg",
-                  description:
-                    "Objek wisata alam yang menawarkan keindahan air terjun dan suasana alami di sekitar hutan tropis Samarinda.",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Air Terjun Tanah Merah",
+        imgSrc: "img/smd/air terjun tanah merah.jpg",
+        address: "Alamat: Jalan Muara Badak, Kelurahan Tanah Merah, Kota Samarinda.",
+        link: "https://maps.app.goo.gl/WwKCHXwcYY3gR6Dz7",
+      },
+      {
+        title: "Masjid Islamic Center",
+        imgSrc: "img/smd/masjid islamic center.jpg",
+        address: "Alamat: Jalan Slamet Riyadi, Kelurahan Teluk Lerong Ulu, Kecamatan Sungai Kunjang, Kota Samarinda.",
+        link: "https://maps.app.goo.gl/9ug5gv4RgN2XAquTA",
+      },
+      {
+        title: "Taman Tepian Mahakam",
+        imgSrc: "img/smd/taman tepian mahakam.jpg",
+        address: "Alamat: Jalan Gadjah Mada, Kelurahan Bugis, Kecamatan Samarinda Kota, Kota Samarinda.",
+        link: "https://maps.app.goo.gl/WfbvJenZ6FFdVoXA6",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <img
+              src={place.imgSrc}
+              alt={place.title}
+              className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
+            />
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}

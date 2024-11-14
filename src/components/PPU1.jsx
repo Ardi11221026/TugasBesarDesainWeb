@@ -13,7 +13,7 @@ const PPU = () => {
          <nav className="text-sm mb-5 text-gray-600">
                             <Link to="/" className="hover:underline">Home</Link> 
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/penajam-paser utara" className="hover:underline font-semibold">Penajam Paser Utara</Link>
+                            <Link to="/penajam-paser-utara" className="hover:underline font-semibold">Penajam Paser Utara</Link>
                         </nav>
         <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Penajam Paser Utara</h1>
 

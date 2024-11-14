@@ -18,6 +18,11 @@ import PulauDerawan from './components/PulauDerawan';
 import PantaiMarina from './components/PantaiMarina';
 import AirTerjunJanturInar from './components/AirTerjunJanturInar';
 import MuseumMulawarman from './components/MuseumMulawarman';
+import TamanNasionalKutai from './components/TamanNasionalKutai';
+import BatuDinding from './components/BatuDinding';
+import PantaiPasirMayang from './components/PantaiPasirMayang';
+import TamanAlunAlun from './components/TamanAlunAlun';
+import MasjidIslamicCenter from './components/MasjidIslamicCenter';
 
 const App = () => {
     return (
@@ -35,14 +40,18 @@ const App = () => {
                     <Route path="/kutai-timur" element={<KutaiTimur />} />
                     <Route path="/mahakam-ulu" element={<MahakamUlu />} />
                     <Route path="/paser" element={<Paser />} />
-                    <Route path="/penajam-paser utara" element={<PPU />} />
+                    <Route path="/penajam-paser-utara" element={<PPU />} />
                     <Route path="/samarinda" element={<Samarinda />} />
                     <Route path="/pantai-bsb" element={<PantaiBSB />} />
                     <Route path="/pulau-derawan" element={<PulauDerawan />} />
                     <Route path="/pantai-marina" element={<PantaiMarina />} />
                     <Route path="/air-terjun-jantur-inar" element={<AirTerjunJanturInar />} />
                     <Route path="/museum-mulawarman" element={<MuseumMulawarman />} />
-            
+                    <Route path="/taman-nasional-kutai" element={<TamanNasionalKutai />} />
+                    <Route path="/batu-dinding" element={<BatuDinding />} />
+                    <Route path="/pantai-pasir-mayang" element={<PantaiPasirMayang />} />
+                    <Route path="/taman-alun-alun" element={<TamanAlunAlun />} />
+                    <Route path="/masjid-islamic-center" element={<MasjidIslamicCenter />} />
                 </Routes>
             </div>
         </Router>

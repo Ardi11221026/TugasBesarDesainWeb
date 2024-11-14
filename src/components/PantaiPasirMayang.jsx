@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogRandom from './BlogRandom';
 
-const PantaiMarina = () => {
+const PantaiPasirMayang = () => {
     return (
         <div>
             <Header />
@@ -16,30 +16,30 @@ const PantaiMarina = () => {
                         <nav className="text-sm mb-5 text-gray-600">
                             <Link to="/" className="hover:underline">Home</Link> 
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/bontang" className="hover:underline">Bontang</Link>
+                            <Link to="/paser" className="hover:underline">Paser</Link>
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/pantai-marina" className="hover:underline font-semibold">Pantai Marina</Link>
+                            <Link to="/pantai-pasir-mayang" className="hover:underline font-semibold">Pantai Pasir Mayang</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Marina, Tempat Wisata Alam Bontang</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Pasir Mayang, Keindahan Pantai di Paser</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bontang/pantai marina.jpg' 
-                            alt="Pantai Marina"
+                            src='img/paser/pantai pasir mayang.jpg' 
+                            alt="Pantai Pasir Mayang"
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina terletak di Bontang, Kalimantan Timur. Pantai ini merupakan salah satu destinasi wisata yang menarik dengan pasir putih yang bersih, air laut yang jernih, dan suasana yang tenang. Cocok untuk menikmati hari santai, berenang, atau menikmati pemandangan matahari terbenam.
+                            Pantai Pasir Mayang terletak di Kabupaten Paser, Kalimantan Timur. Pantai ini menawarkan hamparan pasir putih yang bersih dan pemandangan laut biru yang memukau. Tempat ini sangat cocok untuk bersantai, menikmati keindahan alam, serta berlibur bersama keluarga atau teman.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pengunjung Pantai Marina dapat menikmati berbagai aktivitas seperti berjemur, berenang, atau bermain voli pantai. Fasilitas seperti warung makan dan gazebo juga tersedia di sepanjang pantai.
+                            Di Pantai Pasir Mayang, pengunjung dapat menikmati aktivitas seperti berenang, bermain pasir, atau hanya berjalan-jalan di sepanjang pantai. Fasilitas yang tersedia meliputi area parkir, warung makanan, dan tempat berteduh untuk pengunjung.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina mudah diakses dari pusat kota Bontang. Anda dapat menggunakan kendaraan pribadi atau transportasi umum untuk mencapai lokasi ini. Pantai ini menjadi pilihan utama bagi wisatawan yang mencari ketenangan di alam terbuka.
+                            Pantai Pasir Mayang dapat dicapai dengan kendaraan pribadi dari pusat kota Paser. Akses jalan menuju pantai cukup mudah, menjadikannya pilihan populer bagi wisatawan lokal yang ingin menikmati keindahan pantai di Kalimantan Timur.
                         </p>
                     </div>
 
@@ -52,4 +52,4 @@ const PantaiMarina = () => {
     );
 };
 
-export default PantaiMarina;
+export default PantaiPasirMayang;
