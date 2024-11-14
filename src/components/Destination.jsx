@@ -55,7 +55,7 @@ const Destination = () => {
             name: 'Penajam Paser Utara',
             description: 'Calon Ibu Kota Nusantara dengan pesona pantainya.',
             image: '/img/ppu/logo ppu.jpeg',
-            link: '/penajam-paser utara',
+            link: '/penajam-paser-utara',
         },
         {
             name: 'Samarinda',

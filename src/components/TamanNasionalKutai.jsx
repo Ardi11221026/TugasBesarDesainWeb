@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogRandom from './BlogRandom';
 
-const PantaiMarina = () => {
+const TamanNasionalKutai = () => {
     return (
         <div>
             <Header />
@@ -16,30 +16,30 @@ const PantaiMarina = () => {
                         <nav className="text-sm mb-5 text-gray-600">
                             <Link to="/" className="hover:underline">Home</Link> 
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/bontang" className="hover:underline">Bontang</Link>
+                            <Link to="/kutai-timur" className="hover:underline">Kutai Timur</Link>
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/pantai-marina" className="hover:underline font-semibold">Pantai Marina</Link>
+                            <Link to="/taman-nasional-kutai" className="hover:underline font-semibold">Taman Nasional Kutai</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Marina, Tempat Wisata Alam Bontang</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Taman Nasional Kutai, Keindahan Alam Kutai Timur</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bontang/pantai marina.jpg' 
-                            alt="Pantai Marina"
+                            src='img/kutim/taman nasional kutai.jpg' 
+                            alt="Taman Nasional Kutai"
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina terletak di Bontang, Kalimantan Timur. Pantai ini merupakan salah satu destinasi wisata yang menarik dengan pasir putih yang bersih, air laut yang jernih, dan suasana yang tenang. Cocok untuk menikmati hari santai, berenang, atau menikmati pemandangan matahari terbenam.
+                            Taman Nasional Kutai yang terletak di Kutai Timur, Kalimantan Timur, merupakan kawasan konservasi yang kaya akan keanekaragaman hayati. Taman nasional ini meliputi berbagai habitat, termasuk hutan tropis, sungai, dan lahan basah yang menjadi rumah bagi flora dan fauna langka seperti orangutan, bekantan, dan beragam jenis burung. Ini adalah destinasi ideal bagi para pecinta alam dan ekowisata.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pengunjung Pantai Marina dapat menikmati berbagai aktivitas seperti berjemur, berenang, atau bermain voli pantai. Fasilitas seperti warung makan dan gazebo juga tersedia di sepanjang pantai.
+                            Di Taman Nasional Kutai, pengunjung dapat menjelajahi jalur trekking, mengamati satwa liar, serta menikmati keindahan alam yang asri. Taman ini juga menyediakan fasilitas seperti pos pengamatan, pemandu wisata, dan area berkemah yang aman. Pengunjung dapat belajar tentang konservasi dan pentingnya pelestarian alam di area ini.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina mudah diakses dari pusat kota Bontang. Anda dapat menggunakan kendaraan pribadi atau transportasi umum untuk mencapai lokasi ini. Pantai ini menjadi pilihan utama bagi wisatawan yang mencari ketenangan di alam terbuka.
+                            Taman Nasional Kutai terletak di Kutai Timur dan dapat dicapai dari kota Sangatta atau Bontang dengan menggunakan kendaraan pribadi atau transportasi umum. Akses menuju taman nasional ini cukup mudah, menjadikannya pilihan tepat bagi para pelancong yang ingin merasakan suasana alam liar Kalimantan Timur.
                         </p>
                     </div>
 
@@ -52,4 +52,4 @@ const PantaiMarina = () => {
     );
 };
 
-export default PantaiMarina;
+export default TamanNasionalKutai;

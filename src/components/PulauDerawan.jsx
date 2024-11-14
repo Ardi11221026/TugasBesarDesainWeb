@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import BlogRandom from './BlogRandom'; // Import BlogRandom
+import BlogRandom from './BlogRandom';
 
 const PulauDerawan = () => {
     return (
@@ -21,7 +21,7 @@ const PulauDerawan = () => {
                             <Link to="/pulau-derawan" className="hover:underline font-semibold">Pulau Derawan</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pulau Derawan, Surga Tersembunyi di Kalimantan</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pulau Derawan, Surga Tropis di Berau</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
                             src='img/berau/pulau derawan.jpg' 
@@ -29,21 +29,17 @@ const PulauDerawan = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Derawan, yang terletak di lepas pantai Kalimantan Timur, adalah destinasi wisata yang menakjubkan dengan keindahan alam bawah laut dan pantai pasir putih yang eksotis. 
-                            Pulau ini terkenal dengan spot diving dan snorkeling yang luar biasa, serta menjadi rumah bagi penyu hijau yang langka. Pulau Derawan menawarkan pengalaman liburan yang tak terlupakan, jauh dari keramaian kota.
+                            Pulau Derawan terletak di Kabupaten Berau, Kalimantan Timur. Pulau ini dikenal dengan keindahan alam bawah lautnya yang luar biasa, menjadi tujuan wisata populer bagi penyelam dan pecinta alam. Di Pulau Derawan, pengunjung dapat menikmati pantai pasir putih, air laut yang jernih, dan kehidupan laut yang kaya, termasuk penyu hijau dan manta ray.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Pulau Derawan, pengunjung dapat menikmati berbagai aktivitas air seperti diving, snorkeling, dan berenang dengan penyu. 
-                            Selain itu, pengunjung juga dapat menjelajahi keindahan alam dengan berjalan-jalan di sepanjang pantai, atau menikmati pemandangan matahari terbenam yang menakjubkan. 
-                            Fasilitas penginapan yang nyaman dan restoran dengan hidangan laut segar juga tersedia di pulau ini untuk menunjang kenyamanan para wisatawan.
+                            Di Pulau Derawan, para wisatawan bisa melakukan berbagai aktivitas seperti snorkeling, diving, dan berenang dengan penyu. Fasilitas penginapan juga tersedia di sekitar pulau, termasuk homestay dan resort. Pulau ini juga menawarkan tempat yang tenang untuk menikmati keindahan alam dan berburu foto.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Derawan dapat diakses melalui perjalanan laut dari Berau, Kalimantan Timur. Pengunjung dapat menggunakan kapal atau speedboat untuk mencapai pulau ini, yang memakan waktu sekitar 2-3 jam dari pelabuhan terdekat. 
-                            Karena lokasinya yang agak terpencil, Pulau Derawan menawarkan suasana yang tenang dan alami, jauh dari keramaian, ideal untuk mereka yang mencari ketenangan dan keindahan alam.
+                            Pulau Derawan dapat diakses dengan menggunakan kapal dari Kota Tanjung Redeb, ibu kota Kabupaten Berau. Meskipun membutuhkan perjalanan yang lebih panjang untuk sampai ke pulau ini, keindahan alam yang menanti membuat perjalanan tersebut sangat berharga bagi para wisatawan.
                         </p>
                     </div>
 
