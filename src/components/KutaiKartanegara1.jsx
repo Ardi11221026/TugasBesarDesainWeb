@@ -43,31 +43,31 @@ const KutaiKartanegara = () => {
         title: "Bukit Bangkirai",
         imgSrc: "img/kukar/bukit bangkirai.jpg",
         address: "Alamat: Kelurahan Karya Merdeka, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
-        link: "https://maps.app.goo.gl/M1RSLwDgQTwDnnAp7",
+        linkPage: "/bukit-bangkirai",
       },
       {
         title: "Museum Mulawarman",
         imgSrc: "img/kukar/museum mulawarman.jpg",
         address: "Alamat: Jalan Diponegoro, Kelurahan Panji, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        link: "https://maps.app.goo.gl/68XtAV8mc3vUsWfN6",
+        linkPage: "/museum-mulawarman",
       },
       {
         title: "Pantai Ambalat",
         imgSrc: "img/kukar/pantai ambalat.jpeg",
         address: "Alamat: Kelurahan Amborawang Laut, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
-        link: "https://maps.app.goo.gl/aV3qhXzTCPU63Rts5",
+        linkPage: "/pantai-ambalat",
       },
       {
         title: "Pulau Kumala",
         imgSrc: "img/kukar/pulau kumala.jpeg",
         address: "Alamat: Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        link: "https://maps.app.goo.gl/8ZUA5SH4dZysQiJGA",
+        linkPage: "/pulau-kumala",
       },
       {
         title: "Taman Kota Raja",
         imgSrc: "img/kukar/taman kota raja.jpg",
         address: "Alamat: Jalan Robert Wolter Mongisidi, Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        link: "https://maps.app.goo.gl/ptYPc8juWzaJ6aRg9",
+        linkPage: "/taman-kota-raja",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))
@@ -75,16 +75,18 @@ const KutaiKartanegara = () => {
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
+            <a href={place.linkPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto cursor-pointer"
+              />
+            </a>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">
-            <a href={place.link} target="_blank" rel="noopener noreferrer">
-              Lihat di Maps
+            <a href={place.linkPage} target="_self">
+              Selengkapnya
             </a>
           </p>
         </li>

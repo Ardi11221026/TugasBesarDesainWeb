@@ -40,22 +40,39 @@ const MahakamUlu = () => {
   <ul className="list-none p-0">
     {[
       {
-        title: "Batu Dinding Mahakam Ulu",
-        imgSrc: "img/mahulu/batu dinding.jpg",
-        address: "Alamat: Kecamatan Long Hubung, Kabupaten Mahakam Ulu, Kalimantan Timur.",
-        link: "https://maps.app.goo.gl/exampleLink4",
+        title: "Batu Dinding Long Melaham",
+        imgSrc: "img/mahulu/batu dinding long melaham.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Ujoh Bilang, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/6ya4uDov3UXGCwjN9", // Replace with actual link
+        infoPage: "/batu-dinding-long-melaham",
+      },
+      {
+        title: "Desa Batu Majang",
+        imgSrc: "img/mahulu/desa-batu-majang.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Batu Majang, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/jU13xB86waMVDgdaA", // Replace with actual link
+        infoPage: "/desa-batu-majang",
+      },
+      {
+        title: "Riam Udang",
+        imgSrc: "img/mahulu/riam-udang.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Long Bagun Ulu, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/AooxX6RD3i1GagZz5", // Replace with actual link
+        infoPage: "/riam-udang",
       },
     ]
-      .sort((a, b) => a.title.localeCompare(b.title))
+      .sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically from A to Z
       .map((place, index) => (
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
-            />
+            <Link to={place.infoPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto cursor-pointer"
+              />
+            </Link>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

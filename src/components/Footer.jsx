@@ -47,7 +47,7 @@ const Footer = () => {
                             'Samarinda',
                         ].map((dest, index) => (
                             <li key={index} className="mb-2">
-                                <Link to={`/${dest.toLowerCase().replace(' ', '-')}`}>{dest}</Link>
+                                <Link to={`/${dest.toLowerCase().replace(/\s+/g, '-')}`}>{dest}</Link>
                             </li>
                         ))}
                     </ul>
@@ -68,7 +68,7 @@ const Footer = () => {
                             'Sitemap',
                         ].map((aboutItem, index) => (
                             <li key={index} className="mb-2">
-                                {aboutItem}
+                                <Link to={`/${aboutItem.toLowerCase().replace(/\s+/g, '-')}`}>{aboutItem}</Link>
                             </li>
                         ))}
                     </ul>

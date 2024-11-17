@@ -10,7 +10,7 @@ const blogs = [
     { name: 'Kutai Barat', description: 'Air Terjun Jantur Inar', image: '/img/kubar/air terjun jantur inar.jpg', link: '/air-terjun-jantur-inar' },
     { name: 'Kutai Kartanegara', description: 'Museum Mulawarman', image: '/img/kukar/museum mulawarman.jpg', link: '/museum-mulawarman' },
     { name: 'Kutai Timur', description: 'Taman Nasional Kutai', image: '/img/kutim/taman nasional kutai.jpg', link: '/taman-nasional-kutai' },
-    { name: 'Mahakam Ulu', description: 'Batu Dinding', image: '/img/mahulu/batu dinding.jpg', link: '/batu-dinding' },
+    { name: 'Mahakam Ulu', description: 'Batu Dinding', image: '/img/mahulu/batu dinding long melaham.jpg', link: '/batu-dinding-long-melaham' },
     { name: 'Paser', description: 'Pantai Pasir Mayang', image: '/img/paser/pantai pasir mayang.jpg', link: '/pantai-pasir-mayang' },
     { name: 'Penajam Paser Utara', description: 'Taman Alun-alun', image: '/img/ppu/taman alun-alun.jpg', link: '/taman-alun-laun' },
     { name: 'Samarinda', description: 'Masjid Islamic Center', image: '/img/smd/masjid islamic center.jpg', link: '/masjid-islamic-center' },
