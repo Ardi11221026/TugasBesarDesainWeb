@@ -46,30 +46,35 @@ const Samarinda = () => {
         imgSrc: "img/smd/air terjun tanah merah.jpg",
         address: "Alamat: Jalan Muara Badak, Kelurahan Tanah Merah, Kota Samarinda.",
         link: "https://maps.app.goo.gl/WwKCHXwcYY3gR6Dz7",
+        linkPage: "/air-terjun-tanah-merah"
       },
       {
         title: "Masjid Islamic Center",
         imgSrc: "img/smd/masjid islamic center.jpg",
         address: "Alamat: Jalan Slamet Riyadi, Kelurahan Teluk Lerong Ulu, Kecamatan Sungai Kunjang, Kota Samarinda.",
         link: "https://maps.app.goo.gl/9ug5gv4RgN2XAquTA",
+        linkPage: "/masjid-islamic-center"
       },
       {
         title: "Taman Tepian Mahakam",
         imgSrc: "img/smd/taman tepian mahakam.jpg",
         address: "Alamat: Jalan Gadjah Mada, Kelurahan Bugis, Kecamatan Samarinda Kota, Kota Samarinda.",
         link: "https://maps.app.goo.gl/WfbvJenZ6FFdVoXA6",
+        linkPage: "/taman-tepian-mahakam"
       },
     ]
-      .sort((a, b) => a.title.localeCompare(b.title))
+      .sort((a, b) => a.title.localeCompare(b.title))  // Sort places alphabetically by title
       .map((place, index) => (
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
-            />
+            <a href={place.linkPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
+              />
+            </a>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

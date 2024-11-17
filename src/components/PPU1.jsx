@@ -46,49 +46,58 @@ const PPU = () => {
         imgSrc: "img/ppu/pantai nipah-nipah.jpg",
         address: "Alamat: Jalan Coastal Road KM. 7, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/yYXy5RNyTkBV1Lx9A",
+        linkPage: "/pantai-sipakario-nipah-nipah"
       },
       {
         title: "Pantai Saloloang",
         imgSrc: "img/ppu/pantai saloloang.jpg",
         address: "Alamat: Jalan Pariwisata, Kelurahan Saloloang, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/dPK3Kis7qKn8fXxD9",
+        linkPage: "/pantai-saloloang"
       },
       {
         title: "Taman Alun-alun",
         imgSrc: "img/ppu/taman alun-alun.jpg",
         address: "Alamat: Jalan Provinsi KM. 9 Depan Kantor Bupati, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/fvduXnvb4vH2Df6P9",
+        linkPage: "/taman-alun-alun"
       },
       {
         title: "Taman Bunga Rozeline",
         imgSrc: "img/ppu/taman bunga rozeline.jpg",
         address: "Alamat: Jalan Provinsi KM. 9, Kelurahan Nipah-nipah, Kecamatan Penajam, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/i9gQLwVasEUdq7iC9",
+        linkPage: "/taman-bunga-rozeline"
       },
       {
         title: "Wisata Sawah Gunung Mulia",
         imgSrc: "img/ppu/wisata sawah gunung mulia.jpg",
         address: "Alamat: Desa Gunung Mulia, Kecamatan Babulu, Kabupaten Penajam Paser Utara.",
         link: "https://maps.app.goo.gl/2S93zyQbQuK9XtbK7",
+        linkPage: "/wisata-sawah-gunung-mulia"
       },
-    ].sort((a, b) => a.title.localeCompare(b.title)).map((place, index) => (
-      <li key={index} className="mt-5 font-bold">
-        <strong>{place.title}</strong>
-        <div className="img-container my-2 text-center">
-          <img
-            src={place.imgSrc}
-            alt={place.title}
-            className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
-          />
-        </div>
-        <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
-        <p className="mb-5 text-blue-600">
-          <a href={place.link} target="_blank" rel="noopener noreferrer">
-            Lihat di Maps
-          </a>
-        </p>
-      </li>
-    ))}
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <a href={place.linkPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-auto rounded-lg mx-auto"
+              />
+            </a>
+          </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
   </ul>
 </div>
       </div>

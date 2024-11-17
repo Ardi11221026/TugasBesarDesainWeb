@@ -37,60 +37,67 @@ const Berau = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                    {
-                      title: "Air Terjun Bawan Batu",
-                      imgSrc: "img/berau/air terjun bawan batu.jpeg",
-                      address: "Alamat: Desa Long Lanuk, Kecamatan Sambaliung, Kabupaten Berau.",
-                      link: "https://maps.app.goo.gl/HYkHG98WGye7rKP97",
-                    },
-                    {
-                      title: "Danau Labuan Cermin",
-                      imgSrc: "img/berau/danau labuan cermin.jpg",
-                      address: "Alamat: Desa Biduk-biduk, Kecamatan Biduk-biduk, Kabupaten Berau.",
-                      link: "https://maps.app.goo.gl/Vrh8nHD8CJgy7ARc9",
-                    },
-                    {
-                      title: "Pulau Derawan",
-                      imgSrc: "img/berau/pulau derawan.jpg",
-                      address: "Alamat: Kepulauan Derawan, Kecamatan Derawan, Kabupaten Berau.",
-                      link: "https://maps.app.goo.gl/vv6ykPkCW1GgHY1MA",
-                    },
-                    {
-                      title: "Pulau Kakaban",
-                      imgSrc: "img/berau/pulau kakaban.jpg",
-                      address: "Alamat: Kepulauan Kakaban, Kecamatan Derawan, Kabupaten Berau, Kalimantan Timur.",
-                      link: "https://maps.app.goo.gl/yF2jgXGL2YKQ5f8q6",
-                    },
-                    {
-                      title: "Pulau Maratua",
-                      imgSrc: "img/berau/pulau maratua.jpeg",
-                      address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
-                      link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
-                    },
-                // Tambahkan tempat lain di sini
-              ].sort((a, b) => a.title.localeCompare(b.title))
-              .map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
-                  <p className="mb-5 text-blue-600">
-                    <a href={place.link} target="_blank" rel="noopener noreferrer">
-                      Lihat di Maps
-                    </a>
-                  </p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Air Terjun Bawan Batu",
+        imgSrc: "img/berau/air terjun bawan batu.jpeg",
+        address: "Alamat: Desa Long Lanuk, Kecamatan Sambaliung, Kabupaten Berau.",
+        link: "https://maps.app.goo.gl/HYkHG98WGye7rKP97",
+        infoPage: "/air-terjun-bawan-batu",
+      },
+      {
+        title: "Danau Labuan Cermin",
+        imgSrc: "img/berau/danau labuan cermin.jpg",
+        address: "Alamat: Desa Biduk-biduk, Kecamatan Biduk-biduk, Kabupaten Berau.",
+        link: "https://maps.app.goo.gl/Vrh8nHD8CJgy7ARc9",
+        infoPage: "/danau-labuan-cermin",
+      },
+      {
+        title: "Pulau Derawan",
+        imgSrc: "img/berau/pulau derawan.jpg",
+        address: "Alamat: Kepulauan Derawan, Kecamatan Derawan, Kabupaten Berau.",
+        link: "https://maps.app.goo.gl/vv6ykPkCW1GgHY1MA",
+        infoPage: "/pulau-derawan",
+      },
+      {
+        title: "Pulau Kakaban",
+        imgSrc: "img/berau/pulau kakaban.jpg",
+        address: "Alamat: Kepulauan Kakaban, Kecamatan Derawan, Kabupaten Berau, Kalimantan Timur.",
+        link: "https://maps.app.goo.gl/yF2jgXGL2YKQ5f8q6",
+        infoPage: "/pulau-kakaban",
+      },
+      {
+        title: "Pulau Maratua",
+        imgSrc: "img/berau/pulau maratua.jpeg",
+        address: "Alamat: Kepulauan Maratua, Kecamatan Maratua, Kabupaten Berau, Kalimantan Timur.",
+        link: "https://maps.app.goo.gl/SrAT9zUdr2negSQv5",
+        infoPage: "/pulau-maratua",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <a href={place.infoPage} target="_self" rel="noopener noreferrer">
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+              />
+            </a>
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}

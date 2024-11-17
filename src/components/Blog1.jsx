@@ -44,7 +44,7 @@ const Blog = () => {
         {
             name: 'Mahakam Ulu',
             description: 'Batu Dinding',
-            image: '/img/mahulu/batu dinding.jpg',
+            image: '/img/mahulu/batu dinding long melaham.jpg',
             link: '/batu-dinding',
         },
         {
