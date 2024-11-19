@@ -29,7 +29,7 @@ const PantaiKemala = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Kemala, yang dikenal sebagai Pantai Polda, merupakan salah satu destinasi wisata pantai paling populer di Balikpapan. Terkenal dengan suasana santai dan air laut yang jernih, Pantai Kemala menjadi tempat ideal untuk rekreasi keluarga.
+                        Pantai Kemala, juga dikenal sebagai Pantai Polda, adalah salah satu destinasi wisata favorit di Balikpapan, Kalimantan Timur. Pantai ini terkenal dengan suasana santainya, pasir putih yang bersih, serta air laut yang jernih, menjadikannya tempat yang ideal untuk rekreasi keluarga atau bersantai bersama teman. Lokasinya yang mudah dijangkau dari pusat kota menambah daya tariknya, terutama bagi warga lokal yang ingin melepas penat di akhir pekan. Selain menikmati pemandangan, pengunjung dapat mencoba berbagai aktivitas, seperti bermain di tepi pantai, menikmati kuliner di restoran sekitar, atau sekadar duduk-duduk sambil menikmati angin laut yang menenangkan.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Fasilitas dan Aktivitas</h2>
@@ -39,7 +39,7 @@ const PantaiKemala = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Lokasi Pantai Kemala mudah dijangkau dari pusat kota Balikpapan. Anda dapat menggunakan kendaraan pribadi atau transportasi umum. Dengan tiket masuk yang terjangkau, pantai ini menjadi pilihan favorit bagi wisatawan dan warga setempat.
+                        Pantai Kemala, yang berlokasi strategis dekat pusat kota Balikpapan, mudah dijangkau baik dengan kendaraan pribadi maupun transportasi umum, sehingga menjadi destinasi yang sangat populer di kalangan wisatawan dan warga lokal. Dengan tiket masuk yang terjangkau, pantai ini menawarkan pengalaman rekreasi yang nyaman tanpa harus mengeluarkan banyak biaya. Suasananya yang tenang, dilengkapi dengan fasilitas seperti area parkir, warung makan, dan tempat duduk tepi pantai, membuat Pantai Kemala cocok untuk bersantai, menikmati pemandangan laut, atau menghabiskan waktu berkualitas bersama keluarga dan teman. Kombinasi antara aksesibilitas, kenyamanan, dan keindahannya menjadikan pantai ini pilihan favorit untuk mengisi waktu luang.
                         </p>
                     </div>
 
