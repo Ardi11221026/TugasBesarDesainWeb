@@ -25,7 +25,6 @@ const Footer = () => {
                         </p>
                         <p className="mt-2">
                             <strong>Email:</strong> discoveryeastborneo.id@gmail.com <br />
-                            info@discoveryeastborneo.com
                         </p>
                     </div>
                 </div>
