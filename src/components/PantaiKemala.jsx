@@ -29,7 +29,7 @@ const PantaiKemala = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                        Pantai Kemala, juga dikenal sebagai Pantai Polda, adalah salah satu destinasi wisata favorit di Balikpapan, Kalimantan Timur. Pantai ini terkenal dengan suasana santainya, pasir putih yang bersih, serta air laut yang jernih, menjadikannya tempat yang ideal untuk rekreasi keluarga atau bersantai bersama teman. Lokasinya yang mudah dijangkau dari pusat kota menambah daya tariknya, terutama bagi warga lokal yang ingin melepas penat di akhir pekan. Selain menikmati pemandangan, pengunjung dapat mencoba berbagai aktivitas, seperti bermain di tepi pantai, menikmati kuliner di restoran sekitar, atau sekadar duduk-duduk sambil menikmati angin laut yang menenangkan.
+                        Pantai Manggar Segara Sari, yang terletak di Balikpapan, Kalimantan Timur, adalah salah satu destinasi wisata pantai yang paling populer di kawasan ini. Dikenal dengan pasir putihnya yang lembut dan ombak yang tenang, pantai ini menjadi tempat ideal untuk rekreasi keluarga, bersantai, atau menikmati berbagai aktivitas pantai seperti berenang, bermain pasir, hingga voli pantai. Fasilitas pendukung seperti area parkir luas, warung makan, dan tempat istirahat membuat pengalaman berkunjung semakin nyaman. Dengan lokasinya yang mudah diakses dari pusat kota dan suasananya yang ramah untuk semua usia, Pantai Manggar Segara Sari menjadi pilihan favorit untuk menikmati keindahan pesisir Balikpapan.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Fasilitas dan Aktivitas</h2>
@@ -39,7 +39,7 @@ const PantaiKemala = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                        Pantai Kemala, yang berlokasi strategis dekat pusat kota Balikpapan, mudah dijangkau baik dengan kendaraan pribadi maupun transportasi umum, sehingga menjadi destinasi yang sangat populer di kalangan wisatawan dan warga lokal. Dengan tiket masuk yang terjangkau, pantai ini menawarkan pengalaman rekreasi yang nyaman tanpa harus mengeluarkan banyak biaya. Suasananya yang tenang, dilengkapi dengan fasilitas seperti area parkir, warung makan, dan tempat duduk tepi pantai, membuat Pantai Kemala cocok untuk bersantai, menikmati pemandangan laut, atau menghabiskan waktu berkualitas bersama keluarga dan teman. Kombinasi antara aksesibilitas, kenyamanan, dan keindahannya menjadikan pantai ini pilihan favorit untuk mengisi waktu luang.
+                        Pantai Manggar Segara Sari terletak sekitar 30 menit perjalanan dari pusat kota Balikpapan, mudah dijangkau baik dengan kendaraan pribadi maupun transportasi umum. Akses yang baik menuju pantai ini, ditambah dengan area parkir yang luas, menjadikannya sangat nyaman bagi pengunjung. Pantai ini tidak hanya cocok untuk bersantai menikmati pemandangan laut, tetapi juga ideal untuk berbagai aktivitas pantai, seperti berenang, bermain pasir, atau berolahraga. Dengan suasana yang tenang dan fasilitas yang memadai, Pantai Manggar Segara Sari menjadi destinasi favorit bagi wisatawan yang ingin menikmati keindahan alam Balikpapan tanpa harus pergi jauh dari kota.
                         </p>
                     </div>
 
