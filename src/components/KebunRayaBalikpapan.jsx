@@ -29,7 +29,7 @@ const KebunRayaBalikpapan = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Kebun Raya Balikpapan adalah tempat wisata alam yang terletak di Balikpapan, Kalimantan Timur. Kebun ini menawarkan keindahan flora lokal serta menjadi lokasi untuk edukasi dan penelitian. Dikelilingi oleh hutan tropis, Kebun Raya Balikpapan sangat cocok bagi Anda yang ingin menikmati keasrian alam.
+                        Kebun Raya Balikpapan adalah destinasi wisata alam di Balikpapan, Kalimantan Timur, yang menawarkan keindahan flora lokal sekaligus berfungsi sebagai pusat edukasi, konservasi, dan penelitian keanekaragaman hayati. Dikelilingi hutan tropis, tempat ini menyediakan suasana asri yang cocok untuk rekreasi sekaligus belajar tentang tanaman endemik. Dengan fasilitas seperti jalur trekking dan area piknik, Kebun Raya Balikpapan menjadi pilihan ideal bagi keluarga, pelajar, dan pecinta alam yang ingin menikmati keindahan sekaligus memahami pentingnya pelestarian lingkungan.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Fasilitas dan Aktivitas</h2>
@@ -39,7 +39,7 @@ const KebunRayaBalikpapan = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Kebun Raya Balikpapan dapat dicapai dengan kendaraan pribadi atau umum. Berlokasi tidak jauh dari pusat kota, kebun ini menjadi tujuan favorit bagi wisatawan maupun penduduk lokal.
+                        Kebun Raya Balikpapan mudah diakses dengan kendaraan pribadi maupun transportasi umum, berlokasi sekitar 15-20 kilometer dari pusat kota dengan waktu tempuh kurang dari satu jam. Jalur menuju lokasi memiliki akses yang baik dan petunjuk arah yang jelas, menjadikannya destinasi favorit bagi wisatawan dan penduduk lokal. Tempat ini menawarkan suasana tenang dikelilingi hutan tropis, cocok untuk rekreasi keluarga atau sekadar melepas penat, didukung fasilitas seperti area parkir, tempat istirahat, dan papan informasi yang memudahkan pengunjung.
                         </p>
                     </div>
 
