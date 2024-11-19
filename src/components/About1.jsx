@@ -26,10 +26,11 @@ const About = () => {
                 dan keindahan wisata di Kalimantan Timur, mulai dari wisata alam, sejarah, hingga budaya lokal.
               </p>
               <p className="mt-4 leading-relaxed text-justify text-black font-normal">
-              Di website ini, kami menyajikan informasi lengkap tentang setiap daerah di Kalimantan Timur, termasuk rekomendasi destinasi wisata unggulan yang cocok untuk berbagai jenis petualangan. 
-              Mulai dari pantai yang memesona, hutan lindung yang asri, pulau-pulau eksotis, hingga tempat rekreasi yang penuh dengan aktivitas seru. 
-              Kami hadir untuk memudahkan para wisatawan dalam menjelajahi keindahan tersembunyi di setiap sudut Kalimantan Timur, 
-              sehingga setiap perjalanan Anda dapat menjadi pengalaman yang tak terlupakan.
+              Di website ini, kami menyajikan informasi lengkap dan mendalam tentang setiap daerah di Kalimantan Timur, memberikan wawasan berharga bagi para wisatawan yang ingin mengeksplorasi pesona alam dan budaya di kawasan ini. 
+              Mulai dari pantai-pantai memesona dengan pasir putih dan air jernih, hutan lindung yang rimbun dan menjadi rumah bagi flora serta fauna langka, 
+              hingga pulau-pulau eksotis yang menawarkan ketenangan dan keindahan yang tak tertandingi, semuanya kami rangkum dalam panduan yang mudah diakses. 
+              Tak hanya itu, kami juga merekomendasikan berbagai tempat rekreasi dengan aktivitas seru, mulai dari wisata sejarah, kuliner khas, 
+              hingga petualangan outdoor yang memacu adrenalin. Dengan panduan ini, kami berkomitmen membantu Anda merencanakan perjalanan sempurna, menyajikan tips dan rekomendasi yang dirancang khusus agar Anda dapat menikmati keindahan tersembunyi di setiap sudut Kalimantan Timur, menciptakan kenangan tak terlupakan, dan menjadikan setiap momen perjalanan sebagai pengalaman berharga.
               </p>
             </div>
           </div>
