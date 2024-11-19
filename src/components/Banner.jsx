@@ -40,13 +40,13 @@ const Banner = () => {
         </div>
     
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-            <h5 className="text-xl text-white">Welcome to</h5>
+            <h5 className="text-xl text-red-500">Welcome to</h5>
             <h1 className="text-4xl font-bold mb-4 text-white">Ragam Kaltim</h1>
             <button
                 onClick={scrollToDestinations}
                 className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
             >
-                Jelajah
+                Jelajahi Kaltim
             </button>
         </div>
     
