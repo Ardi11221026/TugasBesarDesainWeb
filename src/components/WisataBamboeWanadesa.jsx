@@ -29,7 +29,7 @@ const WisataBamboeWanadesa = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Wisata Bamboe Wanadesa adalah tempat wisata alam unik di Balikpapan yang menawarkan suasana asri dan tradisional. Dengan hutan bambu yang rindang dan suasana pedesaan, tempat ini cocok untuk melepas penat dari kesibukan kota.
+                        Wisata Bamboe Wanadesa di Balikpapan adalah destinasi wisata alam yang unik, menawarkan suasana asri dan tradisional yang jauh dari hiruk-pikuk kota. Dikelilingi oleh hutan bambu yang rindang dan pemandangan pedesaan yang menenangkan, tempat ini menjadi pilihan ideal untuk melepas penat dan menikmati ketenangan alam. Selain menikmati udara segar dan keindahan alam, pengunjung dapat berjalan-jalan di jalur trekking bambu, berfoto dengan latar alam yang indah, atau sekadar bersantai di area yang telah disediakan. Dengan akses yang mudah dan suasana yang ramah keluarga, Wisata Bamboe Wanadesa menawarkan pengalaman yang menyegarkan dan menyatu dengan alam.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Fasilitas dan Aktivitas</h2>
@@ -39,7 +39,7 @@ const WisataBamboeWanadesa = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Lokasi Wisata Bamboe Wanadesa dapat diakses dengan kendaraan pribadi. Tempat ini berada di kawasan yang sejuk dan asri, membuatnya sangat menarik bagi wisatawan lokal maupun mancanegara.
+                        Wisata Bamboe Wanadesa terletak di kawasan yang sejuk dan asri, dapat diakses dengan mudah menggunakan kendaraan pribadi. Lokasinya yang berada jauh dari keramaian kota membuat tempat ini menjadi pilihan sempurna bagi wisatawan yang mencari kedamaian dan ketenangan. Dengan hutan bambu yang rindang, suasana pedesaan yang alami, dan pemandangan yang menawan, wisata ini menawarkan pengalaman yang menyegarkan. Tempat ini menarik bagi wisatawan lokal maupun mancanegara yang ingin menikmati alam sambil bersantai atau beraktivitas ringan seperti trekking. Wisata Bamboe Wanadesa memberikan kesempatan untuk merasakan keindahan alam yang autentik dan menenangkan.
                         </p>
                     </div>
 
