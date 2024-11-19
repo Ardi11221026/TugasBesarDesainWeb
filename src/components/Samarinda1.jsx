@@ -29,7 +29,7 @@ const Samarinda = () => {
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Wisata di Samarinda</h2>
           <p className="leading-relaxed mb-8">
-            Samarinda menawarkan berbagai destinasi wisata menarik yang bisa kalian dikunjungi, antara lain:
+            Samarinda menawarkan berbagai destinasi wisata menarik yang bisa kalian dikunjungi, diantaranya:
           </p>
   
           <div className="wisata">
