@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-
 
 const Paser = () => {
     return (
@@ -9,6 +9,12 @@ const Paser = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/paser" className="hover:underline font-semibold">Paser</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Paser</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -36,30 +42,35 @@ const Paser = () => {
         imgSrc: "img/paser/air terjun doyam seriam.jpg",
         address: "Alamat: Desa Modang, Kecamatan Kuaro, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/qt6BZtLwV1st2YMv9",
+        pageLink: "/air-terjun-doyam-seriam"
       },
       {
         title: "Gunung Embun",
         imgSrc: "img/paser/gunung embun.jpg",
         address: "Alamat: Desa Luan, Kecamatan Muara Samu, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/H9Ah2wedyxgew5YJ7",
+        pageLink: "/gunung-embun"
       },
       {
         title: "Museum Sadurengas",
         imgSrc: "img/paser/museum sadurengas.jpeg",
         address: "Alamat: Jalan Jenderal Sudirman No. 1, Tanah Grogot, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/XrihCFgw6EE38niW8",
+        pageLink: "/museum-sadurengas"
       },
       {
         title: "Pantai Pasir Mayang",
         imgSrc: "img/paser/pantai pasir mayang.jpg",
         address: "Alamat: Desa Pasir Mayang, Kecamatan Kuaro, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/JXPQMZ4bGTdwkfTh6",
+        pageLink: "/pantai-pasir-mayang"
       },
       {
         title: "Telaga Ungu",
         imgSrc: "img/paser/telaga ungu.jpg",
         address: "Alamat: Desa Tepian Batang, Kecamatan Tanah Grogot, Kabupaten Paser.",
         link: "https://maps.app.goo.gl/EPmHZ4NC3CMW3kXc6",
+        pageLink: "/telaga-ungu"
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))
@@ -67,11 +78,13 @@ const Paser = () => {
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
+            <a href={place.pageLink}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+              />
+            </a>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

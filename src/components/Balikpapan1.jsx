@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -8,6 +9,12 @@ const Balikpapan = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/balikpapan" className="hover:underline font-semibold">Balikpapan</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kota Balikpapan</h1>
 
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -41,30 +48,35 @@ const Balikpapan = () => {
         imgSrc: "img/bpp/krb.jpg",
         address: "Alamat: Jalan Soekarno Hatta KM. 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/nbsm5SzxsvYXoMBb7",
+        infoPage: "/kebun-raya-balikpapan",
       },
       {
         title: "Pantai BSB",
         imgSrc: "img/bpp/pantai bsb.jpg",
         address: "Alamat: Jalan Jenderal Sudirman, Kelurahan Gunung Bahagia, Kecamatan Balikpapan Selatan, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/GX2Y49RnroeAVEgcA",
+        infoPage: "/pantai-bsb",
       },
       {
         title: "Pantai Kemala",
         imgSrc: "img/bpp/pantai kemala.jpeg",
         address: "Alamat: Kelurahan Klandasan Ulu, Kecamatan Balikpapan Kota, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/EuPBdoBUYdmkXAKN7",
+        infoPage: "/pantai-kemala",
       },
       {
         title: "Pantai Manggar",
         imgSrc: "img/bpp/pantai manggar.jpg",
         address: "Alamat: Jalan Pantai Manggar Segarasari, Kelurahan Manggar Baru, Kecamatan Balikpapan Timur, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/n9VFFZ3J8jUqKuSf8",
+        infoPage: "/pantai-manggar",
       },
       {
         title: "Wisata Bamboe Wanadesa",
         imgSrc: "img/bpp/wisata bamboe wanadesa.jpeg",
         address: "Alamat: Jalan Giri Rejo, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota Balikpapan.",
         link: "https://maps.app.goo.gl/NDPgsvNQQCu6UFWD6",
+        infoPage: "/wisata-bamboe-wanadesa",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))
@@ -72,11 +84,13 @@ const Balikpapan = () => {
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
+            <Link to={place.infoPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto cursor-pointer"
+              />
+            </Link>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

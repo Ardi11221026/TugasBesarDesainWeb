@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -8,6 +9,12 @@ const KutaiBarat = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/kutai-barat" className="hover:underline font-semibold">Kutai Barat</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Kutai Barat</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -37,42 +44,49 @@ const KutaiBarat = () => {
         imgSrc: "img/kubar/air terjun jantur inar.jpg",
         address: "Alamat: Kampung Terajuk, Kecamatan Nyuatan, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/wcPCTi46UtyEtDnRA",
+        linkPage: "/air-terjun-jantur-inar", // Add a page link
       },
       {
         title: "Danau Aco",
         imgSrc: "img/kubar/danau aco.jpg",
         address: "Alamat: Kampung Linggang Melapeh, Kecamatan Linggang Bingung, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/YEev8hhPamgn9ch99",
+        linkPage: "/danau-aco", // Add a page link
       },
       {
         title: "Danau Jempang",
         imgSrc: "img/kubar/danau jempang.jpg",
         address: "Alamat: Kampung Tanjung Isuy, Kecamatan Jempang, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/dFnD3hQEosh8b61CA",
+        linkPage: "/danau-jempang", // Add a page link
       },
       {
         title: "Lamin Eheng",
         imgSrc: "img/kubar/lamin eheng.jpg",
         address: "Alamat: Kampung Pepas Eheng, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/UyM4ovpceKVFtsAh7",
+        linkPage: "/lamin-eheng", // Add a page link
       },
       {
         title: "Taman Budaya Sentawar",
         imgSrc: "img/kubar/taman budaya sentawar.jpeg",
         address: "Alamat: Jalan Sendawar Raya, Kelurahan Barong Tongkok, Kecamatan Barong Tongkok, Kabupaten Kutai Barat.",
         link: "https://maps.app.goo.gl/HnagYGeKDsbXjfmW9",
+        linkPage: "/taman-budaya-sentawar", // Add a page link
       },
     ]
-      .sort((a, b) => a.title.localeCompare(b.title))
+      .sort((a, b) => a.title.localeCompare(b.title)) // Ensure the places are sorted alphabetically
       .map((place, index) => (
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
+            <a href={place.linkPage} className="block"> {/* Wrap the image in a link */}
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+              />
+            </a>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

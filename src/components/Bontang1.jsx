@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -8,6 +9,12 @@ const Bontang = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/bontang" className="hover:underline font-semibold">Bontang</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kota Bontang</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -32,47 +39,49 @@ const Bontang = () => {
           <div className="wisata">
   <ul className="list-none p-0">
     {[
-       {
-        title: "Pantai Tanjung Laut",
-        imgSrc: "img/bontang/pantai tanjung laut.jpg",
-        address: "Alamat: Jalan Pelabuhan III, Kelurahan Tanjung Laut Indah, Kec. Bontang Selatan, Kota Bontang.",
-        link: "https://maps.app.goo.gl/6fVcC4tKxAFCyKku6", // Replace with actual link
-      },
       {
         title: "Bontang Kuala",
         imgSrc: "img/bontang/bontang kuala.jpg",
         address: "Alamat: Kelurahan Bontang Kuala, Kecamatan Bontang Utara, Kota Bontang.",
-        link: "https://maps.app.goo.gl/sgqPCP3YdHu7ziSH9", // Replace with actual link
+        link: "/bontang-kuala", // Updated to the page route
       },
       {
         title: "Bontang Mangrove Park",
-        imgSrc: "img/bontang/bontang mangrove park.jpg",
+        imgSrc: "img/bontang/bontang mangrove park.jpeg",
         address: "Alamat: Jalan Cut Nyak Dien, Kelurahan Bontang Baru, Kecamatan Bontang Utara, Kota Bontang.",
-        link: "https://maps.app.goo.gl/VdhVqoE2dPBPucu6A", // Replace with actual link
-      },
-      {
-        title: "Pulau Beras Basah",
-        imgSrc: "img/bontang/pulau beras basah.jpg",
-        address: "Alamat: Pulau Beras Basah, Kelurahan Bontang Lestari, Kecamatan Bontang Selatan, Kota Bontang.",
-        link: "https://maps.app.goo.gl/DV6XE2VpgcE4mTJ39", // Replace with actual link
+        link: "/bontang-mangrove-park", // Updated to the page route
       },
       {
         title: "Pantai Marina",
         imgSrc: "img/bontang/pantai marina.jpg",
         address: "Alamat: Jalan Pelabuhan Marina, Kelurahan Satimpo, Kecamatan Bontang Selatan , Kota Bontang.",
-        link: "https://maps.app.goo.gl/x45yLGz55Z6xTxmy8", // Replace with actual link
+        link: "/pantai-marina", // Updated to the page route
+      },
+      {
+        title: "Pantai Tanjung Laut",
+        imgSrc: "img/bontang/pantai tanjung laut.jpg",
+        address: "Alamat: Jalan Pelabuhan III, Kelurahan Tanjung Laut Indah, Kecamatan Bontang Selatan, Kota Bontang.",
+        link: "/pantai-tanjung-laut", // Updated to the page route
+      },
+      {
+        title: "Pulau Beras Basah",
+        imgSrc: "img/bontang/pulau beras basah.jpg",
+        address: "Alamat: Pulau Beras Basah, Kelurahan Bontang Lestari, Kecamatan Bontang Selatan, Kota Bontang.",
+        link: "/pulau-beras-basah", // Updated to the page route
       },
     ]
-      .sort((a, b) => a.title.localeCompare(b.title))
+      .sort((a, b) => a.title.localeCompare(b.title)) // Sorting alphabetically by title
       .map((place, index) => (
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <img
-              src={place.imgSrc}
-              alt={place.title}
-              className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
-            />
+            <a href={place.link}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto"
+              />
+            </a>
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
-import Footer from './Footer'; 
+import Footer from './Footer';
 
 const MahakamUlu = () => {
     return (
@@ -8,6 +9,12 @@ const MahakamUlu = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/mahakam-ulu" className="hover:underline font-semibold">Mahakam Ulu</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Mahakam Ulu</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -30,37 +37,53 @@ const MahakamUlu = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Batu Dinding Long Melaham",
-                  imgSrc: "img/mahulu/batu dinding.jpg",
-                  description:
-                    "Desa di hulu Sungai Mahakam yang menyajikan kehidupan tradisional Suku Dayak dan pemandangan alam yang asri.",
-                },
-                {
-                  title: "Batu Lataq",
-                  imgSrc: "img/mahulu/batu lataq.jpg",
-                  description:
-                    "Air terjun yang terletak di tengah hutan yang masih alami, menjadi tempat favorit untuk menikmati keindahan alam Mahakam Ulu.",
-                },
-            
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Batu Dinding Long Melaham",
+        imgSrc: "img/mahulu/batu dinding long melaham.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Ujoh Bilang, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/6ya4uDov3UXGCwjN9", // Replace with actual link
+        infoPage: "/batu-dinding-long-melaham",
+      },
+      {
+        title: "Desa Batu Majang",
+        imgSrc: "img/mahulu/desa-batu-majang.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Batu Majang, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/jU13xB86waMVDgdaA", // Replace with actual link
+        infoPage: "/desa-batu-majang",
+      },
+      {
+        title: "Riam Udang",
+        imgSrc: "img/mahulu/riam-udang.jpg", // Update the image source with the correct path
+        address: "Alamat: Desa Long Bagun Ulu, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/AooxX6RD3i1GagZz5", // Replace with actual link
+        infoPage: "/riam-udang",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically from A to Z
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <Link to={place.infoPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto cursor-pointer"
+              />
+            </Link>
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}
