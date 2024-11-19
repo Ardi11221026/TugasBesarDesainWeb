@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -8,6 +9,12 @@ const KutaiTimur = () => {
       <div className="content-container flex justify-between py-8 max-w-[1300px] mx-auto gap-7">
         {/* Main Content */}
         <div className="main-content flex-[3] bg-white p-5 rounded-lg shadow-lg">
+           {/* Breadcrumb Navigation */}
+           <nav className="text-sm mb-5 text-gray-600">
+                            <Link to="/" className="hover:underline">Home</Link> 
+                            <span className="mx-2">{'>>'}</span>
+                            <Link to="/kutai-timur" className="hover:underline font-semibold">Kutai Timur</Link>
+                        </nav>
           <h1 className="text-center mb-2 text-3xl font-bold font-arial">Kabupaten Kutai Timur</h1>
   
           <h2 className="text-left mb-5 text-2xl font-semibold">Sejarah</h2>
@@ -30,42 +37,60 @@ const KutaiTimur = () => {
           </p>
   
           <div className="wisata">
-            <ul className="list-none p-0">
-              {[
-                {
-                  title: "Sangkulirang Karst",
-                  imgSrc: "img/kutim/sangkulirang_karst.png",
-                  description:
-                    "Formasi karst yang menakjubkan dengan gua-gua alami dan lukisan purba, sangat cocok untuk aktivitas caving dan hiking.",
-                },
-                {
-                  title: "Pantai Sekerat",
-                  imgSrc: "img/kutim/pantai_sekerat.png",
-                  description:
-                    "Pantai yang indah dan sepi, menawarkan pemandangan laut yang tenang dan pasir putih yang luas.",
-                },
-                {
-                  title: "Taman Nasional Kutai",
-                  imgSrc: "img/kutim/taman_nasional_kutai.png",
-                  description:
-                    "Habitat alami orangutan dan berbagai spesies endemik lainnya, populer untuk ekowisata dan pengamatan satwa.",
-                },
-                // Tambahkan tempat lain di sini jika perlu...
-              ].map((place, index) => (
-                <li key={index} className="mt-5 font-bold">
-                  <strong>{place.title}</strong>
-                  <div className="img-container my-2 text-center">
-                    <img
-                      src={place.imgSrc}
-                      alt={place.title}
-                      className="w-full max-w-[800px] h-auto rounded-lg mx-auto"
-                    />
-                  </div>
-                  <p className="mb-5 text-gray-700 leading-6 font-normal">{place.description}</p>
-                </li>
-              ))}
-            </ul>
+  <ul className="list-none p-0">
+    {[
+      {
+        title: "Bukit Pelangi",
+        imgSrc: "img/kutim/bukit-pelangi.jpg",
+        address: "Alamat: Kelurahan Teluk Lingga, Kecamatan Sangatta Utara, Kabupaten Kutai Timur.",
+        link: "https://maps.app.goo.gl/n9it2LnjcaQnfd1Q7",
+        infoPage: "/bukit-pelangi",
+      },
+      {
+        title: "Pantai Teluk Lombok",
+        imgSrc: "img/kutim/pantai teluk lombok.jpg",
+        address: "Alamat: Desa Sangkima, Kecamatan Sangatta Selatan, Kabupaten Kutai Timur.",
+        link: "https://maps.app.goo.gl/LUxknBzBZZaMU7Xg8",
+        infoPage: "/pantai-teluk-lombok",
+      },
+      {
+        title: "Taman Nasional Kutai",
+        imgSrc: "img/kutim/taman nasional kutai.jpg",
+        address: "Alamat: Desa Sangatta Selatan, Kecamatan Sangatta Selatan, Kabupaten Kutai Timur.",
+        link: "https://maps.app.goo.gl/CvuBmZUExwGsBwdV9",
+        infoPage: "/taman-nasional-kutai",
+      },
+      {
+        title: "Wisata Teluk Prancis",
+        imgSrc: "img/kutim/wisata pulau prancis.jpg",
+        address: "Alamat: CH4C+HVG, Jalan Sei papan, Kelurahan Singa Geweh, Kecamatan Sangatta Selatan, Kabupaten Kutai Timur.",
+        link: "https://maps.app.goo.gl/TqV6S6xztstVuSta8",
+        infoPage: "/air-terjun-pinang-seribu",
+      },
+    ]
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map((place, index) => (
+        <li key={index} className="mt-5 font-bold">
+          <strong>{place.title}</strong>
+          <div className="img-container my-2 text-center">
+            <Link to={place.infoPage}>
+              <img
+                src={place.imgSrc}
+                alt={place.title}
+                className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto cursor-pointer"
+              />
+            </Link>
           </div>
+          <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
+          <p className="mb-5 text-blue-600">
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
+            </a>
+          </p>
+        </li>
+      ))}
+  </ul>
+</div>
         </div>
   
         {/* Profile Card */}
