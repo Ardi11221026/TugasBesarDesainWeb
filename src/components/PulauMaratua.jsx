@@ -39,7 +39,7 @@ const PulauMaratua = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Maratua dapat dicapai dengan perjalanan laut dari Tanjung Redeb, ibu kota Kabupaten Berau. Tiba di pulau, pengunjung dapat melanjutkan perjalanan dengan menggunakan perahu menuju beberapa spot wisata di pulau tersebut. Meskipun perjalanan memakan waktu, keindahan alam Pulau Maratua akan membuatnya menjadi pengalaman yang tak terlupakan.
+                            Pulau Maratua dapat dicapai dengan melakukan perjalanan laut dari Tanjung Redeb, ibu kota Kabupaten Berau. Tiba di pulau, pengunjung dapat melanjutkan perjalanan dengan menggunakan perahu menuju beberapa spot wisata di pulau tersebut. Meskipun perjalanan memakan waktu, keindahan alam Pulau Maratua akan membuatnya menjadi pengalaman yang tak terlupakan.
                         </p>
                     </div>
 
