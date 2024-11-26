@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogRandom from './BlogRandom';
 
-const DesaBatuMajang = () => {
+const DatahBilangIlir = () => {
     return (
         <div>
             <Header />
@@ -18,28 +18,28 @@ const DesaBatuMajang = () => {
                             <span className="mx-2">{'>>'}</span>
                             <Link to="/mahakam-ulu" className="hover:underline">Mahakam Ulu</Link>
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/desa-batu-majang" className="hover:underline font-semibold">Desa Batu Majang</Link>
+                            <Link to="/datah-bilang-ilir" className="hover:underline font-semibold">Datah Bilang Ilir</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Desa Batu Majang, Keindahan Tradisi Mahakam Ulu</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Datah Bilang Ilir, Permata di Mahakam Ulu</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/mahulu/desa batu majang.jpg' 
-                            alt="Desa Batu Majang"
+                            src='img/mahulu/datah bilang ilir.jpg' 
+                            alt="Datah Bilang Ilir"
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Desa Batu Majang adalah salah satu desa yang terletak di Mahakam Ulu, Kalimantan Timur. Desa ini menawarkan keindahan alam yang memukau serta kehidupan masyarakat yang sangat kental dengan tradisi Dayak. Pengunjung dapat menikmati keindahan hutan tropis serta mengenal lebih dalam kehidupan masyarakat lokal yang masih mempertahankan adat istiadat mereka.
+                            Datah Bilang Ilir adalah kampung kecil di Mahakam Ulu yang terkenal dengan pemandangan alamnya yang memukau. Kampung ini menjadi tempat persinggahan yang sempurna bagi para wisatawan yang mencari ketenangan di tengah hutan tropis dan sungai Mahakam yang megah.
                         </p>
 
-                        <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
+                        <h2 className="text-left mb-5 text-2xl font-semibold">Daya Tarik</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Desa Batu Majang, wisatawan dapat menikmati berbagai kegiatan seperti berinteraksi dengan penduduk setempat, belajar tentang budaya Dayak, serta menikmati keindahan alam sekitar. Desa ini juga memiliki fasilitas yang cukup sederhana namun nyaman bagi para pengunjung.
+                            Kampung ini menawarkan pemandangan sungai yang tenang, ladang hijau yang luas, dan rumah-rumah tradisional yang dihuni oleh masyarakat Dayak. Wisatawan juga dapat menikmati aktivitas seperti memancing, menyusuri sungai dengan perahu, atau sekadar menikmati suasana pedesaan yang damai.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Akses menuju Desa Batu Majang dapat dilakukan dengan menggunakan kendaraan dari Samarinda atau Balikpapan, menuju kawasan Mahakam Ulu. Perjalanan menuju desa ini dapat ditempuh melalui jalan darat yang cukup menantang, namun menawarkan pemandangan yang sangat indah sepanjang perjalanan.
+                            Perjalanan ke Datah Bilang Ilir melibatkan perjalanan air menggunakan perahu tradisional. Pengalaman menyusuri Sungai Mahakam yang luas dan melihat kehidupan di sepanjang sungai akan menjadi bagian tak terlupakan dari kunjungan ini.
                         </p>
                     </div>
 
@@ -52,4 +52,4 @@ const DesaBatuMajang = () => {
     );
 };
 
-export default DesaBatuMajang;
+export default DatahBilangIlir;

@@ -41,7 +41,7 @@ const KutaiTimur = () => {
     {[
       {
         title: "Bukit Pelangi",
-        imgSrc: "img/kutim/bukit-pelangi.jpg",
+        imgSrc: "img/kutim/bukit pelangi.jpg",
         address: "Alamat: Kelurahan Teluk Lingga, Kecamatan Sangatta Utara, Kabupaten Kutai Timur.",
         link: "https://maps.app.goo.gl/n9it2LnjcaQnfd1Q7",
         infoPage: "/bukit-pelangi",
