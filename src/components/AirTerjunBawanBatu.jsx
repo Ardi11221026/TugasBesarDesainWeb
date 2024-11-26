@@ -29,17 +29,23 @@ const AirTerjunBawanBatu = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Air Terjun Bawan Batu adalah salah satu tempat wisata alam yang terletak di Kabupaten Berau, Kalimantan Timur. Dengan air terjun yang menakjubkan, keindahan alamnya sangat memukau para pengunjung. Di sini, Anda bisa menikmati suasana alam yang tenang dan menyegarkan, serta menikmati pemandangan hutan tropis yang hijau.
+                        Air Terjun Bawan Batu, yang terletak di Kabupaten Berau, Kalimantan Timur, adalah destinasi wisata alam yang menawarkan pemandangan memukau dengan air terjun yang megah dikelilingi oleh hutan tropis yang rimbun. 
+                        Tempat ini menjadi pilihan ideal bagi pengunjung yang mencari ketenangan dan suasana alami untuk melepas penat. Selain keindahan air terjunnya, area sekitar juga menyediakan jalur trekking ringan yang cocok bagi pecinta alam dan fotografer yang ingin mengabadikan momen indah. 
+                        Dengan akses yang cukup mudah dan suasana yang sejuk, Air Terjun Bawan Batu menjadi daya tarik wisata favorit di wilayah ini.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Air Terjun Bawan Batu, wisatawan bisa melakukan aktivitas trekking ringan menuju lokasi air terjun. Setelah mencapai tempat tersebut, Anda dapat menikmati keindahan air terjun sambil berfoto atau sekadar bersantai menikmati udara segar. Fasilitas di sekitar air terjun terbatas, jadi pastikan membawa perlengkapan yang diperlukan.
+                        Air Terjun Bawan Batu menawarkan pengalaman wisata yang menyegarkan, dengan aktivitas trekking ringan melalui jalur alami menuju lokasi air terjun. Sesampainya di sana, pengunjung dapat menikmati pemandangan air terjun yang memukau, berfoto di sekitar keindahan alam, atau bersantai di bawah rindangnya pepohonan sambil menikmati udara segar khas hutan tropis. 
+                        Karena fasilitas di area ini masih terbatas, seperti minimnya warung atau tempat istirahat permanen, wisatawan disarankan untuk membawa perlengkapan pribadi, seperti makanan, air minum, dan alas duduk. 
+                        Tempat ini cocok bagi mereka yang mencari pelarian sejenak dari kesibukan kota sambil menikmati suasana yang alami dan damai.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Untuk menuju Air Terjun Bawan Batu, pengunjung dapat memulai perjalanan dari Tanjung Redeb, ibu kota Kabupaten Berau, dan melanjutkan perjalanan darat menuju desa terdekat. Dari sana, pengunjung harus melakukan trekking menuju lokasi air terjun. Akses jalan menuju air terjun ini sedikit menantang, namun pemandangan yang indah setibanya di sana sangat layak untuk dinikmati.
+                        Untuk mencapai Air Terjun Bawan Batu, perjalanan dimulai dari Tanjung Redeb, ibu kota Kabupaten Berau, dengan menggunakan kendaraan menuju desa terdekat sebagai titik awal trekking. Rute perjalanan darat ini memakan waktu beberapa jam dan menawarkan pemandangan pedesaan yang asri sepanjang jalan. Dari desa, pengunjung melanjutkan trekking dengan medan yang sedikit menantang, melalui jalur setapak yang dikelilingi oleh hutan tropis. 
+                        Meski memerlukan usaha ekstra, keindahan alam yang menanti di lokasi air terjun, dengan gemuruh air yang jatuh dan udara segar khas pegunungan, menjadikan perjalanan ini sangat berkesan. 
+                        Dianjurkan untuk menggunakan alas kaki yang nyaman dan membawa bekal untuk mendukung perjalanan.
                         </p>
                     </div>
 
