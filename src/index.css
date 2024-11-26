@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+
+html.dark body {
+  background-color: #121212;
+  color: black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont,'Arial','Times New Roman' ,'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,6 +16,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: black;
 }
 
 code {

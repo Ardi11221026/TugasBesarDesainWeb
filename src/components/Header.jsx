@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
+import LightDarkMode from './LightDarkMode';
 
 const Header = () => {
     const [searchOpen, setSearchOpen] = useState(false);
@@ -37,7 +38,7 @@ const Header = () => {
             </div>
 
             <nav className="relative">
-                <ul className="flex space-x-6 items-center">
+                <ul className="flex space-x-4 items-center">
                     <li>
                         <Link
                             to="/"
@@ -105,8 +106,14 @@ const Header = () => {
                     </li>
 
                     {/* Search Icon */}
-                    <li className="relative">
-                        <FaSearch onClick={toggleSearch} className="h-6 w-6 cursor-pointer" />
+                    <li className="relative flex items-center space-x-4">
+                        <LightDarkMode />
+                        <button
+                            onClick={toggleSearch}
+                            className="font-bold hover:text-white hover:bg-gray-700 px-2 py-2 rounded flex items-center"
+                        >
+                            <FaSearch className="h-6 w-6 cursor-pointer" />
+                        </button>
                         {searchOpen && (
                             <form
                                 onSubmit={handleSearchSubmit}
