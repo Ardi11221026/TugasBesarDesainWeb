@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import { FaChevronDown, FaSearch } from 'react-icons/fa';
 
 const Header = () => {
