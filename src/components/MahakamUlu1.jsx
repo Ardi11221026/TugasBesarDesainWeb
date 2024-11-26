@@ -60,6 +60,20 @@ const MahakamUlu = () => {
         link: "https://maps.app.goo.gl/AooxX6RD3i1GagZz5", // Replace with actual link
         infoPage: "/riam-udang",
       },
+      {
+        title: "Kampung Long Tuyoq", 
+        imgSrc: "img/mahulu/kampung long tuyoq.JPG", // belum di update
+        address: "Alamat: Jalan Liah Loong No.31, RT.01, Desa Long Pahangai I, Kecamatan Long Pahangai, Kabupaten Mahakam Ulu",
+        link: "https://maps.app.goo.gl/ujbJjjexeoPJ4kM1A", 
+        infoPage: "/kampung-long-tuyoq",
+      },
+      {
+        title: "Datah Bilang Ilir", 
+        imgSrc: "img/mahulu/datah bilang ilir.jpg", // belum di update
+        address: "Alamat: Desa Long Hubung, Kabupaten Mahakam Ulu.",
+        link: "https://maps.app.goo.gl/WgoBRSDreMV7mKge6",
+        infoPage: "/datah-bilang-ilir",
+      },
     ]
       .sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically from A to Z
       .map((place, index) => (
