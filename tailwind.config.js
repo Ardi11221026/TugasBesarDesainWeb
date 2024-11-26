@@ -1,21 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // Aktifkan dark mode menggunakan class
+  darkMode: 'class', // Enable class-based dark mode
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-      fontFamily: {
-        times: ['"Times New Roman"', 'serif'], // Custom font named 'times'
-      },
-      colors: {
+      // Add custom dark mode colors if needed
+      backgroundColor: {
         dark: {
-          bg: '#121212',
-          text: '#ffffff',
-        },
+          primary: '#1a202c',
+          secondary: '#2d3748'
+        }
       },
+      textColor: {
+        dark: {
+          primary: '#e2e8f0',
+          secondary: '#cbd5e0'
+        }
+      }
     },
   },
   plugins: [],
-};
+}
