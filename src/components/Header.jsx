@@ -1,43 +1,18 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect, useRef } from "react";
-import { FaGlobe, FaSearch, FaChevronDown } from 'react-icons/fa';
+import { useState, useRef } from "react";
+import { FaChevronDown, FaSearch } from 'react-icons/fa';
+import LightDarkMode from './LightDarkMode';
 
 const Header = () => {
-    const [languageDropdown, setLanguageDropdown] = useState(false);
-    const [destinationDropdown, setDestinationDropdown] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
-    const [language, setLanguage] = useState('en');
     const [searchQuery, setSearchQuery] = useState('');
-    const dropdownRef = useRef(null);
     const destinationRef = useRef(null);
     const navigate = useNavigate();
 
-    const toggleLanguageDropdown = () => {
-        setLanguageDropdown((prev) => !prev);
-    };
+    // Toggle search input visibility
+    const toggleSearch = () => setSearchOpen((prev) => !prev);
 
-    const toggleDestinationDropdown = () => {
-        setDestinationDropdown((prev) => !prev);
-    };
-
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-            setLanguageDropdown(false);
-        }
-        if (destinationRef.current && !destinationRef.current.contains(event.target)) {
-            setDestinationDropdown(false);
-        }
-    };
-
-    const toggleSearch = () => {
-        setSearchOpen((prev) => !prev);
-    };
-
-    const changeLanguage = (lang) => {
-        setLanguage(lang);
-        setLanguageDropdown(false);
-    };
-
+    // Handle search form submit
     const handleSearchSubmit = (event) => {
         event.preventDefault();
         if (searchQuery.trim()) {
@@ -46,11 +21,6 @@ const Header = () => {
             setSearchOpen(false);
         }
     };
-
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
 
     return (
         <header className="bg-white shadow-md py-4 px-6 flex justify-between items-center relative z-50">
@@ -62,40 +32,34 @@ const Header = () => {
                         className="h-12"
                     />
                     <div className="ml-3 text-xl font-bold leading-none">
-                        {language === 'en' ? 'Ragam' : 'Keberagaman'} <br />{' '}
-                        {language === 'en' ? 'Kaltim' : 'Kalimantan Timur'}
+                        Ragam <br /> Kaltim
                     </div>
                 </Link>
             </div>
 
             <nav className="relative">
-                <ul className="flex space-x-6 items-center">
+                <ul className="flex space-x-4 items-center">
                     <li>
                         <Link
                             to="/"
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
                         >
-                            {language === 'en' ? 'Home' : 'Beranda'}
+                            Home
                         </Link>
                     </li>
 
                     {/* Destinasi Dropdown */}
-                    <li className="relative" ref={destinationRef}>
+                    <li className="relative group" ref={destinationRef}>
                         <button
-                            onClick={toggleDestinationDropdown}
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded flex items-center"
                             aria-haspopup="true"
-                            aria-expanded={destinationDropdown}
+                            aria-expanded="false"
                         >
-                            {language === 'en' ? 'Destination' : 'Destinasi'}{' '}
+                            Destination
                             <FaChevronDown className="ml-1" />
                         </button>
                         <ul
-                            className={`absolute bg-gray-800 text-white mt-2 rounded shadow-md w-48 transform transition-transform duration-300 origin-top ${
-                                destinationDropdown
-                                    ? 'opacity-100 scale-y-100'
-                                    : 'opacity-0 scale-y-0'
-                            } z-50`}
+                            className="absolute bg-gray-800 text-white mt-2 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50"
                             style={{ position: 'absolute', top: '100%', left: 0 }}
                         >
                             {[
@@ -129,7 +93,7 @@ const Header = () => {
                             to="/blog"
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
                         >
-                            {language === 'en' ? 'Blog' : 'Blog'}
+                            Blog
                         </Link>
                     </li>
                     <li>
@@ -137,45 +101,19 @@ const Header = () => {
                             to="/about"
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
                         >
-                            {language === 'en' ? 'About' : 'Tentang'}
+                            About
                         </Link>
                     </li>
 
-                    {/* Language Selector */}
-                    <li className="relative" ref={dropdownRef}>
-                        <button
-                            onClick={toggleLanguageDropdown}
-                            className="flex items-center focus:outline-none"
-                            aria-haspopup="true"
-                            aria-expanded={languageDropdown}
-                        >
-                            <FaGlobe className="h-6 w-6" />
-                        </button>
-                        {languageDropdown && (
-                            <ul className="absolute right-0 mt-2 bg-gray-800 text-white rounded shadow-md w-36 z-50">
-                                <li>
-                                    <button
-                                        onClick={() => changeLanguage('en')}
-                                        className="block w-full text-left px-4 py-2 hover:bg-gray-700"
-                                    >
-                                        English
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        onClick={() => changeLanguage('id')}
-                                        className="block w-full text-left px-4 py-2 hover:bg-gray-700"
-                                    >
-                                        Bahasa Indonesia
-                                    </button>
-                                </li>
-                            </ul>
-                        )}
-                    </li>
-
                     {/* Search Icon */}
-                    <li className="relative">
-                        <FaSearch onClick={toggleSearch} className="h-6 w-6 cursor-pointer" />
+                    <li className="relative flex items-center space-x-4">
+                        <LightDarkMode />
+                        <button
+                            onClick={toggleSearch}
+                            className="font-bold hover:text-white hover:bg-gray-700 px-2 py-2 rounded flex items-center"
+                        >
+                            <FaSearch className="h-6 w-6 cursor-pointer" />
+                        </button>
                         {searchOpen && (
                             <form
                                 onSubmit={handleSearchSubmit}
@@ -185,14 +123,14 @@ const Header = () => {
                                     type="text"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
-                                    placeholder={language === 'en' ? 'Search...' : 'Cari...'}
+                                    placeholder="Search"
                                     className="w-full p-2 border border-gray-300 rounded"
                                 />
                                 <button
                                     type="submit"
                                     className="mt-2 w-full bg-blue-500 text-white rounded py-1 hover:bg-blue-600"
                                 >
-                                    {language === 'en' ? 'Search' : 'Cari'}
+                                    Search
                                 </button>
                             </form>
                         )}
