@@ -34,12 +34,15 @@ const PulauKakaban = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Pulau Kakaban, wisatawan dapat menikmati berbagai aktivitas seperti snorkeling, diving, dan berenang bersama ubur-ubur di danau. Selain itu, para pengunjung dapat menikmati keindahan alam pulau dengan berjalan-jalan santai di sepanjang pantai yang masih alami. Fasilitas penginapan terbatas di sekitar pulau, jadi pastikan merencanakan perjalanan dengan baik.
+                        Pulau Kakaban, yang terletak di Kepulauan Derawan, menawarkan pengalaman unik bagi wisatawan dengan aktivitas seperti snorkeling, diving, dan berenang di Danau Kakaban bersama ubur-ubur tak menyengat, sebuah fenomena langka yang hanya ditemukan di beberapa tempat di dunia. 
+                        Selain itu, pengunjung dapat menikmati keindahan alam pulau dengan berjalan-jalan di pantai berpasir putih yang masih alami, dikelilingi oleh hutan tropis yang rimbun. Fasilitas penginapan di sekitar pulau terbatas, sehingga penting untuk merencanakan perjalanan dengan matang, termasuk membawa perlengkapan yang dibutuhkan untuk kenyamanan selama berada di pulau ini.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Kakaban dapat diakses melalui perjalanan menggunakan kapal dari Tanjung Redeb, ibu kota Kabupaten Berau. Setelah tiba di pulau, pengunjung dapat melanjutkan perjalanan dengan perahu menuju danau ubur-ubur yang terkenal. Akses menuju pulau ini memerlukan perjalanan cukup jauh, namun keindahan alam yang menanti sangat layak untuk dijelajahi.
+                        Pulau Kakaban dapat diakses melalui perjalanan laut menggunakan kapal dari Tanjung Redeb, ibu kota Kabupaten Berau, dengan durasi perjalanan yang bergantung pada kondisi cuaca dan jenis transportasi yang digunakan. 
+                        Setelah tiba di pulau, pengunjung biasanya melanjutkan perjalanan melalui jalur darat atau menggunakan perahu untuk mencapai Danau Kakaban, rumah bagi ubur-ubur tak menyengat yang menjadi daya tarik utama. 
+                        Perjalanan menuju pulau ini mungkin cukup panjang dan menantang, namun pesona keindahan alamnya, mulai dari air laut yang jernih hingga hutan tropis yang rimbun, menjadikan setiap langkah perjalanan terasa sepadan. Pastikan untuk membawa bekal yang cukup karena fasilitas di pulau masih terbatas.
                         </p>
                     </div>
 

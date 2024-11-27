@@ -29,17 +29,23 @@ const PulauMaratua = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Maratua merupakan salah satu pulau eksotis yang terletak di Kabupaten Berau, Kalimantan Timur. Pulau ini terkenal dengan keindahan bawah lautnya yang luar biasa, membuatnya menjadi tempat yang sangat populer untuk aktivitas diving dan snorkeling. Dengan pantai berpasir putih dan perairan yang jernih, Pulau Maratua menjadi surga bagi para pecinta alam dan wisatawan yang ingin menikmati keindahan alam tropis.
+                        Pulau Maratua adalah salah satu pulau tropis yang memukau di Kabupaten Berau, Kalimantan Timur, dan menjadi bagian dari Kepulauan Derawan. 
+                        Pulau ini menawarkan keindahan bawah laut yang luar biasa, menjadikannya surga bagi para penyelam dan pecinta snorkeling yang ingin menjelajahi terumbu karang yang masih alami serta kehidupan laut yang beragam, seperti penyu hijau, hiu karang, hingga ikan-ikan eksotis. 
+                        Selain aktivitas bawah laut, Pulau Maratua juga memiliki pantai berpasir putih yang luas dan perairan biru yang jernih, ideal untuk bersantai atau sekadar menikmati suasana tropis yang tenang. Dengan beberapa pilihan penginapan seperti resort dan homestay yang menghadap langsung ke laut, Pulau Maratua memberikan pengalaman liburan yang tak terlupakan bagi wisatawan lokal maupun mancanegara.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Pulau Maratua, pengunjung dapat menikmati berbagai aktivitas seperti diving, snorkeling, serta berkeliling dengan perahu untuk menikmati pemandangan sekitar pulau. Pulau ini juga memiliki beberapa resort dan homestay bagi wisatawan yang ingin menginap. Selain itu, tempat ini cocok untuk bersantai di pantai atau menikmati keindahan alam dengan berjalan-jalan di sepanjang pantai.
+                        Di Pulau Maratua, pengunjung dapat menikmati beragam aktivitas seru seperti diving dan snorkeling, yang memungkinkan untuk menjelajahi terumbu karang yang kaya akan kehidupan laut, termasuk penyu, ikan tropis, dan berbagai spesies laut lainnya. 
+                        Selain itu, wisatawan bisa berkeliling dengan perahu untuk menikmati pemandangan pulau yang menakjubkan atau bersantai di pantai berpasir putih yang tenang. 
+                        Pulau Maratua juga memiliki beberapa resort dan homestay dengan fasilitas yang nyaman, memberikan pengalaman menginap yang menyatu dengan alam. Dengan suasana yang damai, tempat ini sangat cocok untuk berjalan-jalan santai di sepanjang pantai, menikmati keindahan alam, atau hanya bersantai sambil menikmati angin laut yang segar.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Maratua dapat dicapai dengan melakukan perjalanan laut dari Tanjung Redeb, ibu kota Kabupaten Berau. Tiba di pulau, pengunjung dapat melanjutkan perjalanan dengan menggunakan perahu menuju beberapa spot wisata di pulau tersebut. Meskipun perjalanan memakan waktu, keindahan alam Pulau Maratua akan membuatnya menjadi pengalaman yang tak terlupakan.
+                        Pulau Maratua dapat dijangkau melalui perjalanan laut dari Tanjung Redeb, ibu kota Kabupaten Berau, dengan menggunakan kapal atau perahu. 
+                        Setelah tiba di pulau, pengunjung dapat melanjutkan perjalanan menuju berbagai spot wisata dengan perahu lokal, seperti spot diving, snorkeling, atau pantai-pantai eksotis yang tersembunyi. 
+                        Meskipun perjalanan menuju pulau ini memerlukan waktu, baik dari daratan maupun laut, keindahan alam yang ditawarkan, termasuk perairan jernih, terumbu karang, dan kehidupan laut yang mempesona, akan membuat setiap perjalanan terasa sangat berharga dan memberikan pengalaman yang tak terlupakan bagi wisatawan.
                         </p>
                     </div>
 

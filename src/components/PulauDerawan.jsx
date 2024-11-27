@@ -34,12 +34,15 @@ const PulauDerawan = () => {
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Pulau Derawan, para wisatawan bisa melakukan berbagai aktivitas seperti snorkeling, diving, dan berenang dengan penyu. Fasilitas penginapan juga tersedia di sekitar pulau, termasuk homestay dan resort. Pulau ini juga menawarkan tempat yang tenang untuk menikmati keindahan alam dan berburu foto.
+                        Pulau Derawan, yang terletak di Kabupaten Berau, Kalimantan Timur, adalah surga bagi para pecinta wisata bahari. Wisatawan dapat menikmati berbagai aktivitas seperti snorkeling dan diving untuk menjelajahi keindahan terumbu karang serta kehidupan bawah laut yang kaya, termasuk berenang bersama penyu hijau dan penyu sisik yang sering terlihat di perairan sekitar pulau. Selain itu, fasilitas penginapan di pulau ini beragam, mulai dari homestay sederhana hingga resort yang menawarkan kenyamanan lebih. 
+                        Pulau ini juga menjadi tempat favorit bagi para fotografer untuk mengabadikan pemandangan laut yang jernih, pasir putih, dan langit yang indah, menjadikannya destinasi ideal untuk bersantai dan menikmati keindahan alam tropis.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Derawan dapat diakses dengan menggunakan kapal dari Kota Tanjung Redeb, ibu kota Kabupaten Berau. Meskipun membutuhkan perjalanan yang lebih panjang untuk sampai ke pulau ini, keindahan alam yang menanti membuat perjalanan tersebut sangat berharga bagi para wisatawan.
+                        Pulau Derawan dapat diakses melalui perjalanan dari Kota Tanjung Redeb, ibu kota Kabupaten Berau. Wisatawan biasanya menggunakan kendaraan darat menuju Pelabuhan Tanjung Batu, dilanjutkan dengan perjalanan laut menggunakan speedboat atau kapal tradisional menuju pulau. 
+                        Meskipun perjalanan ini membutuhkan waktu dan persiapan ekstra, pengalaman menuju Pulau Derawan menawarkan pemandangan laut yang menakjubkan. 
+                        Setibanya di sana, pengunjung akan disambut dengan keindahan pasir putih, air laut yang jernih, dan suasana tropis yang memikat, menjadikan perjalanan tersebut sebanding dengan keindahan yang ditawarkan.
                         </p>
                     </div>
 
