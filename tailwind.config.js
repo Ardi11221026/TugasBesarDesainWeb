@@ -6,20 +6,28 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // Add custom dark mode colors if needed
-      backgroundColor: {
+      colors: {
+        // Define custom dark mode and light mode colors
+        light: {
+          primary: '#f9fafb',
+          secondary: '#e5e7eb',
+        },
         dark: {
           primary: '#1a202c',
-          secondary: '#2d3748'
-        }
+          secondary: '#2d3748',
+        },
       },
       textColor: {
+        light: {
+          primary: '#1a202c',
+          secondary: '#4a5568',
+        },
         dark: {
           primary: '#e2e8f0',
-          secondary: '#cbd5e0'
-        }
-      }
+          secondary: '#cbd5e0',
+        },
+      },
     },
   },
   plugins: [],
-}
+};
