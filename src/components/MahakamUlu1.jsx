@@ -48,14 +48,14 @@ const MahakamUlu = () => {
       },
       {
         title: "Desa Batu Majang",
-        imgSrc: "img/mahulu/desa-batu-majang.jpg", // Update the image source with the correct path
+        imgSrc: "img/mahulu/desa batu majang.jpg", // Update the image source with the correct path
         address: "Alamat: Desa Batu Majang, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
         link: "https://maps.app.goo.gl/jU13xB86waMVDgdaA", // Replace with actual link
         infoPage: "/desa-batu-majang",
       },
       {
         title: "Riam Udang",
-        imgSrc: "img/mahulu/riam-udang.jpg", // Update the image source with the correct path
+        imgSrc: "img/mahulu/riam udang.jpg", // Update the image source with the correct path
         address: "Alamat: Desa Long Bagun Ulu, Kecamatan Long Bagun, Kabupaten Mahakam Ulu.",
         link: "https://maps.app.goo.gl/AooxX6RD3i1GagZz5", // Replace with actual link
         infoPage: "/riam-udang",

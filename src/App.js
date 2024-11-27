@@ -59,7 +59,9 @@ import WisataTelukPrancis from './components/WisataTelukPrancis';
 
 // Tempat Wisata Mahakam Ulu Imports
 import BatuDindingLongMelaham from './components/BatuDindingLongMelaham';
+import DatahBilangIlir from './components/DatahBilangIlir';
 import DesaBatuMajang from './components/DesaBatuMajang';
+import KampungLongTuyoq from './components/KampungLongTuyoq';
 import RiamUdang from './components/RiamUdang';
 
 // Tempat Wisata Paser Imports
@@ -146,7 +148,9 @@ const App = () => {
 
                     {/* Tempat Wisata Mahakam Ulu Routes */}
                     <Route path="/batu-dinding-long-melaham" element={<BatuDindingLongMelaham />} />
+                    <Route path="/datah-bilang-ilir" element={<DatahBilangIlir />} />
                     <Route path="/desa-batu-majang" element={<DesaBatuMajang />} />
+                    <Route path="/kampung-long-tuyoq" element={<KampungLongTuyoq />} />
                     <Route path="/riam-udang" element={<RiamUdang />} />
 
                     {/* Tempat Wisata Paser Routes */}

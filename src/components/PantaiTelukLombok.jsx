@@ -24,7 +24,7 @@ const PantaiTelukLombok = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Teluk Lombok, Surga Tersembunyi di Kutai Timur</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kutim/pantai-teluk-lombok.jpg' 
+                            src='img/kutim/pantai teluk lombok.jpg' 
                             alt="Pantai Teluk Lombok"
                         />
 

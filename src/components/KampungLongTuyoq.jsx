@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import BlogRandom from './BlogRandom';
 
-const DesaBatuMajang = () => {
+const KampungLongTuyoq = () => {
     return (
         <div>
             <Header />
@@ -18,28 +18,28 @@ const DesaBatuMajang = () => {
                             <span className="mx-2">{'>>'}</span>
                             <Link to="/mahakam-ulu" className="hover:underline">Mahakam Ulu</Link>
                             <span className="mx-2">{'>>'}</span>
-                            <Link to="/desa-batu-majang" className="hover:underline font-semibold">Desa Batu Majang</Link>
+                            <Link to="/kampung-long-tuyoq" className="hover:underline font-semibold">Kampung Long Tuyoq</Link>
                         </nav>
 
-                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Desa Batu Majang, Keindahan Tradisi Mahakam Ulu</h2>
+                        <h2 className="text-left mb-5 text-2xl font-bold font-arial">Kampung Long Tuyoq, Warisan Budaya Mahakam Ulu</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/mahulu/desa batu majang.jpg' 
-                            alt="Desa Batu Majang"
+                            src='img/mahulu/kampung long tuyoq.jpg' 
+                            alt="Kampung Long Tuyoq"
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Desa Batu Majang adalah salah satu desa yang terletak di Mahakam Ulu, Kalimantan Timur. Desa ini menawarkan keindahan alam yang memukau serta kehidupan masyarakat yang sangat kental dengan tradisi Dayak. Pengunjung dapat menikmati keindahan hutan tropis serta mengenal lebih dalam kehidupan masyarakat lokal yang masih mempertahankan adat istiadat mereka.
+                            Kampung Long Tuyoq adalah salah satu kampung adat yang kaya akan budaya dan tradisi Dayak di Mahakam Ulu, Kalimantan Timur. Kampung ini menawarkan pengalaman unik untuk mengenal lebih dekat kehidupan masyarakat Dayak, termasuk seni ukir, tarian tradisional, dan rumah lamin yang khas.
                         </p>
 
-                        <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
+                        <h2 className="text-left mb-5 text-2xl font-semibold">Tradisi dan Budaya</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Desa Batu Majang, wisatawan dapat menikmati berbagai kegiatan seperti berinteraksi dengan penduduk setempat, belajar tentang budaya Dayak, serta menikmati keindahan alam sekitar. Desa ini juga memiliki fasilitas yang cukup sederhana namun nyaman bagi para pengunjung.
+                            Pengunjung Kampung Long Tuyoq dapat menyaksikan berbagai tradisi seperti upacara adat, musik khas dengan alat musik Sape, serta mencicipi kuliner khas Dayak. Penduduk setempat dengan ramah akan berbagi cerita tentang sejarah dan makna budaya mereka.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Akses menuju Desa Batu Majang dapat dilakukan dengan menggunakan kendaraan dari Samarinda atau Balikpapan, menuju kawasan Mahakam Ulu. Perjalanan menuju desa ini dapat ditempuh melalui jalan darat yang cukup menantang, namun menawarkan pemandangan yang sangat indah sepanjang perjalanan.
+                            Kampung Long Tuyoq dapat dicapai melalui perjalanan sungai menggunakan perahu tradisional atau kendaraan darat tergantung pada musim. Meskipun perjalanan mungkin memakan waktu, pengalaman yang didapatkan akan sepadan dengan keindahan dan kekayaan budaya yang ditawarkan.
                         </p>
                     </div>
 
@@ -52,4 +52,4 @@ const DesaBatuMajang = () => {
     );
 };
 
-export default DesaBatuMajang;
+export default KampungLongTuyoq;
