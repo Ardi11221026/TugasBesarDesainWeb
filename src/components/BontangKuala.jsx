@@ -29,17 +29,23 @@ const BontangKuala = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Bontang Kuala adalah sebuah desa yang terletak di kawasan pesisir Bontang, Kalimantan Timur. Kawasan ini menawarkan pemandangan laut yang indah serta kekayaan alam yang memukau. Tempat ini sangat cocok bagi para wisatawan yang ingin menikmati suasana yang tenang sambil menikmati panorama alam yang luar biasa.
+                        Bontang Kuala adalah sebuah desa wisata yang terletak di pesisir Bontang, Kalimantan Timur, dikenal sebagai salah satu destinasi yang memadukan keindahan alam dan kehidupan masyarakat lokal yang khas. Desa ini menawarkan pemandangan laut yang memukau dengan jembatan kayu yang membentang di atas air, menghubungkan rumah-rumah tradisional yang berdiri di atas tiang. 
+                        Selain menikmati panorama laut yang tenang, wisatawan juga dapat mencicipi beragam hidangan seafood segar di restoran lokal sambil menikmati angin laut yang sejuk. 
+                        Bontang Kuala juga menjadi tempat yang ideal untuk bersantai dan menyaksikan matahari terbenam, menjadikannya destinasi yang cocok untuk melepas penat.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Bontang Kuala, pengunjung dapat menikmati aktivitas seperti berkeliling dengan perahu, memancing, atau hanya berjalan-jalan di sepanjang pantai. Terdapat juga beberapa warung makan yang menawarkan hidangan lokal yang lezat.
+                        Di Bontang Kuala, pengunjung dapat menikmati berbagai aktivitas menarik yang memanfaatkan keindahan alam dan budaya lokal. Anda bisa berkeliling dengan perahu tradisional untuk menjelajahi area pesisir yang memukau atau mencoba pengalaman memancing bersama penduduk setempat. 
+                        Selain itu, berjalan-jalan di jembatan kayu yang menghubungkan rumah-rumah panggung di atas laut memberikan pengalaman unik yang jarang ditemukan di tempat lain. 
+                        Pengunjung juga dapat menikmati hidangan khas lokal di warung makan setempat, terutama aneka olahan seafood segar yang menjadi daya tarik kuliner kawasan ini. Suasana yang tenang dan pemandangan matahari terbenam menjadikan Bontang Kuala tempat yang sempurna untuk bersantai.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Lokasi Bontang Kuala dapat diakses melalui jalan raya dari pusat kota Bontang. Anda dapat menggunakan kendaraan pribadi atau kendaraan umum yang tersedia di kota untuk menuju ke tempat wisata ini.
+                        Bontang Kuala terletak tidak jauh dari pusat Kota Bontang dan dapat diakses dengan mudah melalui jalan raya yang baik. Pengunjung dapat menggunakan kendaraan pribadi untuk perjalanan yang lebih fleksibel atau memanfaatkan transportasi umum seperti angkutan kota atau ojek online yang tersedia di area perkotaan. 
+                        Perjalanan menuju kawasan ini menawarkan pemandangan pesisir yang menenangkan, menjadikannya bagian dari pengalaman wisata itu sendiri. 
+                        Setibanya di sana, pengunjung akan disambut dengan suasana desa yang khas, lengkap dengan rumah-rumah panggung yang unik dan pemandangan laut yang memukau.
                         </p>
                     </div>
 
