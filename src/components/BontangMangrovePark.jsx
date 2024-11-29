@@ -29,17 +29,23 @@ const BontangMangrovePark = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Bontang Mangrove Park adalah kawasan ekowisata yang menawarkan keindahan hutan mangrove di Bontang, Kalimantan Timur. Tempat ini sangat cocok bagi pengunjung yang tertarik untuk menikmati keanekaragaman hayati dan belajar lebih banyak tentang ekosistem mangrove.
+                        Bontang Mangrove Park merupakan kawasan ekowisata yang memamerkan keindahan dan pentingnya hutan mangrove di Bontang, Kalimantan Timur. Destinasi ini menawarkan pengalaman edukatif dan rekreasi, di mana pengunjung dapat menjelajahi jalur kayu yang rapi di tengah rimbunnya pohon mangrove. 
+                        Selain menjadi habitat bagi berbagai jenis flora dan fauna, kawasan ini juga berfungsi sebagai pelindung alami pantai dari abrasi. 
+                        Bontang Mangrove Park adalah tempat yang ideal untuk menikmati keanekaragaman hayati, berfoto dengan latar hijau yang memukau, serta belajar mengenai peran vital ekosistem mangrove dalam menjaga keseimbangan lingkungan.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pengunjung dapat melakukan berbagai aktivitas seperti berjalan-jalan di atas jembatan bambu yang dibangun di tengah hutan mangrove, atau mengamati satwa liar seperti burung dan ikan yang hidup di sekitar kawasan tersebut.
+                        Di Bontang Mangrove Park, pengunjung dapat menikmati berbagai aktivitas menarik, seperti berjalan di atas jembatan bambu yang membentang di tengah hutan mangrove, memberikan pengalaman unik menyatu dengan alam. Selama perjalanan, pengunjung dapat mengamati satwa liar seperti burung-burung eksotis, kepiting, dan ikan yang hidup di sekitar ekosistem mangrove. 
+                        Bagi pecinta fotografi, tempat ini menawarkan banyak spot menarik dengan latar pemandangan hijau yang asri. 
+                        Kawasan ini juga menjadi lokasi edukasi lingkungan, di mana pengunjung dapat belajar tentang pentingnya mangrove dalam menjaga keseimbangan ekosistem pesisir dan melindungi pantai dari abrasi.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Lokasi Bontang Mangrove Park dapat dijangkau dengan kendaraan pribadi atau kendaraan umum dari pusat kota Bontang. Setelah mencapai lokasi, pengunjung dapat menjelajahi taman mangrove melalui jalur yang telah disediakan.
+                        Bontang Mangrove Park terletak tidak jauh dari pusat kota Bontang, sehingga mudah dijangkau dengan kendaraan pribadi maupun kendaraan umum. Perjalanan menuju lokasi memberikan pemandangan khas daerah pesisir yang menarik. 
+                        Setibanya di sana, pengunjung dapat menjelajahi kawasan ekowisata ini melalui jalur-jalur yang telah disediakan, termasuk jembatan bambu yang melintasi hutan mangrove. 
+                        Akses yang cukup baik membuat tempat ini menjadi destinasi favorit bagi keluarga, pelajar, dan pecinta alam yang ingin menikmati suasana asri sekaligus belajar tentang pentingnya pelestarian ekosistem mangrove.
                         </p>
                     </div>
 
