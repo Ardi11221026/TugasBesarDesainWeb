@@ -29,17 +29,23 @@ const PulauBerasBasah = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pulau Beras Basah adalah sebuah pulau kecil yang terletak di sekitar Bontang, Kalimantan Timur. Pulau ini terkenal dengan pasir putihnya yang lembut, air laut yang jernih, dan pemandangan alam yang menakjubkan. Tempat ini cocok bagi pengunjung yang ingin menikmati suasana tropis yang eksotis.
+                        Pulau Beras Basah adalah sebuah pulau kecil yang terletak sekitar 30 menit perjalanan dengan kapal dari Bontang, Kalimantan Timur. Pulau ini terkenal dengan pasir putihnya yang lembut, air laut yang jernih, serta pemandangan alam tropis yang memukau. 
+                        Selain keindahan alamnya, pulau ini juga menawarkan suasana yang tenang dan eksotis, menjadikannya destinasi yang sempurna bagi pengunjung yang ingin bersantai atau menikmati kegiatan seperti berenang dan snorkeling. 
+                        Dengan keanekaragaman hayati bawah laut yang menarik, Pulau Beras Basah menjadi tempat ideal untuk wisata alam dan rekreasi.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Di Pulau Beras Basah, pengunjung dapat menikmati berbagai aktivitas seperti snorkeling, berenang, atau hanya bersantai di pantai. Pulau ini juga memiliki keanekaragaman hayati bawah laut yang memukau, membuatnya ideal bagi para penyelam dan penggemar alam.
+                        Di Pulau Beras Basah, pengunjung dapat menikmati berbagai aktivitas seperti snorkeling, berenang, atau sekadar bersantai di pantai yang tenang. Keindahan bawah lautnya yang kaya akan terumbu karang dan berbagai spesies ikan menjadikannya lokasi yang sangat menarik bagi para penyelam dan penggemar alam. 
+                        Selain itu, suasana yang tenang dan jauh dari keramaian membuat pulau ini menjadi tempat yang sempurna untuk melepas penat dan menikmati keindahan alam tropis. 
+                        Pulau ini juga cocok untuk berjalan-jalan santai sepanjang pantai sambil menikmati pemandangan laut yang memukau.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Untuk menuju ke Pulau Beras Basah, pengunjung dapat menyewa perahu dari pelabuhan di Bontang. Perjalanan ke pulau ini memakan waktu sekitar 30 hingga 45 menit, dan begitu sampai, pengunjung akan disambut oleh keindahan alam pulau yang menawan.
+                        Untuk menuju ke Pulau Beras Basah, pengunjung dapat menyewa perahu dari pelabuhan di Bontang, yang berjarak sekitar 30 hingga 45 menit perjalanan laut. Sepanjang perjalanan, wisatawan akan disuguhi pemandangan laut yang indah dan suasana tenang. 
+                        Setibanya di pulau, pengunjung akan disambut oleh pantai berpasir putih yang bersih dan air laut yang jernih, menciptakan suasana tropis yang eksotis. 
+                        Akses yang mudah dan keindahan alam yang menakjubkan menjadikan pulau ini destinasi wisata yang ideal bagi mereka yang mencari ketenangan dan petualangan alam.
                         </p>
                     </div>
 

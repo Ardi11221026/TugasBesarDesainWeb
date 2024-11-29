@@ -29,17 +29,23 @@ const PantaiMarina = () => {
                         />
 
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina terletak di Bontang, Kalimantan Timur. Pantai ini merupakan salah satu destinasi wisata yang menarik dengan pasir putih yang bersih, air laut yang jernih, dan suasana yang tenang. Cocok untuk menikmati hari santai, berenang, atau menikmati pemandangan matahari terbenam.
+                        Pantai Marina, yang terletak di Bontang, Kalimantan Timur, adalah destinasi wisata yang menawarkan keindahan alami khas pesisir. Dengan pasir putih yang lembut, air laut yang jernih, dan suasana yang damai, pantai ini menjadi tempat ideal untuk bersantai bersama keluarga atau teman. 
+                        Selain berenang, pengunjung dapat menikmati berbagai aktivitas seperti bermain di tepi pantai, piknik, atau sekadar berjalan-jalan sambil menghirup udara segar. 
+                        Pemandangan matahari terbenam di Pantai Marina menjadi daya tarik utama, memberikan pengalaman yang memukau bagi siapa saja yang berkunjung. Lokasinya yang mudah diakses menjadikan pantai ini pilihan populer bagi wisatawan lokal maupun luar daerah.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Aktivitas dan Fasilitas</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pengunjung Pantai Marina dapat menikmati berbagai aktivitas seperti berjemur, berenang, atau bermain voli pantai. Fasilitas seperti warung makan dan gazebo juga tersedia di sepanjang pantai.
+                        Di Pantai Marina, pengunjung dapat menikmati berbagai aktivitas menarik seperti berjemur di bawah sinar matahari tropis, berenang di air laut yang jernih, atau bermain voli pantai bersama keluarga dan teman. 
+                        Tersedia juga fasilitas pendukung seperti warung makan yang menyajikan hidangan lokal, gazebo untuk bersantai, dan area piknik yang nyaman. 
+                        Suasana pantai yang tenang dan bersih menjadikannya tempat yang sempurna untuk melepas penat. Selain itu, pengunjung juga dapat menikmati angin sepoi-sepoi sambil menikmati pemandangan laut yang memukau, terutama saat matahari mulai terbenam.
                         </p>
 
                         <h2 className="text-left mb-5 text-2xl font-semibold">Akses dan Lokasi</h2>
                         <p className="leading-relaxed max-w-[900px] mb-8 text-justify">
-                            Pantai Marina mudah diakses dari pusat kota Bontang. Anda dapat menggunakan kendaraan pribadi atau transportasi umum untuk mencapai lokasi ini. Pantai ini menjadi pilihan utama bagi wisatawan yang mencari ketenangan di alam terbuka.
+                        Pantai Marina berlokasi tidak jauh dari pusat kota Bontang, sehingga mudah diakses baik dengan kendaraan pribadi maupun transportasi umum. 
+                        Perjalanan menuju pantai ini menyuguhkan pemandangan indah khas pesisir yang menenangkan. 
+                        Pantai Marina menjadi salah satu destinasi favorit wisatawan karena menawarkan suasana yang tenang dan alami, cocok untuk bersantai atau sekadar menikmati udara segar. Dengan aksesibilitas yang baik dan fasilitas yang memadai, pantai ini menjadi pilihan tepat bagi siapa saja yang ingin melepaskan diri dari kesibukan kota dan menikmati keindahan alam.
                         </p>
                     </div>
 
