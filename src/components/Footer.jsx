@@ -3,13 +3,13 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="bg-white py-10 shadow-inner">
-            <div className="container mx-auto flex flex-wrap justify-between">
+            <div className="container mx-auto flex flex-col items-center text-center">
                 {/* Logo and Info Section */}
-                <div className="w-full md:w-1/4 mb-8 md:mb-0">
+                <div className="mb-8">
                     <img
                         src="/img/Kalimantan Timur.png"
                         alt="Discovery East Borneo"
-                        className="h-12 mb-4"
+                        className="h-12 mb-4 mx-auto"
                     />
                     <h4 className="text-2xl font-bold mb-4">
                         Ragam <br /> Kaltim
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright Section */}
-                <div className="w-full text-center text-gray-500 mt-8">
+                <div className="text-gray-500">
                     <p>&copy; 2024 Ragam Kaltim. All Rights Reserved.</p>
                 </div>
             </div>
