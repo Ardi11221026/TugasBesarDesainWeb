@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About1';
@@ -87,7 +88,7 @@ import TamanTepianMahakam from './components/TamanTepianMahakam';
 const App = () => {
     return (
         <Router>
-            <div>
+           <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

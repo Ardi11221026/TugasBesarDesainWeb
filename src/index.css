@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 html.dark body {
-  background-color: #121212;
-  color: black;
+  background-color: #000000; /* Background untuk mode gelap (latar putih di mode terang) */
+  color: #ffffff;          /* Teks putih untuk mode gelap */
+}
+
+html.dark body.bg-gray-100 {
+  background-color: #2e2e2e; /* Warna abu-abu gelap untuk bg-gray-100 */
+  color: #ffffff;           /* Teks putih untuk mode gelap */
 }
 
 body {
@@ -16,8 +19,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
-  color: black;
+  background-color: #ffffff; /* Background default */
+  color: black;             /* Teks default */
 }
 
 code {
