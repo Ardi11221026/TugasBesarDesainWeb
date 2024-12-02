@@ -1,19 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
-import { FaChevronDown, FaSearch } from "react-icons/fa";
+import { FaChevronDown, FaSearch, FaMoon, FaSun } from "react-icons/fa";
 
 const Header = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+    const [darkMode, setDarkMode] = useState(false);
     const destinationRef = useRef(null);
     const navigate = useNavigate();
 
     // Data statis untuk pencarian
     const pages = [
-        { title: "Home", url: "/" },
-        { title: "Blog", url: "/blog" },
-        { title: "About", url: "/about" },
         { title: "Balikpapan", url: "/balikpapan" },
         { title: "Berau", url: "/berau" },
         { title: "Bontang", url: "/bontang" },
@@ -41,8 +39,13 @@ const Header = () => {
         }
     };
 
+    const toggleDarkMode = () => {
+        setDarkMode((prevMode) => !prevMode);
+        document.body.classList.toggle("dark-mode");
+    };
+
     return (
-        <header className="bg-white shadow-md py-1 px-6 mt-3 flex justify-between items-center relative z-50">
+        <header className={`bg-white shadow-md py-1 px-6 mt-3 flex justify-between items-center relative z-50 ${darkMode ? "dark-mode" : ""}`}>
             {/* Logo Section */}
             <div className="logo-section flex justify-center items-center mb-4">
                 <Link to="/" className="flex items-center">
@@ -73,11 +76,16 @@ const Header = () => {
                     <li className="relative group" ref={destinationRef}>
                         <button
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded flex items-center"
+                            aria-haspopup="true"
+                            aria-expanded="false"
                         >
                             Destination
                             <FaChevronDown className="ml-1" />
                         </button>
-                        <ul className="absolute bg-gray-800 text-white mt-0 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50">
+                        <ul
+                            className="absolute bg-gray-800 text-white mt-0 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50"
+                            style={{ position: "absolute", top: "100%", left: 0 }}
+                        >
                             {pages
                                 .filter((page) => page.url.startsWith("/"))
                                 .map((destination) => (
@@ -138,6 +146,16 @@ const Header = () => {
                                 </button>
                             </form>
                         )}
+                    </li>
+
+                    {/* Dark Mode Toggle */}
+                    <li>
+                        <button
+                            onClick={toggleDarkMode}
+                            className="text-2xl p-2"
+                        >
+                            {darkMode ? <FaSun /> : <FaMoon />}
+                        </button>
                     </li>
                 </ul>
             </nav>

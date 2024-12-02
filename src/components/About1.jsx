@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 const About = () => {
     return (
-        <div className="main-content flex-[3] bg-gray-100 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg flex flex-col items-center">
+        <div className="main-content flex-[3] bg-gray-100 p-6 sm:p-8 lg:p-10 shadow-lg flex flex-col items-center">
             <h1 className="text-center mb-4 text-2xl sm:text-3xl lg:text-4xl font-bold font-arial">
                 Tentang Kami
             </h1>
@@ -36,6 +36,49 @@ const About = () => {
                     </p>
                 </div>
             </div>
+
+            {/* Our Team Section */}
+<div className="team-section mt-10 w-full text-center">
+    <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6">Our Team</h2>
+    <div className="team-members grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="team-member flex flex-col items-center">
+            <img
+                src="img/el duduk.jpg"
+                alt="Ardi Dwi Saputra"
+                className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
+            />
+            <p className="mt-3 text-sm sm:text-base font-semibold">Ardi Dwi Saputra</p>
+            <p className="text-sm text-gray-600">NIM: 11221026</p>
+        </div>
+        <div className="team-member flex flex-col items-center">
+            <img
+                src="img/el duduk.jpg"
+                alt="Rianto Padli"
+                className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
+            />
+            <p className="mt-3 text-sm sm:text-base font-semibold">Rianto Padli</p>
+            <p className="text-sm text-gray-600">NIM: 11221049</p>
+        </div>
+        <div className="team-member flex flex-col items-center">
+            <img
+                src="img/el duduk.jpg"
+                alt="Arya Andhika Trisnawan"
+                className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
+            />
+            <p className="mt-3 text-sm sm:text-base font-semibold">Arya Andhika Trisnawan</p>
+            <p className="text-sm text-gray-600">NIM: 11221054</p>
+        </div>
+        <div className="team-member flex flex-col items-center">
+            <img
+                src="img/el duduk.jpg"
+                alt="Samuel Benedicto Siahaan"
+                className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
+            />
+            <p className="mt-3 text-sm sm:text-base font-semibold">Samuel Benedicto Siahaan</p>
+            <p className="text-sm text-gray-600">NIM: 11221064</p>
+        </div>
+    </div>
+</div>
         </div>
     );
 };
