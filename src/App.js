@@ -132,7 +132,7 @@ const App = () => {
                     <Route path="/danau-aco" element={<DanauAco />} />
                     <Route path="/danau-jempang" element={<DanauJempang />} />
                     <Route path="/lamin-eheng" element={<LaminEheng />} />
-                    <Route path="/taman-budaya-sendawar" element={<TamanBudayaSentawar />} />
+                    <Route path="/taman-budaya-sentawar" element={<TamanBudayaSentawar />} />
 
                     {/* Tempat Wisata Kutai Kartanegara Routes */}
                     <Route path="/bukit-bangkirai" element={<BukitBangkirai />} />
