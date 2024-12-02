@@ -20,7 +20,7 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-white shadow-md py-3 px-6 mt-2 flex justify-between items-center relative z-50">
+        <header className="bg-white shadow-md py-1 px-6 mt-3 flex justify-between items-center relative z-50">
             {/* Logo Section */}
             <div className="logo-section flex justify-center items-center mb-4">
                 <Link to="/" className="flex items-center">
