@@ -43,31 +43,36 @@ const Bontang = () => {
         title: "Bontang Kuala",
         imgSrc: "img/bontang/bontang kuala.jpg",
         address: "Alamat: Kelurahan Bontang Kuala, Kecamatan Bontang Utara, Kota Bontang.",
-        link: "/bontang-kuala", // Updated to the page route
+        link: "https://maps.app.goo.gl/3fhfLbr9imjyE3vT7",
+        infoPage: "/bontang-kuala", // Updated to the page route
       },
       {
         title: "Bontang Mangrove Park",
         imgSrc: "img/bontang/bontang mangrove park.jpeg",
         address: "Alamat: Jalan Cut Nyak Dien, Kelurahan Bontang Baru, Kecamatan Bontang Utara, Kota Bontang.",
-        link: "/bontang-mangrove-park", // Updated to the page route
+        link: "https://maps.app.goo.gl/J7rUx5D1k814ff4v6",
+        infoPage: "/bontang-mangrove-park", // Updated to the page route
       },
       {
         title: "Pantai Marina",
         imgSrc: "img/bontang/pantai marina.jpg",
         address: "Alamat: Jalan Pelabuhan Marina, Kelurahan Satimpo, Kecamatan Bontang Selatan , Kota Bontang.",
-        link: "/pantai-marina", // Updated to the page route
+        link: "https://maps.app.goo.gl/Bua2tmXN7rych3iZ8",
+        infoPage: "/pantai-marina", // Updated to the page route
       },
       {
         title: "Pantai Tanjung Laut",
         imgSrc: "img/bontang/pantai tanjung laut.jpg",
         address: "Alamat: Jalan Pelabuhan III, Kelurahan Tanjung Laut Indah, Kecamatan Bontang Selatan, Kota Bontang.",
-        link: "/pantai-tanjung-laut", // Updated to the page route
+        link: "https://maps.app.goo.gl/uoXm7L8E6yhNDMZ38",
+        infoPage: "/pantai-tanjung-laut", // Updated to the page route
       },
       {
         title: "Pulau Beras Basah",
         imgSrc: "img/bontang/pulau beras basah.jpg",
         address: "Alamat: Pulau Beras Basah, Kelurahan Bontang Lestari, Kecamatan Bontang Selatan, Kota Bontang.",
-        link: "/pulau-beras-basah", // Updated to the page route
+        link: "https://maps.app.goo.gl/9WcsJJCDaRwjeyvd8",
+        infoPage: "/pulau-beras-basah", // Updated to the page route
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title)) // Sorting alphabetically by title

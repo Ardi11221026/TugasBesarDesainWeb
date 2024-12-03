@@ -1,5 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
 import { FaChevronDown, FaSearch, FaMoon, FaSun } from "react-icons/fa";
 
 const Header = () => {
@@ -8,7 +8,6 @@ const Header = () => {
     const [searchResults, setSearchResults] = useState([]);
     const [darkMode, setDarkMode] = useState(false);
     const destinationRef = useRef(null);
-    const navigate = useNavigate();
 
     // Data statis untuk pencarian
     const pages = [
@@ -106,9 +105,22 @@ const Header = () => {
         }
     };
 
+    useEffect(() => {
+        // Periksa preferensi mode gelap dari localStorage
+        const savedMode = localStorage.getItem("darkMode");
+        if (savedMode === "true") {
+            setDarkMode(true);
+            document.body.classList.add("dark-mode");
+        }
+    }, []);
+
     const toggleDarkMode = () => {
-        setDarkMode((prevMode) => !prevMode);
-        document.body.classList.toggle("dark-mode");
+        setDarkMode((prevMode) => {
+            const newMode = !prevMode;
+            localStorage.setItem("darkMode", newMode); // Simpan ke localStorage
+            document.body.classList.toggle("dark-mode", newMode); // Tambahkan/hapus class
+            return newMode;
+        });
     };
 
     return (
@@ -190,44 +202,41 @@ const Header = () => {
                     </li>
 
                     {/* Search Icon */}
-                    <li className="relative flex items-center space-x-4">
-                        <button
-                            onClick={toggleSearch}
-                            className="font-bold hover:text-white hover:bg-gray-700 px-2 py-2 rounded flex items-center"
-                        >
-                            <FaSearch className="h-6 w-6 cursor-pointer" />
-                        </button>
-                        {searchOpen && (
-                            <form
-                                onSubmit={handleSearchSubmit}
-                                className="absolute top-10 right-0 bg-white rounded shadow-md p-2 w-64 z-50"
-                            >
-                                <input
-                                    type="text"
-                                    value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
-                                    placeholder="Cari..."
-                                    className="w-full p-2 border border-gray-300 rounded"
-                                />
-                                <button
-                                    type="submit"
-                                    className="mt-2 w-full bg-blue-500 text-white rounded py-1 hover:bg-blue-600"
-                                >
-                                    Cari
-                                </button>
-                            </form>
-                        )}
-                    </li>
+<li className="relative flex items-center justify-center space-x-4">
+    <button
+        onClick={toggleSearch}
+        className="font-bold hover:text-white hover:bg-gray-700 px-2 py-2 rounded flex items-center"
+    >
+        <FaSearch className="h-6 w-6 cursor-pointer" />
+    </button>
+    {searchOpen && (
+       <form
+       onSubmit={handleSearchSubmit}
+       className="absolute top-12 sm:top-10 left-[-75%] transform -translate-x-1/2 bg-white rounded shadow-md p-2 w-64 z-50"
+   >
+       <input
+           type="text"
+           value={searchQuery}
+           onChange={(e) => setSearchQuery(e.target.value)}
+           placeholder="Cari..."
+           className="w-full p-2 border border-gray-300 rounded"
+       />
+       <button
+           type="submit"
+           className="mt-2 w-full bg-blue-500 text-white rounded py-1 hover:bg-blue-600"
+       >
+           Cari
+       </button>
+   </form>   
+    )}
+</li>
 
-                    {/* Dark Mode Toggle */}
-                    <li>
-                        <button
-                            onClick={toggleDarkMode}
-                            className="text-2xl p-2"
-                        >
-                            {darkMode ? <FaSun /> : <FaMoon />}
-                        </button>
-                    </li>
+{/* Dark Mode Toggle */}
+<li className="flex justify-center">
+    <button onClick={toggleDarkMode} className="text-2xl p-2 flex items-center justify-center">
+        {darkMode ? <FaSun /> : <FaMoon />}
+    </button>
+</li>
                 </ul>
             </nav>
 
