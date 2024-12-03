@@ -117,7 +117,7 @@ const Header = () => {
             <div className="logo-section flex justify-center items-center mb-4">
                 <Link to="/" className="flex items-center">
                     <img
-                        src="/img/Kalimantan Timur.png"
+                        src="/img/ragam kaltim.png"
                         alt="Ragam Kaltim Logo"
                         className="h-12"
                     />
@@ -135,7 +135,7 @@ const Header = () => {
                             to="/"
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
                         >
-                            Home
+                            Beranda
                         </Link>
                     </li>
 
@@ -144,10 +144,10 @@ const Header = () => {
     <button
         className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded flex items-center"
     >
-        Destination
+        Destinasi
         <FaChevronDown className="ml-1" />
     </button>
-    <ul className="absolute bg-gray-800 text-white mt-0 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50">
+    <ul className="absolute bg-gray-700 text-white mt-1 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50">
         {[
             { title: "Balikpapan", url: "/balikpapan" },
             { title: "Berau", url: "/berau" },
@@ -163,7 +163,7 @@ const Header = () => {
             <li key={destination.url}>
                 <Link
                     to={destination.url}
-                    className="block px-4 py-2 rounded hover:bg-gray-700"
+                    className="block px-4 py-2 rounded hover:bg-gray-800"
                 >
                     {destination.title}
                 </Link>
@@ -185,7 +185,7 @@ const Header = () => {
                             to="/about"
                             className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
                         >
-                            About
+                            Tentang
                         </Link>
                     </li>
 
@@ -206,14 +206,14 @@ const Header = () => {
                                     type="text"
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
-                                    placeholder="Search"
+                                    placeholder="Cari..."
                                     className="w-full p-2 border border-gray-300 rounded"
                                 />
                                 <button
                                     type="submit"
                                     className="mt-2 w-full bg-blue-500 text-white rounded py-1 hover:bg-blue-600"
                                 >
-                                    Search
+                                    Cari
                                 </button>
                             </form>
                         )}
@@ -234,7 +234,7 @@ const Header = () => {
             {/* Search Results */}
             {searchResults.length > 0 && (
                 <div className="absolute top-16 right-0 bg-white shadow-md rounded p-4 w-96 z-50">
-                    <h3 className="font-bold text-lg mb-2">Search Results:</h3>
+                    <h3 className="font-bold text-lg mb-2">Hasil Pencarian:</h3>
                     <ul>
                         {searchResults.map((result) => (
                             <li key={result.url} className="border-b border-gray-200 py-2">

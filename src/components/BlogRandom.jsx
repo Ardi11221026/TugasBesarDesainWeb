@@ -24,7 +24,7 @@ const BlogRandom = () => {
 
     return (
         <aside className="bg-white p-4 rounded-lg shadow-md w-full max-w-[350px]">
-            <h2 className="text-xl font-semibold mb-4 text-center">Explore More</h2>
+            <h2 className="text-xl font-semibold mb-4 text-center">Jelajahi Lebih Lanjut</h2>
             <div className="space-y-4">
                 {randomBlogs.map((blog, index) => (
                     <Link to={blog.link} key={index} className="block">
