@@ -43,31 +43,36 @@ const KutaiKartanegara = () => {
         title: "Bukit Bangkirai",
         imgSrc: "img/kukar/bukit bangkirai.jpg",
         address: "Alamat: Kelurahan Karya Merdeka, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
-        linkPage: "/bukit-bangkirai",
+        link: "https://maps.app.goo.gl/c4z832tpTMKXwifE6",
+        infoPage: "/bukit-bangkirai",
       },
       {
         title: "Museum Mulawarman",
         imgSrc: "img/kukar/museum mulawarman.jpg",
         address: "Alamat: Jalan Diponegoro, Kelurahan Panji, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        linkPage: "/museum-mulawarman",
+        link: "https://maps.app.goo.gl/H51jd6LMYr7f6WPfA",
+        infoPage: "/museum-mulawarman",
       },
       {
         title: "Pantai Ambalat",
         imgSrc: "img/kukar/pantai ambalat.jpeg",
         address: "Alamat: Kelurahan Amborawang Laut, Kecamatan Samboja, Kabupaten Kutai Kartanegara.",
-        linkPage: "/pantai-ambalat",
+        link: "https://maps.app.goo.gl/HSPJTW3hRCiF8Yty7",
+        infoPage: "/pantai-ambalat",
       },
       {
         title: "Pulau Kumala",
         imgSrc: "img/kukar/pulau kumala.jpeg",
         address: "Alamat: Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        linkPage: "/pulau-kumala",
+        link: "https://maps.app.goo.gl/gRyLYygEtKqU2yuq9",
+        infoPage: "/pulau-kumala",
       },
       {
         title: "Taman Kota Raja",
         imgSrc: "img/kukar/taman kota raja.jpg",
         address: "Alamat: Jalan Robert Wolter Mongisidi, Kelurahan Timbau, Kecamatan Tenggarong, Kabupaten Kutai Kartanegara.",
-        linkPage: "/taman-kota-raja",
+        link: "https://maps.app.goo.gl/TiwQHs5iQGYcNMUu6",
+        infoPage: "/taman-kota-raja",
       },
     ]
       .sort((a, b) => a.title.localeCompare(b.title))
@@ -75,7 +80,8 @@ const KutaiKartanegara = () => {
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <a href={place.linkPage}>
+            {/* Foto tempat wisata mengarah ke halaman informasi */}
+            <a href={place.infoPage}>
               <img
                 src={place.imgSrc}
                 alt={place.title}
@@ -85,15 +91,16 @@ const KutaiKartanegara = () => {
           </div>
           <p className="mb-1 text-black leading-6 font-normal">{place.address}</p>
           <p className="mb-5 text-blue-600">
-            <a href={place.linkPage} target="_self">
-              Selengkapnya
+            {/* Link "Lihat di Maps" mengarah ke Google Maps */}
+            <a href={place.link} target="_blank" rel="noopener noreferrer">
+              Lihat di Maps
             </a>
           </p>
         </li>
       ))}
   </ul>
 </div>
-        </div>
+</div>
   
         {/* Profile Card */}
         <ProfileCardKutaiKartanegara />
