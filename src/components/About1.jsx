@@ -13,7 +13,7 @@ const About = () => {
                 {/* Left Side Image */}
                 <div className="img-container w-[180px] sm:w-[220px] lg:w-[250px] h-auto">
                     <img
-                        src="img/Kalimantan Timur.png"
+                        src="img/ragam kaltim.png"
                         alt="Logo Ragam Kaltim"
                         className="w-full h-auto rounded-lg"
                     />
@@ -48,7 +48,7 @@ const About = () => {
                 className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
             />
             <p className="mt-3 text-sm sm:text-base font-semibold">Ardi Dwi Saputra</p>
-            <p className="text-sm text-gray-600">NIM: 11221026</p>
+            <p className="text-sm text-gray-600">NIM 11221026</p>
         </div>
         <div className="team-member flex flex-col items-center">
             <img
@@ -57,7 +57,7 @@ const About = () => {
                 className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
             />
             <p className="mt-3 text-sm sm:text-base font-semibold">Rianto Padli</p>
-            <p className="text-sm text-gray-600">NIM: 11221049</p>
+            <p className="text-sm text-gray-600">NIM 11221049</p>
         </div>
         <div className="team-member flex flex-col items-center">
             <img
@@ -66,7 +66,7 @@ const About = () => {
                 className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
             />
             <p className="mt-3 text-sm sm:text-base font-semibold">Arya Andhika Trisnawan</p>
-            <p className="text-sm text-gray-600">NIM: 11221054</p>
+            <p className="text-sm text-gray-600">NIM 11221054</p>
         </div>
         <div className="team-member flex flex-col items-center">
             <img
@@ -75,7 +75,7 @@ const About = () => {
                 className="w-auto h-auto sm:w-32 lg:w-36 shadow-md"
             />
             <p className="mt-3 text-sm sm:text-base font-semibold">Samuel Benedicto Siahaan</p>
-            <p className="text-sm text-gray-600">NIM: 11221064</p>
+            <p className="text-sm text-gray-600">NIM 11221064</p>
         </div>
     </div>
 </div>

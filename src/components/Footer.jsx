@@ -7,23 +7,21 @@ const Footer = () => {
                 {/* Logo and Info Section */}
                 <div className="mb-8">
                     <img
-                        src="/img/Kalimantan Timur.png"
+                        src="/img/ragam kaltim.png"
                         alt="Discovery East Borneo"
-                        className="h-12 mb-4 mx-auto"
+                        className="h-20 w-20 mb-4 mx-auto"
                     />
-                    <h4 className="text-2xl font-bold mb-4">
-                        Ragam <br /> Kaltim
-                    </h4>
+                  
                     <div className="text-gray-600 text-sm">
                         <p>
-                            Jl. Soekarno Hatta No.KM 15, Karang Joang, Kec. Balikpapan Utara, Kota
+                            Jl. Soekarno Hatta No.KM 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota
                             Balikpapan, Kalimantan Timur 76127, Indonesia.
                         </p>
                         <p className="mt-2">
-                            <strong>Phone:</strong> +62 361 475 4416
+                            <strong>Telepon:</strong> +62 8361 475 4416
                         </p>
                         <p className="mt-2">
-                            <strong>Email:</strong> discoveryeastborneo.id@gmail.com
+                            <strong>Email:</strong> ragamkaltim.id@gmail.com
                         </p>
                     </div>
                 </div>
