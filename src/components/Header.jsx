@@ -233,7 +233,7 @@ const Header = () => {
 
             {/* Search Results */}
             {searchResults.length > 0 && (
-                <div className="absolute top-16 right-0 bg-white shadow-md rounded p-4 w-96 z-50">
+                <div className="absolute top-20 mt-10 right-0 bg-white shadow-md rounded p-4 w-96 z-50">
                     <h3 className="font-bold text-lg mb-2">Hasil Pencarian:</h3>
                     <ul>
                         {searchResults.map((result) => (
