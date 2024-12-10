@@ -69,11 +69,11 @@ const Blog = () => {
     ];
 
     return (
-        <section id="blogs" className="py-16 bg-gray-100">
+        <section id="blogs" className="py-16 bg-gray-100 mb-[-200px]">
             {/* Heading Section */}
             <div className="text-center">
-                <h1 className="text-2xl font-bold text-red-600">RAGAM KALTIM'S BLOG</h1>
-                <h2 className="text-2xl font-semibold text-black mt-4">
+                <h1 className="text-2xl font-bold text-red-600 mb-[20px]">RAGAM KALTIM'S BLOG</h1>
+                <h2 className="text-2xl font-semibold text-black mb-[20px]">
                     <span className="text-black">Tempat Wisata yang terkenal di setiap Kota dan Kabupaten di Kalimantan Timur</span>
                 </h2>
             </div>
