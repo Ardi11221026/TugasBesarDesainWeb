@@ -69,17 +69,17 @@ const Destination = () => {
     const nextFive = destinations.slice(5);
   
     return (
-        <section id="destinations" className="py-16 bg-gray-100">
+        <section id="destinations" className="py-[30px] bg-gray-100 mt-[-20px]">
             {/* Heading Section */}
             <div className="text-center">
-            <h1 className="text-2xl font-bold text-red-600">JELAJAHI RAGAM KALTIM</h1>
-            <h2 className="text-2xl font-semibold text-black mt-4">
+            <h1 className="text-2xl font-bold text-red-600  mt-[40px] mb-[20px]">JELAJAHI RAGAM KALTIM</h1>
+            <h2 className="text-2xl font-semibold text-black mb-[20px]">
            <span className="text-black">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
              </h2>
             </div>
   
             {/* First 5 Destinations */}
-            <div className="flex flex-wrap justify-center gap-7 mt-10">
+            <div className="flex flex-wrap justify-center gap-7 mt-7">
                 {firstFive.map((destination, index) => (
                     <div
                         key={index}
