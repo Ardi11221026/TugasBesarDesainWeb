@@ -42,7 +42,7 @@ const Samarinda = () => {
   <ul className="list-none p-0">
     {[
       {
-        title: "Air Terjun Tanah Merah",
+        title: "Air Terjun Tanah Mera",
         imgSrc: "img/smd/air terjun tanah merah.jpg",
         address: "Alamat: Jalan Muara Badak, Kelurahan Tanah Merah, Kota Samarinda.",
         link: "https://maps.app.goo.gl/WwKCHXwcYY3gR6Dz7",
