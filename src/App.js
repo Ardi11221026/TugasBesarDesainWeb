@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About1';
 import Blog from './components/Blog1';
@@ -84,10 +84,21 @@ import AirTerjunTanahMerah from './components/AirTerjunTanahMerah';
 import MasjidIslamicCenter from './components/MasjidIslamicCenter';
 import TamanTepianMahakam from './components/TamanTepianMahakam';
 
+// Komponen untuk menangani scroll ke atas
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+};
 
 const App = () => {
     return (
         <Router>
+            <ScrollToTop />
            <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
