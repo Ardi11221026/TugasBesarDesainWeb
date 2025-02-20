@@ -147,7 +147,7 @@ const ProfileCard = () => {
               </tr>
               <tr className="border-b border-gray-200">
                 <th className="p-2 bg-gray-100 text-left font-semibold">Bupati</th>
-                <td className="p-2">Zainal Arifin (PJ Bupati)</td>
+                <td className="p-2">Mudyat Noor</td>
               </tr>
               <tr className="border-b border-gray-200">
                 <th className="p-2 bg-gray-100 text-left font-semibold">Hari Jadi</th>
