@@ -63,7 +63,7 @@ const KutaiTimur = () => {
       {
         title: "Wisata Teluk Prancis",
         imgSrc: "img/kutim/wisata pulau prancis.jpg",
-        address: "Alamat: CH4C+HVG, Jalan Sei papan, Kelurahan Singa Geweh, Kecamatan Sangatta Selatan, Kabupaten Kutai Timur.",
+        address: "Alamat: Jalan Sei papan, Kelurahan Singa Geweh, Kecamatan Sangatta Selatan, Kabupaten Kutai Timur.",
         link: "https://maps.app.goo.gl/TqV6S6xztstVuSta8",
         infoPage: "/air-terjun-pinang-seribu",
       },
