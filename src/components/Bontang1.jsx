@@ -80,7 +80,7 @@ const Bontang = () => {
         <li key={index} className="mt-5 font-bold">
           <strong>{place.title}</strong>
           <div className="img-container my-2 text-center">
-            <a href={place.link}>
+            <a href={place.infoPage}>
               <img
                 src={place.imgSrc}
                 alt={place.title}
