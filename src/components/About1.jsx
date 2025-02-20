@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="main-content flex-[3] bg-gray-100 p-6 sm:p-8 lg:p-10 shadow-lg flex flex-col items-center">
       <h1 className="text-center mb-4 text-2xl sm:text-3xl lg:text-4xl font-bold font-arial">
-        Tentang Kami
+        Tentang Web Kami
       </h1>
 
       <div className="about-content flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start max-w-[1000px] mt-5">
