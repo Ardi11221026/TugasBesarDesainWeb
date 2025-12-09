@@ -96,7 +96,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ragam-kaltim">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
