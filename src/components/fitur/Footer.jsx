@@ -2,17 +2,17 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="bg-white py-10 shadow-inner">
+        <footer className="bg-[#102c1e] py-10 shadow-inner">
             <div className="container mx-auto flex flex-col items-center text-center">
                 {/* Logo and Info Section */}
                 <div className="mb-8">
                     <img
-                        src="/img/ragam kaltim.png"
+                        src="img/ragam kaltim.png"
                         alt="Discovery East Borneo"
                         className="h-20 w-20 mb-4 mx-auto"
                     />
                   
-                    <div className="text-gray-600 text-sm">
+                    <div className="text-gray-300 text-sm">
                         <p>
                             Jl. Soekarno Hatta No.KM 15, Kelurahan Karang Joang, Kecamatan Balikpapan Utara, Kota
                             Balikpapan, Kalimantan Timur 76127, Indonesia.
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright Section */}
-                <div className="text-gray-500">
+                <div className="text-gray-400">
                     <p>&copy; 2024 Ragam Kaltim. All Rights Reserved.</p>
                 </div>
             </div>

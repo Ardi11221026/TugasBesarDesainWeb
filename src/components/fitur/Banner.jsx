@@ -4,8 +4,8 @@ const Banner = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
   
     const slides = [
-        { src: 'img/gerbang madani upscale.jpg', alt: 'Gerbang Madani 1' },
-        { src: 'img/mahakam.jpg', alt: 'Gerbang Madani 2' },
+        { src: '/img/gerbang madani upscale.jpg', alt: 'Gerbang Madani 1' },
+        { src: '/img/mahakam.jpg', alt: 'Gerbang Madani 2' },
         // Add more images 
     ];
   

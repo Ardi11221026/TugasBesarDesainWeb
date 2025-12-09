@@ -81,8 +81,8 @@ import TamanBungaRozeline from './components/ppu/TamanBungaRozeline';
 import WisataSawahGunungMulia from './components/ppu/WisataSawahGunungMulia';
 
 // Wisata Samarinda
-import AirTerjunTanahMerah from './components/samarinda/AirTerjunTanahMerah';
 import MasjidIslamicCenter from './components/samarinda/MasjidIslamicCenter';
+import AirTerjunTanahMerah from './components/samarinda/AirTerjunTanahMerah';
 import TamanTepianMahakam from './components/samarinda/TamanTepianMahakam';
 
 // Scroll to top
@@ -96,7 +96,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <Router basename="/ragam-kaltim">
+    <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -160,8 +160,8 @@ const App = () => {
         <Route path="/taman-alun-alun" element={<TamanAlunAlun />} />
         <Route path="/taman-bunga-rozeline" element={<TamanBungaRozeline />} />
         <Route path="/wisata-sawah-gunung-mulia" element={<WisataSawahGunungMulia />} />
-        <Route path="/air-terjun-tanah-merah" element={<AirTerjunTanahMerah />} />
         <Route path="/masjid-islamic-center" element={<MasjidIslamicCenter />} />
+        <Route path="/air-terjun-tanah-merah" element={<AirTerjunTanahMerah />} />
         <Route path="/taman-tepian-mahakam" element={<TamanTepianMahakam />} />
       </Routes>
     </Router>

@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
-import { useState, useRef, useEffect } from "react";
-import { FaChevronDown, FaSearch, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
+import { useState, useRef } from "react";
+import { FaChevronDown, FaSearch } from "react-icons/fa";
 
 const Header = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
-    const [darkMode, setDarkMode] = useState(false);
-    const [language, setLanguage] = useState("id");
-    const [languageOpen, setLanguageOpen] = useState(false);
     const destinationRef = useRef(null);
 
     // Data statis untuk pencarian
@@ -107,44 +104,17 @@ const Header = () => {
         }
     };
 
-    useEffect(() => {
-        // Periksa preferensi mode gelap dari localStorage
-        const savedMode = localStorage.getItem("darkMode");
-        if (savedMode === "true") {
-            setDarkMode(true);
-            document.body.classList.add("dark-mode");
-        }
-        // Periksa preferensi bahasa dari localStorage
-        const savedLanguage = localStorage.getItem("language") || "id";
-        setLanguage(savedLanguage);
-    }, []);
-
-    const toggleDarkMode = () => {
-        setDarkMode((prevMode) => {
-            const newMode = !prevMode;
-            localStorage.setItem("darkMode", newMode); // Simpan ke localStorage
-            document.body.classList.toggle("dark-mode", newMode); // Tambahkan/hapus class
-            return newMode;
-        });
-    };
-
-    const handleLanguageChange = (lang) => {
-        setLanguage(lang);
-        localStorage.setItem("language", lang);
-        setLanguageOpen(false);
-    };
-
     return (
-        <header className={`bg-white shadow-md py-1 px-6 mt-3 flex justify-between items-center relative z-50 ${darkMode ? "dark-mode" : ""}`}>
+        <header className="bg-[#102c1e] shadow-md py-6 px-6 mt-0 flex justify-between items-center relative z-50">
             {/* Logo Section */}
-            <div className="logo-section flex justify-center items-center mb-4">
+            <div className="logo-section flex justify-center items-center">
                 <Link to="/" className="flex items-center">
                     <img
-                        src="/img/ragam kaltim.png"
+                        src="img/ragam kaltim.png"
                         alt="Ragam Kaltim Logo"
                         className="h-12"
                     />
-                    <div className="ml-3 text-xl font-bold leading-none text-center">
+                    <div className="ml-3 text-xl font-bold leading-none text-center text-white">
                         Ragam <br /> Kaltim
                     </div>
                 </Link>
@@ -152,11 +122,11 @@ const Header = () => {
 
             {/* Navigation Section */}
             <nav>
-                <ul className="flex space-x-4 items-center">
+                <ul className="flex space-x-4 items-center h-full">
                     <li>
                         <Link
                             to="/"
-                            className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
+                            className="font-bold text-white hover:text-white hover:bg-[#0a1f13] px-3 py-2 rounded transition-all duration-300"
                         >
                             Beranda
                         </Link>
@@ -165,12 +135,12 @@ const Header = () => {
                    {/* Destinasi Dropdown */}
 <li className="relative group" ref={destinationRef}>
     <button
-        className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded flex items-center"
+        className="font-bold text-white hover:text-white hover:bg-[#0a1f13] px-3 py-2 rounded flex items-center transition-all duration-300"
     >
         Destinasi
         <FaChevronDown className="ml-1" />
     </button>
-    <ul className="absolute bg-gray-700 text-white mt-1 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50">
+    <ul className="absolute bg-[#102c1e] text-white mt-1 rounded shadow-md w-48 transform transition-transform duration-300 origin-top opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 z-50">
         {[
             { title: "Balikpapan", url: "/balikpapan" },
             { title: "Berau", url: "/berau" },
@@ -186,7 +156,7 @@ const Header = () => {
             <li key={destination.url}>
                 <Link
                     to={destination.url}
-                    className="block px-4 py-2 rounded hover:bg-gray-800"
+                    className="block px-4 py-2 rounded hover:bg-[#0a1f13] transition-all duration-300"
                 >
                     {destination.title}
                 </Link>
@@ -198,7 +168,7 @@ const Header = () => {
                     <li>
                         <Link
                             to="/blog"
-                            className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
+                            className="font-bold text-white hover:text-white hover:bg-[#0a1f13] px-3 py-2 rounded transition-all duration-300"
                         >
                             Blog
                         </Link>
@@ -206,7 +176,7 @@ const Header = () => {
                     <li>
                         <Link
                             to="/about"
-                            className="font-bold hover:text-white hover:bg-gray-700 px-3 py-2 rounded"
+                            className="font-bold text-white hover:text-white hover:bg-[#0a1f13] px-3 py-2 rounded transition-all duration-300"
                         >
                             Tentang
                         </Link>
@@ -216,7 +186,7 @@ const Header = () => {
 <li className="relative flex items-center justify-center space-x-4">
     <button
         onClick={toggleSearch}
-        className="font-bold hover:text-white hover:bg-gray-700 px-2 py-2 rounded flex items-center"
+        className="font-bold text-white hover:text-gray-200 hover:bg-[#0a1f13] px-2 py-2 rounded flex items-center"
     >
         <FaSearch className="h-6 w-6 cursor-pointer" />
     </button>
@@ -239,49 +209,10 @@ const Header = () => {
            Cari
        </button>
    </form>   
-    )}
-</li>
-
-{/* Dark Mode Toggle */}
-<li className="flex justify-center">
-    <button onClick={toggleDarkMode} className="text-2xl p-2 flex items-center justify-center">
-        {darkMode ? <FaSun /> : <FaMoon />}
-    </button>
-</li>
-
-{/* Language Switcher */}
-<li className="relative">
-    <button
-        onClick={() => setLanguageOpen(!languageOpen)}
-        className="text-2xl p-2 flex items-center justify-center hover:bg-gray-700 rounded"
-    >
-        <FaGlobe />
-    </button>
-    {languageOpen && (
-        <div className="absolute top-12 right-0 bg-white rounded shadow-md w-40 z-50">
-            <button
-                onClick={() => handleLanguageChange("id")}
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${
-                    language === "id" ? "bg-gray-200 font-bold" : ""
-                }`}
-            >
-                🇮🇩 Indonesia
-            </button>
-            <button
-                onClick={() => handleLanguageChange("en")}
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${
-                    language === "en" ? "bg-gray-200 font-bold" : ""
-                }`}
-            >
-                🇬🇧 English
-            </button>
-        </div>
-    )}
-</li>
+                    )}
+                </li>
                 </ul>
-            </nav>
-
-            {/* Search Results */}
+            </nav>            {/* Search Results */}
             {searchResults.length > 0 && (
                 <div className="absolute top-20 mt-10 right-0 bg-white shadow-md rounded p-4 w-96 z-50">
                     <h3 className="font-bold text-lg mb-2">Hasil Pencarian:</h3>
