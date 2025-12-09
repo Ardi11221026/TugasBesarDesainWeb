@@ -73,8 +73,8 @@ const Destination = () => {
             {/* Heading Section */}
             <div className="text-center">
             <h1 className="text-4xl font-bold text-orange-400 mt-[40px] mb-[20px] tracking-tight">JELAJAHI RAGAM KALTIM</h1>
-            <h2 className="text-xl font-semibold text-gray-200 mb-[20px] max-w-2xl mx-auto">
-           <span className="text-gray-300">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
+            <h2 className="text-xl font-semibold text-white mb-[20px] max-w-2xl mx-auto">
+           <span className="text-white">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
              </h2>
             </div>
   
@@ -93,7 +93,7 @@ const Destination = () => {
                                 />
                             </div>
                             <h3 className="text-lg font-bold text-white mb-2 pointer-events-none">{destination.name}</h3>
-                            <p className="text-gray-300 text-sm leading-relaxed pointer-events-none">{destination.description}</p>
+                            <p className="text-white text-sm leading-relaxed pointer-events-none">{destination.description}</p>
                             <div className="mt-4 text-orange-400 font-semibold text-sm pointer-events-none">Pelajari Lebih →</div>
                         </div>
                     </Link>
@@ -115,7 +115,7 @@ const Destination = () => {
                                 />
                             </div>
                             <h3 className="text-lg font-bold text-white mb-2 pointer-events-none">{destination.name}</h3>
-                            <p className="text-gray-300 text-sm leading-relaxed pointer-events-none">{destination.description}</p>
+                            <p className="text-white text-sm leading-relaxed pointer-events-none">{destination.description}</p>
                             <div className="mt-4 text-orange-400 font-semibold text-sm pointer-events-none">Pelajari Lebih →</div>
                         </div>
                     </Link>

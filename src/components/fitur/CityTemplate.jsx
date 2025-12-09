@@ -25,10 +25,10 @@ const CityTemplate = ({ cityKey, cityUrl }) => {
       <div className="flex-grow">
         <div className="max-w-8xl mx-auto px-0 sm:px-0 lg:px-0 py-6 sm:py-8">
           {/* Breadcrumb Navigation */}
-          <nav className="text-xs sm:text-sm mb-5 mt-[-10px] text-gray-600 ml-8 px-4 sm:px-6 lg:px-8">
-            <Link to="/" className="hover:underline">Home</Link> 
-            <span className="mx-2">{'>>'}</span>
-            <Link to={cityUrl} className="hover:underline font-semibold">{cityData.name}</Link>
+          <nav className="text-xs sm:text-sm mb-5 mt-[-10px] text-white ml-8 px-4 sm:px-6 lg:px-8">
+            <Link to="/" className="text-white hover:underline">Home</Link> 
+            <span className="mx-2 text-white">{'>>'}</span>
+            <Link to={cityUrl} className="text-white hover:underline font-semibold">{cityData.name}</Link>
           </nav>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-6 lg:px-8">
@@ -41,7 +41,7 @@ const CityTemplate = ({ cityKey, cityUrl }) => {
               {/* Sejarah */}
               <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-white">Sejarah</h2>
-                <p className="leading-relaxed text-sm sm:text-base text-justify text-gray-300">
+                <p className="leading-relaxed text-sm sm:text-base text-justify text-white">
                   {cityData.history}
                 </p>
               </section>
@@ -49,7 +49,7 @@ const CityTemplate = ({ cityKey, cityUrl }) => {
               {/* Geografis */}
               <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-white">Geografis</h2>
-                <p className="leading-relaxed text-sm sm:text-base text-justify text-gray-300">
+                <p className="leading-relaxed text-sm sm:text-base text-justify text-white">
                   {cityData.geography}
                 </p>
               </section>
@@ -57,7 +57,7 @@ const CityTemplate = ({ cityKey, cityUrl }) => {
               {/* Wisata */}
               <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-white">Destinasi Wisata</h2>
-                <p className="leading-relaxed text-sm sm:text-base mb-6 text-gray-300">
+                <p className="leading-relaxed text-sm sm:text-base mb-6 text-white">
                   {cityData.name} menawarkan berbagai destinasi wisata menarik yang bisa dijelajahi:
                 </p>
 
@@ -71,10 +71,10 @@ const CityTemplate = ({ cityKey, cityUrl }) => {
                       <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                         {place.name}
                       </h3>
-                      <p className="text-xs sm:text-sm text-gray-400 mb-3">
+                      <p className="text-xs sm:text-sm text-white mb-3">
                         <strong>Alamat:</strong> {place.address}
                       </p>
-                      <p className="text-sm sm:text-base text-gray-300 mb-4">
+                      <p className="text-sm sm:text-base text-white mb-4">
                         {place.description}
                       </p>
                       <div className="mt-4 text-orange-400 hover:text-orange-300 font-semibold text-sm inline-block">

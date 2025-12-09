@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../fitur/Header';
 import Footer from '../fitur/Footer';
+import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -21,18 +22,9 @@ const AboutContent = () => {
         Tentang Kami
       </h1>
 
-      <div className="about-content flex flex-col lg:flex-row gap-6 lg:gap-10 items-center lg:items-start max-w-[1000px] mt-5">
-        {/* Left Side Image */}
-        <div className="img-container w-[180px] sm:w-[220px] lg:w-[250px] h-auto flex-shrink-0">
-          <img
-            src="img/ragam kaltim.png"
-            alt="Logo Ragam Kaltim"
-            className="w-full h-auto rounded-xl shadow-md"
-          />
-        </div>
-
-        {/* Right Side Text */}
-        <div className="description flex-1 text-sm sm:text-base bg-[#102c1e] p-6 rounded-xl shadow-md border border-white">
+      <div className="about-content flex flex-col lg:flex-row gap-8 items-center w-full mt-5 max-w-full">
+        {/* Left Side Text - Full Width */}
+        <div className="description flex-1 text-sm sm:text-base bg-[#102c1e] p-6 sm:p-8 lg:p-10 rounded-xl shadow-md border border-white order-2 lg:order-1">
           <p className="leading-relaxed text-justify text-white font-normal">
             Selamat datang di <strong className="text-orange-400">Ragam Kaltim</strong>, sebuah website informatif yang memberikan
             panduan komprehensif tentang wisata dan budaya yang ada di 10 kota dan kabupaten di
@@ -46,6 +38,15 @@ const AboutContent = () => {
             Tak hanya itu, kami juga merekomendasikan berbagai tempat rekreasi dengan aktivitas seru, mulai dari wisata sejarah, kuliner khas, 
             hingga petualangan outdoor yang memacu adrenalin.
           </p>
+        </div>
+
+        {/* Right Side Image */}
+        <div className="img-container w-[180px] sm:w-[220px] lg:w-[300px] h-auto flex-shrink-0 order-1 lg:order-2">
+          <img
+            src="img/ragam kaltim.png"
+            alt="Logo Ragam Kaltim"
+            className="w-full h-auto rounded-xl shadow-md"
+          />
         </div>
       </div>
 
@@ -150,58 +151,68 @@ const Modal = ({ onClose, image, name, nim, role, technologies, description, lin
     return () => clearTimeout(timeout);
   }, []);
 
+  const handleClose = () => {
+    setIsVisible(false);
+    setTimeout(onClose, 300);
+  };
+
   return (
     <div
-      className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-      onClick={() => {
-        setIsVisible(false);
-        setTimeout(onClose, 300);
-      }}
+      className="modal-overlay fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-50"
+      onClick={handleClose}
       style={{
         opacity: isVisible ? 1 : 0,
         transition: 'opacity 0.3s ease-in-out',
       }}
     >
       <div
-        className="modal-content bg-[#102c1e] p-6 rounded-lg w-80 sm:w-96 border border-white"
+        className="modal-content bg-[#102c1e] p-8 sm:p-10 rounded-lg w-50 sm:w-full  border border-white"
         onClick={(e) => e.stopPropagation()}
         style={{
           transform: isVisible ? 'scale(1)' : 'scale(0.9)',
           transition: 'transform 0.3s ease-in-out',
         }}
       >
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-64 object-cover rounded-lg mb-4"
-        />
-        <h3 className="text-xl font-semibold mb-2 text-white">{name}</h3>
-        <p className="text-sm text-gray-300 mb-1">{nim}</p>
-        <p className="text-sm text-orange-400 font-semibold mb-1">{role}</p>
-        <p className="text-xs text-gray-400 mb-3">{technologies}</p>
-        <p className="mb-4 text-sm text-white leading-relaxed">{description}</p>
-        
-        <div className="flex justify-center items-center gap-3 mb-4">
-          <a href={linkedin} target="_blank" rel="noopener noreferrer">
-            <img src="/img/linkedin.png" alt="LinkedIn" className="h-8 w-8 hover:scale-110 transition" />
-          </a>
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <img src="/img/github.png" alt="GitHub" className="h-8 w-8 hover:scale-110 transition" />
-          </a>
-          <a href={instagram} target="_blank" rel="noopener noreferrer">
-            <img src="/img/ig.png" alt="Instagram" className="h-8 w-8 hover:scale-110 transition" />
-          </a>
-          <a href={whatsapp} target="_blank" rel="noopener noreferrer">
-            <img src="/img/wa.png" alt="Whatsapp" className="h-8 w-8 hover:scale-110 transition" />
-          </a>
+        <div className="flex flex-col lg:flex-row gap-6">
+          {/* Left - Info */}
+          <div className="flex-1 flex flex-col justify-between order-2 lg:order-1">
+            <div>
+              <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-white">{name}</h3>
+              <p className="text-sm text-gray-300 mb-1">{nim}</p>
+              <p className="text-sm text-orange-400 font-semibold mb-2">{role}</p>
+              <p className="text-xs text-gray-400 mb-4">{technologies}</p>
+              <p className="text-sm text-white leading-relaxed mb-4">{description}</p>
+            </div>
+            
+            {/* Social Icons */}
+            <div className="flex gap-4 mb-4 lg:mb-0">
+              <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
+                <FaLinkedin className="text-2xl text-blue-500" />
+              </a>
+              <a href={github} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
+                <FaGithub className="text-2xl text-white" />
+              </a>
+              <a href={instagram} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
+                <FaInstagram className="text-2xl text-pink-500" />
+              </a>
+              <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
+                <FaWhatsapp className="text-2xl text-green-500" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right - Image */}
+          <img
+            src={image}
+            alt={name}
+            className="w-full lg:w-80 h-64 lg:h-80 object-cover rounded-lg flex-shrink-0 order-1 lg:order-2"
+          />
         </div>
 
+        {/* Close Button */}
         <button
-          onClick={() => {
-            setIsVisible(false);
-            setTimeout(onClose, 300);
-          }}
-          className="w-full px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded font-semibold transition-all duration-300"
+          onClick={handleClose}
+          className="w-full px-4 py-3 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-300 mt-6"
         >
           Tutup
         </button>
