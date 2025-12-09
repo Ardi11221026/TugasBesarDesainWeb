@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ragam-kaltim/static/css/main.83313938.css",
+    "main.js": "/ragam-kaltim/static/js/main.be839fd2.js",
+    "index.html": "/ragam-kaltim/index.html",
+    "main.83313938.css.map": "/ragam-kaltim/static/css/main.83313938.css.map",
+    "main.be839fd2.js.map": "/ragam-kaltim/static/js/main.be839fd2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83313938.css",
+    "static/js/main.be839fd2.js"
+  ]
+}
