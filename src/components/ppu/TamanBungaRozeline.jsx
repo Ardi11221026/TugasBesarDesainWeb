@@ -24,7 +24,7 @@ const TamanBungaRozeline = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Taman Bunga Rozeline, Keindahan Alam Penajam</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/ppu/taman bunga rozeline.jpg' 
+                            src='/img/ppu/taman bunga rozeline.jpg' 
                             alt="Taman Bunga Rozeline"
                         />
 

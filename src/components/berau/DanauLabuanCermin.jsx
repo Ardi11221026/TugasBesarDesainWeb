@@ -24,7 +24,7 @@ const DanauLabuanCermin = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Danau Labuan Cermin, Keindahan Air Jernih di Berau</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/berau/danau labuan cermin.jpg' 
+                            src='/img/berau/danau labuan cermin.jpg' 
                             alt="Danau Labuan Cermin"
                         />
 

@@ -24,7 +24,7 @@ const TelagaUngu = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Telaga Ungu, Keindahan Alam Paser</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/paser/telaga ungu.jpg' 
+                            src='/img/paser/telaga ungu.jpg' 
                             alt="Telaga Ungu"
                         />
 

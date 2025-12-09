@@ -24,7 +24,7 @@ const PantaiManggar = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Manggar</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bpp/pantai manggar.jpg' 
+                            src='/img/bpp/pantai manggar.jpg' 
                             alt="Pantai Manggar"
                         />
 

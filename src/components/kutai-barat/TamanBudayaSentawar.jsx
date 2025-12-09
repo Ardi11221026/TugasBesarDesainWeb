@@ -24,7 +24,7 @@ const TamanBudayaSentawar = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Taman Budaya Sentawar, Destinasi Budaya di Kutai Barat</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kubar/taman budaya sentawar.jpeg' 
+                            src='/img/kubar/taman budaya sentawar.jpeg' 
                             alt="Taman Budaya Sentawar"
                         />
 

@@ -24,7 +24,7 @@ const RiamUdang = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Riam Udang, Keindahan Alam Mahakam Ulu</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/mahulu/riam udang.jpg' 
+                            src='/img/mahulu/riam udang.jpg' 
                             alt="Riam Udang"
                         />
 

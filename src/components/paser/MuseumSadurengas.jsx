@@ -24,7 +24,7 @@ const MuseumSadurengas = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Museum Sadurengas, Sejarah Paser</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/paser/museum sadurengas.jpeg' 
+                            src='/img/paser/museum sadurengas.jpeg' 
                             alt="Museum Sadurengas"
                         />
 

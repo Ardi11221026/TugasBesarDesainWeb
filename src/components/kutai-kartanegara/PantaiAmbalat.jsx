@@ -24,7 +24,7 @@ const PantaiAmbalat = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Ambalat, Surga Tersembunyi di Kutai Kartanegara</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kukar/pantai ambalat.jpeg' 
+                            src='/img/kukar/pantai ambalat.jpeg' 
                             alt="Pantai Ambalat"
                         />
 

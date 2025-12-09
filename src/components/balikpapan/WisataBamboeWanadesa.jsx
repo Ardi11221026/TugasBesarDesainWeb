@@ -24,7 +24,7 @@ const WisataBamboeWanadesa = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Wisata Bamboe Wanadesa</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bpp/wisata bamboe wanadesa.jpeg' 
+                            src='/img/bpp/wisata bamboe wanadesa.jpeg' 
                             alt="Wisata Bamboe Wanadesa"
                         />
 

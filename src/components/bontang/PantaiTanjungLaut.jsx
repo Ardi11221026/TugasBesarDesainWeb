@@ -24,7 +24,7 @@ const PantaiTanjungLaut = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Tanjung Laut, Wisata Alam di Bontang Selatan</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bontang/pantai tanjung laut.jpg' 
+                            src='/img/bontang/pantai tanjung laut.jpg' 
                             alt="Pantai Tanjung Laut"
                         />
 

@@ -24,7 +24,7 @@ const WisataSawahGunungMulia = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Wisata Sawah Gunung Mulia, Pesona Alam Penajam</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/ppu/wisata sawah gunung mulia.jpg' 
+                            src='/img/ppu/wisata sawah gunung mulia.jpg' 
                             alt="Wisata Sawah Gunung Mulia"
                         />
 

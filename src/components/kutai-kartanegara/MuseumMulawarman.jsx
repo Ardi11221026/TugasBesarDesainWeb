@@ -24,7 +24,7 @@ const MuseumMulawarman = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Museum Mulawarman, Sejarah dan Budaya Kutai Kartanegara</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kukar/museum mulawarman.jpg' 
+                            src='/img/kukar/museum mulawarman.jpg' 
                             alt="Museum Mulawarman"
                         />
 

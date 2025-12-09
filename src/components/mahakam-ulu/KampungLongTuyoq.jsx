@@ -24,7 +24,7 @@ const KampungLongTuyoq = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Kampung Long Tuyoq, Warisan Budaya Mahakam Ulu</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/mahulu/kampung long tuyoq.jpg' 
+                            src='/img/mahulu/kampung long tuyoq.jpg' 
                             alt="Kampung Long Tuyoq"
                         />
 

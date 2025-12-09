@@ -25,7 +25,7 @@ const AboutContent = () => {
         {/* Left Side Image */}
         <div className="img-container w-[180px] sm:w-[220px] lg:w-[250px] h-auto flex-shrink-0">
           <img
-            src="img/ragam kaltim.png"
+            src="/img/ragam kaltim.png"
             alt="Logo Ragam Kaltim"
             className="w-full h-auto rounded-xl shadow-md"
           />

@@ -24,7 +24,7 @@ const BontangMangrovePark = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Bontang Mangrove Park, Ekowisata Alam Bontang</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bontang/bontang mangrove park.jpeg' 
+                            src='/img/bontang/bontang mangrove park.jpeg' 
                             alt="Bontang Mangrove Park"
                         />
 

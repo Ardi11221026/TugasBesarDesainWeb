@@ -24,7 +24,7 @@ const PulauDerawan = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pulau Derawan, Surga Tropis di Berau</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/berau/pulau derawan.jpg' 
+                            src='/img/berau/pulau derawan.jpg' 
                             alt="Pulau Derawan"
                         />
 

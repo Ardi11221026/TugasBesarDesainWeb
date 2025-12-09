@@ -24,7 +24,7 @@ const BatuDindingLongMelaham = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Batu Dinding Long Melaham, Keindahan Alam Mahakam Ulu</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/mahulu/batu dinding long melaham.jpg' 
+                            src='/img/mahulu/batu dinding long melaham.jpg' 
                             alt="Batu Dinding Long Melaham"
                         />
 

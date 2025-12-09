@@ -24,7 +24,7 @@ const PantaiSaloloang = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Pantai Saloloang, Destinasi Alam yang Memikat</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/ppu/pantai saloloang.jpg' 
+                            src='/img/ppu/pantai saloloang.jpg' 
                             alt="Pantai Saloloang"
                         />
 

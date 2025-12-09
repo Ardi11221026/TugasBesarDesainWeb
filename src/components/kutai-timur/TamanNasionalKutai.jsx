@@ -24,7 +24,7 @@ const TamanNasionalKutai = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Taman Nasional Kutai, Keindahan Alam Kutai Timur</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kutim/taman nasional kutai.jpg' 
+                            src='/img/kutim/taman nasional kutai.jpg' 
                             alt="Taman Nasional Kutai"
                         />
 

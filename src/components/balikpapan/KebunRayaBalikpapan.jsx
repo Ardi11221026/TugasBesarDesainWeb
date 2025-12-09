@@ -24,7 +24,7 @@ const KebunRayaBalikpapan = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Kebun Raya Balikpapan</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/bpp/krb.jpg' 
+                            src='/img/bpp/krb.jpg' 
                             alt="Kebun Raya Balikpapan"
                         />
 

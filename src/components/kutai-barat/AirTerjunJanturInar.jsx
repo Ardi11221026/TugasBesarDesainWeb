@@ -24,7 +24,7 @@ const AirTerjunJanturInar = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Air Terjun Jantur Inar, Keindahan Alam Kutai Barat</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/kubar/air terjun jantur inar.jpg' 
+                            src='/img/kubar/air terjun jantur inar.jpg' 
                             alt="Air Terjun Jantur Inar"
                         />
 

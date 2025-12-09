@@ -24,7 +24,7 @@ const MasjidIslamicCenter = () => {
                         <h2 className="text-left mb-5 text-2xl font-bold font-arial">Masjid Islamic Center, Ikon Kota Samarinda</h2>
                         <img 
                             className="w-full max-w-[500px] h-[300px] object-cover rounded-lg mx-auto mb-5" 
-                            src='img/smd/masjid islamic center.jpg' 
+                            src='/img/smd/masjid islamic center.jpg' 
                             alt="Masjid Islamic Center"
                         />
 
