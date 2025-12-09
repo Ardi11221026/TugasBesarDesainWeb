@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import { FaChevronDown, FaSearch, FaMoon, FaSun } from "react-icons/fa";
+import { FaChevronDown, FaSearch, FaMoon, FaSun, FaGlobe } from "react-icons/fa";
 
 const Header = () => {
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
     const [darkMode, setDarkMode] = useState(false);
+    const [language, setLanguage] = useState("id");
+    const [languageOpen, setLanguageOpen] = useState(false);
     const destinationRef = useRef(null);
 
     // Data statis untuk pencarian
@@ -112,6 +114,9 @@ const Header = () => {
             setDarkMode(true);
             document.body.classList.add("dark-mode");
         }
+        // Periksa preferensi bahasa dari localStorage
+        const savedLanguage = localStorage.getItem("language") || "id";
+        setLanguage(savedLanguage);
     }, []);
 
     const toggleDarkMode = () => {
@@ -121,6 +126,12 @@ const Header = () => {
             document.body.classList.toggle("dark-mode", newMode); // Tambahkan/hapus class
             return newMode;
         });
+    };
+
+    const handleLanguageChange = (lang) => {
+        setLanguage(lang);
+        localStorage.setItem("language", lang);
+        setLanguageOpen(false);
     };
 
     return (
@@ -236,6 +247,36 @@ const Header = () => {
     <button onClick={toggleDarkMode} className="text-2xl p-2 flex items-center justify-center">
         {darkMode ? <FaSun /> : <FaMoon />}
     </button>
+</li>
+
+{/* Language Switcher */}
+<li className="relative">
+    <button
+        onClick={() => setLanguageOpen(!languageOpen)}
+        className="text-2xl p-2 flex items-center justify-center hover:bg-gray-700 rounded"
+    >
+        <FaGlobe />
+    </button>
+    {languageOpen && (
+        <div className="absolute top-12 right-0 bg-white rounded shadow-md w-40 z-50">
+            <button
+                onClick={() => handleLanguageChange("id")}
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${
+                    language === "id" ? "bg-gray-200 font-bold" : ""
+                }`}
+            >
+                🇮🇩 Indonesia
+            </button>
+            <button
+                onClick={() => handleLanguageChange("en")}
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-100 ${
+                    language === "en" ? "bg-gray-200 font-bold" : ""
+                }`}
+            >
+                🇬🇧 English
+            </button>
+        </div>
+    )}
 </li>
                 </ul>
             </nav>

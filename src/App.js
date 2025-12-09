@@ -3,20 +3,20 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from './components/fitur/Home';
-import About from './components/fitur/About1';
-import Blog from './components/fitur/Blog1';
+import About from './components/fitur/About';
+import Blog from './components/fitur/Blog';
 
 // Kota dan Kabupaten
-import Balikpapan from './components/balikpapan/Balikpapan1';
-import Berau from './components/berau/Berau1';
-import Bontang from './components/bontang/Bontang1';
-import KutaiBarat from './components/kutai-barat/KutaiBarat1';
-import KutaiKartanegara from './components/kutai-kartanegara/KutaiKartanegara1';
-import KutaiTimur from './components/kutai-timur/KutaiTimur1';
-import MahakamUlu from './components/mahakam-ulu/MahakamUlu1';
-import Paser from './components/paser/Paser1';
-import PPU from './components/ppu/PPU1';
-import Samarinda from './components/samarinda/Samarinda1';
+import Balikpapan from './components/balikpapan/Balikpapan';
+import Berau from './components/berau/Berau';
+import Bontang from './components/bontang/Bontang';
+import KutaiBarat from './components/kutai-barat/KutaiBarat';
+import KutaiKartanegara from './components/kutai-kartanegara/KutaiKartanegara';
+import KutaiTimur from './components/kutai-timur/KutaiTimur';
+import MahakamUlu from './components/mahakam-ulu/MahakamUlu';
+import Paser from './components/paser/Paser';
+import PPU from './components/ppu/PPU';
+import Samarinda from './components/samarinda/Samarinda';
 
 // Wisata Balikpapan
 import KebunRayaBalikpapan from './components/balikpapan/KebunRayaBalikpapan';

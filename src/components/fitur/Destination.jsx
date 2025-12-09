@@ -69,50 +69,56 @@ const Destination = () => {
     const nextFive = destinations.slice(5);
   
     return (
-        <section id="destinations" className="py-[30px] bg-gray-100 mt-[-20px]">
+        <section id="destinations" className="py-[30px] bg-gradient-to-b from-gray-50 to-gray-100 mt-[-20px]">
             {/* Heading Section */}
             <div className="text-center">
-            <h1 className="text-2xl font-bold text-red-600  mt-[40px] mb-[20px]">JELAJAHI RAGAM KALTIM</h1>
-            <h2 className="text-2xl font-semibold text-black mb-[20px]">
-           <span className="text-black">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
+            <h1 className="text-4xl font-bold text-red-600  mt-[40px] mb-[20px] tracking-tight">JELAJAHI RAGAM KALTIM</h1>
+            <h2 className="text-xl font-semibold text-gray-800 mb-[20px] max-w-2xl mx-auto">
+           <span className="text-gray-700">Tempat Wisata, Tradisi, dan Sejarah Kalimantan Timur dalam Satu Laman</span>
              </h2>
             </div>
   
             {/* First 5 Destinations */}
-            <div className="flex flex-wrap justify-center gap-7 mt-7">
+            <div className="flex flex-wrap justify-center gap-7 mt-7 px-4">
                 {firstFive.map((destination, index) => (
                     <div
                         key={index}
-                        className="text-center bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 w-60"
+                        className="bg-white p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 w-64 border border-gray-100 overflow-hidden"
                     >
-                        <Link to={destination.link}>
-                            <img
-                                src={destination.image}
-                                alt={destination.name}
-                                className="w-full h-36 object-contain rounded-lg mb-4"
-                            />
-                            <h3 className="text-lg font-semibold text-black mb-2">{destination.name}</h3>
-                            <p className="text-gray-600">{destination.description}</p>
+                        <Link to={destination.link} className="block">
+                            <div className="w-full h-40 bg-gray-200 rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                                <img
+                                    src={destination.image}
+                                    alt={destination.name}
+                                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+                                />
+                            </div>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">{destination.name}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{destination.description}</p>
+                            <div className="mt-4 text-red-600 font-semibold text-sm hover:text-red-700">Pelajari Lebih →</div>
                         </Link>
                     </div>
                 ))}
             </div>
   
             {/* Second 5 Destinations */}
-            <div className="flex flex-wrap justify-center gap-7 mt-7">
+            <div className="flex flex-wrap justify-center gap-7 mt-10 px-4 pb-8">
                 {nextFive.map((destination, index) => (
                     <div
                         key={index}
-                        className="text-center bg-white p-6 shadow-lg rounded-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 w-60"
+                        className="bg-white p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 w-64 border border-gray-100 overflow-hidden"
                     >
-                        <Link to={destination.link}>
-                            <img
-                                src={destination.image}
-                                alt={destination.name}
-                                className="w-full h-36 object-contain rounded-lg mb-4"
-                            />
-                            <h3 className="text-lg font-semibold text-black mb-2">{destination.name}</h3>
-                            <p className="text-gray-600">{destination.description}</p>
+                        <Link to={destination.link} className="block">
+                            <div className="w-full h-40 bg-gray-200 rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                                <img
+                                    src={destination.image}
+                                    alt={destination.name}
+                                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+                                />
+                            </div>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">{destination.name}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">{destination.description}</p>
+                            <div className="mt-4 text-red-600 font-semibold text-sm hover:text-red-700">Pelajari Lebih →</div>
                         </Link>
                     </div>
                 ))}

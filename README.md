@@ -1,39 +1,90 @@
-# Getting Started with Create React App
+# Ragam Kaltim - Jelajahi Keindahan Kalimantan Timur
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website informatif yang menyajikan panduan komprehensif tentang wisata dan budaya di 10 kota dan kabupaten di Provinsi Kalimantan Timur.
 
-## Available Scripts
+## Fitur Utama
 
-In the project directory, you can run:
+- 🗺️ Informasi lengkap tentang 10 kota dan kabupaten di Kalimantan Timur
+- 🏖️ Database destinasi wisata yang komprehensif
+- 📱 Desain responsif dengan Tailwind CSS
+- 🌍 Dukungan multi-bahasa (Indonesia & English)
+- 🌓 Dark mode support
+- 🔍 Fitur pencarian destinasi
 
-### `npm start`
+## Teknologi yang Digunakan
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18.3.1
+- React Router DOM 6.27.0
+- Tailwind CSS 3.4.14
+- Poppins Font Family
+- React Icons 5.3.0
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup dan Installation
 
-### `npm test`
+```bash
+# Install dependencies
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run development server
+npm run dev
 
-### `npm run build`
+# Build untuk production
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Deploy ke GitHub Pages
+npm run deploy
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Struktur Direktori
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── fitur/          # Komponen utama (Header, Footer, Home, etc)
+│   ├── balikpapan/     # Komponen Balikpapan
+│   ├── berau/          # Komponen Berau
+│   ├── bontang/        # Komponen Bontang
+│   ├── kutai-barat/    # Komponen Kutai Barat
+│   ├── kutai-kartanegara/  # Komponen Kutai Kartanegara
+│   ├── kutai-timur/    # Komponen Kutai Timur
+│   ├── mahakam-ulu/    # Komponen Mahakam Ulu
+│   ├── paser/          # Komponen Paser
+│   ├── ppu/            # Komponen Penajam Paser Utara
+│   └── samarinda/      # Komponen Samarinda
+├── data/
+│   └── citiesData.js   # Data lengkap 10 kota
+├── App.js              # Main routing component
+└── index.css           # Global styles dengan Poppins font
 
-### `npm run eject`
+public/
+└── img/                # Folder untuk gambar setiap daerah
+    ├── bpp/
+    ├── berau/
+    ├── bontang/
+    └── ... (dst)
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 10 Kota dan Kabupaten yang Dicakup
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Balikpapan** - Kota industri dengan pesona wisata pantai
+2. **Berau** - Surga wisata bahari dengan Kepulauan Derawan
+3. **Bontang** - Kota industri dengan Taman Nasional
+4. **Kutai Barat** - Destinasi wisata dan budaya Dayak
+5. **Kutai Kartanegara** - Pusat warisan Kesultanan Kutai
+6. **Kutai Timur** - Rumah Taman Nasional Kutai
+7. **Mahakam Ulu** - Pesona alam pedalaman dan budaya Dayak
+8. **Paser** - Warisan sejarah Kerajaan Paser
+9. **Penajam Paser Utara** - Calon Ibu Kota Nusantara
+10. **Samarinda** - Ibu Kota Kalimantan Timur
+
+## Deployment
+
+Project ini di-deploy ke GitHub Pages di: https://Ardi11221026.github.io/ragam-kaltim/
+
+Untuk melakukan deployment:
+```bash
+npm run deploy
+```
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
