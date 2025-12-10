@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from './components/fitur/Home';
 import About from './components/fitur/About';
@@ -96,7 +96,7 @@ const ScrollToTop = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/ragam-kaltim">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
