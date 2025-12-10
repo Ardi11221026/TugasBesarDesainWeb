@@ -7,7 +7,7 @@ const Footer = () => {
                 {/* Logo and Info Section */}
                 <div className="mb-8">
                     <img
-                        src="img/ragam kaltim.png"
+                        src={`${process.env.PUBLIC_URL}/img/ragam kaltim.png`}
                         alt="Discovery East Borneo"
                         className="h-20 w-20 mb-4 mx-auto"
                     />

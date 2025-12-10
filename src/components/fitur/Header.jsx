@@ -110,7 +110,7 @@ const Header = () => {
             <div className="logo-section flex justify-center items-center">
                 <Link to="/" className="flex items-center">
                     <img
-                        src="img/ragam kaltim.png"
+                        src={`${process.env.PUBLIC_URL}/img/ragam kaltim.png`}
                         alt="Ragam Kaltim Logo"
                         className="h-12"
                     />

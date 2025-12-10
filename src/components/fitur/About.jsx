@@ -26,7 +26,7 @@ const AboutContent = () => {
         {/* Right Side Image */}
         <div className="img-container w-[180px] sm:w-[220px] lg:w-[300px] h-auto flex-shrink-0 order-1 lg:order-1">
           <img
-            src="img/ragam kaltim.png"
+            src={`${process.env.PUBLIC_URL}/img/ragam kaltim.png`}
             alt="Logo Ragam Kaltim"
             className="w-full h-auto rounded-xl shadow-md"
           />
@@ -54,7 +54,7 @@ const AboutContent = () => {
         <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 text-white">Tim Kami</h2>
         <div className="team-members grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto">
           <ProfileCard
-            image="img/ardi.jpg"
+            image={`${process.env.PUBLIC_URL}/img/ardi.jpg`}
             name="Ardi Dwi Saputra"
             nim="NIM 11221026"
             role="Frontend Developer"
@@ -66,7 +66,7 @@ const AboutContent = () => {
             whatsapp="https://wa.me/62895342503504"
           />
           <ProfileCard
-            image="img/rianto.jpg"
+            image={`${process.env.PUBLIC_URL}/img/rianto.jpg`}
             name="Rianto Padli"
             nim="NIM 11221049"
             role="Frontend Developer"
@@ -78,7 +78,7 @@ const AboutContent = () => {
             whatsapp="https://wa.me/6282157612739"
           />
           <ProfileCard
-            image="img/arya.jpg"
+            image={`${process.env.PUBLIC_URL}/img/arya.jpg`}
             name="Arya Andhika Trisnawan"
             nim="NIM 11221054"
             role="Frontend Developer"
@@ -90,7 +90,7 @@ const AboutContent = () => {
             whatsapp="https://wa.me/6281549373141"
           />
           <ProfileCard
-            image="img/samuel.jpg"
+            image={`${process.env.PUBLIC_URL}/img/samuel.jpg`}
             name="Samuel Benedicto Siahaan"
             nim="NIM 11221064"
             role="Frontend Developer"

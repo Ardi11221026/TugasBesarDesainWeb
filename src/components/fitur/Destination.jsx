@@ -1,66 +1,68 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const getImagePath = (path) => `${process.env.PUBLIC_URL}/${path}`;
+
 const Destination = () => {
     const destinations = [
         {
             name: 'Balikpapan',
             description: 'Kota industri dengan pesona wisata pantai dan hutan lindung.',
-            image: 'img/bpp/logo balikpapan.png',
+            image: getImagePath('img/bpp/logo balikpapan.png'),
             link: '/balikpapan',
         },
         {
             name: 'Berau',
             description: 'Surga wisata bahari dengan keindahan Kepulauan Derawan.',
-            image: 'img/berau/logo berau.png',
+            image: getImagePath('img/berau/logo berau.png'),
             link: '/berau',
         },
         {
             name: 'Bontang',
             description: 'Kota industri dengan pesona Taman Nasional dan wisata pantai.',
-            image: 'img/bontang/logo bontang.png',
+            image: getImagePath('img/bontang/logo bontang.png'),
             link: '/bontang',
         },
         {
             name: 'Kutai Barat',
             description: 'Destinasi wisata dan budaya Dayak yang autentik.',
-            image: 'img/kubar/logo kutai barat.png',
+            image: getImagePath('img/kubar/logo kutai barat.png'),
             link: '/kutai-barat',
         },
         {
             name: 'Kutai Kartanegara',
             description: 'Pusat warisan sejarah Kesultanan Kutai Kartanegara.',
-            image: 'img/kukar/logo kutai kartanegara.png',
+            image: getImagePath('img/kukar/logo kutai kartanegara.png'),
             link: '/kutai-kartanegara',
         },
         {
             name: 'Kutai Timur',
             description: 'Rumah bagi Taman Nasional Kutai dan wisata alam.',
-            image: 'img/kutim/logo kutai timur.png',
+            image: getImagePath('img/kutim/logo kutai timur.png'),
             link: '/kutai-timur',
         },
         {
             name: 'Mahakam Ulu',
             description: 'Pesona alam pedalaman dan budaya Dayak yang asli.',
-            image: 'img/mahulu/logo mahakam ulu.png',
+            image: getImagePath('img/mahulu/logo mahakam ulu.png'),
             link: '/mahakam-ulu',
         },
         {
             name: 'Paser',
             description: 'Warisan sejarah Kerajaan Paser dan wisata alamnya.',
-            image: 'img/paser/logo paser.png',
+            image: getImagePath('img/paser/logo paser.png'),
             link: '/paser',
         },
         {
             name: 'Penajam Paser Utara',
             description: 'Calon Ibu Kota Nusantara dengan pesona pantainya.',
-            image: 'img/ppu/logo ppu.png',
+            image: getImagePath('img/ppu/logo ppu.png'),
             link: '/penajam-paser-utara',
         },
         {
             name: 'Samarinda',
             description: 'Ibu Kota Kalimantan Timur dengan wisata sungai dan budaya.',
-            image: 'img/smd/logo samarinda.png',
+            image: getImagePath('img/smd/logo samarinda.png'),
             link: '/samarinda',
         },
     ];
