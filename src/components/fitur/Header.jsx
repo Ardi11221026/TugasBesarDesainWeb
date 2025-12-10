@@ -193,7 +193,7 @@ const Header = () => {
     {searchOpen && (
        <form
        onSubmit={handleSearchSubmit}
-       className="absolute top-12 sm:top-10 left-[-75%] transform -translate-x-1/2 bg-white rounded shadow-md p-2 w-64 z-50"
+       className="absolute top-12 sm:top-10 transform -translate-x-1/2 bg-white rounded shadow-md p-2 w-64 z-50"
    >
        <input
            type="text"

@@ -15,11 +15,7 @@ const Banner = () => {
         }, 3000); // Change slide every 3 seconds
   
         return () => clearInterval(slideInterval);
-    }, []);
-  
-    const nextSlide = () => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    };
+    }, [slides.length]);
   
     const setSlide = (index) => {
         setCurrentSlide(index);
