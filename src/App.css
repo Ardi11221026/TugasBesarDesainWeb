@@ -5,25 +5,8 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #102c1e;
-  line-height: 1.6;
-}
-
 a {
-  color: #102c1e;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Container */
-.content-container {
-  padding: 0 15px;
 }
 
 /* Header Styling */
@@ -37,9 +20,8 @@ header {
   align-items: center;
   position: relative;
   z-index: 50;
-  margin-bottom: 0rem; /* Mengurangi margin bawah */
+  margin-bottom: 0rem;
 }
-
 
 header .logo-section {
   display: flex;
@@ -74,222 +56,101 @@ header nav ul li a {
   font-weight: bold;
   padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  text-transform: none; /* Tidak huruf besar semua */
+  text-transform: none;
   transition: background-color 0.3s, text-decoration 0.3s;
   color: white;
 }
 
 header nav ul li a:hover {
   background-color: #0a1f13;
-  text-decoration: none; /* Hilangkan garis bawah */
+  text-decoration: none;
 }
 
 header nav ul li a:active {
-  text-decoration: none; /* Menghilangkan garis bawah */
+  text-decoration: none;
 }
 
 /* Submenu Styling */
 header nav ul li ul {
-  display: block; /* Pastikan submenu selalu dirender */
+  display: block;
   position: absolute;
-  top: 100%; /* Letakkan submenu langsung di bawah item utama */
+  top: 100%;
   left: 0;
   list-style: none;
-  margin: 0; /* Hilangkan margin tambahan */
-  padding: 0; /* Jarak antar submenu */
-  border: none; /* Hilangkan garis putih */
+  margin: 0;
+  padding: 0;
+  border: none;
   border-radius: 0.25rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 100; /* Agar berada di atas elemen lainnya */
-  opacity: 0; /* Tidak terlihat secara default */
-  transform: translateY(-10px); /* Posisi awal efek slide dari atas */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Efek transisi */
-  pointer-events: none; /* Hindari interaksi saat tidak terlihat */
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
   background-color: #102c1e;
 }
 
 header nav ul li:hover > ul {
-  opacity: 1; /* Tampilkan submenu */
-  transform: translateY(0); /* Kembali ke posisi normal */
-  pointer-events: auto; /* Izinkan interaksi */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 header nav ul li ul li {
-  margin: 0; /* Hilangkan margin antar submenu */
-  padding: 0; /* Sesuaikan padding jika perlu */
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li ul li a {
   font-weight: normal;
   text-transform: none;
   white-space: nowrap;
-  padding: 0.5rem 1rem; /* Jarak dalam submenu */
-  text-decoration: none; /* Hilangkan garis bawah */
-  display: block; /* Pastikan setiap submenu adalah blok penuh */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
   transition: background-color 0.3s ease, text-decoration 0.3s ease;
   color: white;
 }
 
 header nav ul li ul li a:hover {
-  background-color: #0a1f13; /* Warna saat hover - darker green */
+  background-color: #0a1f13;
   color: white;
-  text-decoration: none; /* Hilangkan garis bawah */
+  text-decoration: none;
 }
 
-
-
-/* Card and Layout Styling */
-.bg-gray-100 {
-  background-color: #f7fafc;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.rounded-lg {
-  border-radius: 8px;
-}
-
-.shadow-lg {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.shadow-md {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Text and Typography */
-.text-sm {
-  font-size: 0.875rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.font-bold {
-  font-weight: bold;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-justify {
-  text-align: justify;
-}
-
-/* Buttons and Links */
-button, a {
-  cursor: pointer;
-}
-
-.text-blue-600 {
-  color: #3182ce;
-}
-
-.text-blue-600:hover {
-  color: #2b6cb0;
-}
-
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
-}
-
-th {
-  background-color: #ffffff;
-  font-weight: bold;
-}
-
-td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #ffffff;
-}
-
-tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* Image Styling */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
+/* Custom Classes */
 .img-container img {
   border-radius: 8px;
 }
 
-/* List Styling */
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin-bottom: 15px;
-}
-
-/* Responsive Styling */
-/* Small Screens (Mobile & Small Tablets) */
+/* Responsive Styling - Header Only */
 @media (max-width: 767px) {
-  .content-container { 
-    padding: 0 10px; 
-    flex-direction: column; 
-    align-items: center; /* Ensure the content is centered */
-  }
-
   header { 
     flex-direction: column; 
     padding: 1rem; 
     display: flex; 
     justify-content: center; 
-    align-items: center; /* Center all elements in the header */
+    align-items: center;
   }
 
   header .logo-section { 
     margin-bottom: 1rem; 
-    text-align: center; /* Center the logo and text */
+    text-align: center;
   }
 
   header nav ul { 
     flex-direction: column; 
     gap: 1rem; 
     width: 100%; 
-    text-align: center; /* Center the navigation items */
+    text-align: center;
   } 
 
   header nav ul li { 
     width: 100%; 
   }
 
-  /* Make the "Destination" dropdown also centered in small screens */
   header nav ul li .relative.group {
-    text-align: center; /* Align the Destination button and dropdown centrally */
+    text-align: center;
   }
 
   header nav ul li ul {
@@ -300,16 +161,14 @@ li {
     box-shadow: none;
   }
 
-  /* Ensure the icon buttons (like light/dark mode and search) are also centered */
   header .icon {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem; /* Add space between icons */
+    gap: 1rem;
     width: 100%;
-    align-items: center; /* Center icons vertically */
+    align-items: center;
   }
 
-  /* Adjusting the form in the icon section for small screens */
   header .icon form {
     top: 4rem;
     right: 0;
@@ -317,271 +176,9 @@ li {
   }
 }
 
-/* Medium Screens (Tablets) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content-container {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-
-  .img-container img {
-    width: 100%;
-    height: auto;
-  }
-
-  .text-2xl {
-    font-size: 1.375rem;
-  }
-
-  .text-3xl {
-    font-size: 1.75rem;
-  }
-
   header .logo-section {
     justify-content: flex-start;
   }
-}
-
-/* Larger Screens (Laptops & Desktop) */
-@media (min-width: 1024px) {
-  .content-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #2c5845; /* Latar belakang gelap hijau muda */
-  color: #ffffff; /* Semua teks default menjadi putih */
-}
-
-/* Link */
-body.dark-mode a {
-  color: #81a1c1; /* Tautan dengan warna biru terang */
-}
-
-body.dark-mode a:hover {
-  color: #e2e2e2; /* Hover warna lebih terang */
-}
-
-/* Header */
-body.dark-mode header {
-  background-color: #102c1e;
-  box-shadow: none;
-}
-
-body.dark-mode header .logo-section .text {
-  color: white; /* Logo dan teks dalam header */
-}
-
-body.dark-mode header nav ul li a {
-  color: white; /* Teks menu navbar menjadi putih */
-}
-
-body.dark-mode header nav ul li a:hover {
-  background-color: #102c1e; /* Warna latar belakang saat hover hijau lebih gelap */
-  color: #ffffff; /* Teks tetap putih saat hover */
-}
-
-/* Submenu Navbar */
-body.dark-mode header nav ul li ul li a {
-  color: white; /* Teks submenu */
-}
-
-body.dark-mode header nav ul li ul li a:hover {
-  background-color: #102c1e; /* Warna latar belakang submenu saat hover hijau gelap */
-}
-
-/* Teks dalam tabel */
-body.dark-mode table th, body.dark-mode table td {
-  color: #ffffff; /* Semua teks dalam tabel menjadi putih */
-}
-
-/* Teks dalam konten */
-body.dark-mode .text-sm, body.dark-mode .text-lg, body.dark-mode .text-2xl, 
-body.dark-mode .text-3xl, body.dark-mode .font-bold, body.dark-mode .font-semibold {
-  color: #ffffff; /* Semua ukuran font dan teks penting menjadi putih */
-}
-
-/* Card dan Background */
-body.dark-mode .bg-gray-100 {
-  background-color: #2c5845; /* Latar belakang card hijau */
-}
-
-body.dark-mode .bg-white {
-  background-color: #2c5845; /* Latar belakang item hijau */
-}
-
-body.dark-mode .bg-gradient-to-b {
-  background: linear-gradient(to bottom, #2c5845, #2c5845) !important;
-}
-
-body.dark-mode .from-gray-50 {
-  --tw-gradient-from: #2c5845 var(--tw-gradient-stops);
-}
-
-body.dark-mode .to-gray-100 {
-  --tw-gradient-to: #2c5845;
-}
-
-body.dark-mode .shadow-lg, body.dark-mode .shadow-md {
-  box-shadow: none; /* Menghilangkan bayangan */
-}
-
-/* List dan Form Teks */
-body.dark-mode ul li {
-  color: white; /* Warna teks list */
-}
-
-body.dark-mode .content-container {
-  color: white; /* Warna teks konten */
-}
-
-/* Blog */
-body.dark-mode .blog-post,
-body.dark-mode .blog-post h1,
-body.dark-mode .blog-post h2,
-body.dark-mode .blog-post h3,
-body.dark-mode .blog-post h4,
-body.dark-mode .blog-post h5,
-body.dark-mode .blog-post h6 {
-  color: white; /* Teks blog dan judul-judulnya menjadi putih */
-}
-
-body.dark-mode .blog-post p {
-  color: white; /* Paragraf teks blog */
-}
-
-body.dark-mode .blog-post a {
-  color: #63b3ed; /* Link dalam blog post menjadi biru terang */
-}
-
-body.dark-mode .blog-post a:hover {
-  color: #e2e2e2; /* Warna hover link dalam blog */
-}
-
-/* Sidebar Blog */
-body.dark-mode .blog-sidebar {
-  color: white; /* Sidebar blog */
-}
-
-body.dark-mode .blog-sidebar a {
-  color: #81a1c1; /* Link sidebar menjadi biru terang */
-}
-
-body.dark-mode .blog-sidebar a:hover {
-  color: #e2e2e2; /* Hover link sidebar menjadi lebih terang */
-}
-
-
-/* Form */
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode select {
-  color: white; /* Teks dalam form */
-  background-color: #444444; /* Latar belakang form */
-  border: 1px solid #666666; /* Border form */
-}
-
-/* Placeholder Text */
-body.dark-mode input::placeholder,
-body.dark-mode textarea::placeholder {
-  color: #999999; /* Placeholder warna lebih terang */
-}
-
-/* Footer */
-body.dark-mode footer {
-  color: white; /* Teks footer */
-}
-
-/* Ensure all other text is white */
-body.dark-mode * {
-  color: white !important; /* Override all other text color */
-}
-
-/* Ensure all links are white */
-body.dark-mode a, 
-body.dark-mode .text-blue-600 {
-  color: white !important; /* Override link colors */
-}
-
-/* Destination Section - Provinsi, Populasi, dan Hari Jadi */
-body.dark-mode .destination-item {
-  color: white; /* Teks dalam item destinasi (Provinsi, Populasi, Hari Jadi) */
-}
-
-body.dark-mode .destination-item span {
-  color: #ffbb33; /* Warna untuk label seperti Provinsi, Populasi, Hari Jadi */
-}
-
-body.dark-mode .destination-item p {
-  color: #e2e2e2; /* Warna teks yang lebih terang untuk informasi dalam destinasi */
-}
-
-body.dark-mode .destination-item h3 {
-  color: white; /* Judul dalam item destinasi */
-}
-
-/* Menyesuaikan tampilan jika ada kolom atau grid dalam destinasi */
-body.dark-mode .destination-section .destination-item {
-  background-color: #3c3c3c; /* Latar belakang item destinasi agar lebih gelap */
-  border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-/* Hover effect untuk setiap item destinasi */
-body.dark-mode .destination-item:hover {
-  background-color: #444444; /* Hover effect agar lebih kontras */
-  color: white;
-}
-
-body.dark-mode .destination-item span:hover,
-body.dark-mode .destination-item p:hover {
-  color: #ffbb33; /* Warna saat hover pada label teks dan detail destinasi */
-}
-
-/* Menyesuaikan tampilan elemen informasi pada sisi kanan */
-body.dark-mode .destination-item .info-text {
-  color: #ffffff; /* Teks informasi yang berada di sebelah kanan label menjadi putih */
-  font-weight: normal; /* Menambahkan font-weight normal untuk teks informasi */
-}
-
-/* Tabel */
-body.dark-mode table {
-  background-color: #2d2d2d; /* Latar belakang tabel */
-  width: 100%;
-  margin-top: 12px;
-}
-
-body.dark-mode table th {
-  border: 1px solid #444444; /* Batas tabel */
-  padding: 8px; /* Jarak dalam sel */
-  text-align: left; /* teks di tengah */
-  color: #ffffff; /* Warna teks */
-}
-
-
-body.dark-mode table td {
-  border: 1px solid #444444; /* Batas tabel */
-  padding: 8px; /* Jarak dalam sel */
-  text-align: center; /* teks di tengah */
-  color: #ffffff; /* Warna teks */
-}
-
-body.dark-mode table th {
-  background-color: #444444; /* Latar belakang header tabel */
-  font-weight: bold; /* Teks tebal untuk header */
-}
-
-body.dark-mode table tr:nth-child(even) {
-  background-color: #2d2d2d; /* Latar belakang untuk baris genap */
-}
-
-body.dark-mode table tr:hover {
-  background-color: #444444; /* Latar belakang saat hover */
-  color: #ffffff; /* Warna teks saat hover */
 }
 

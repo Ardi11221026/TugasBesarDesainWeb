@@ -29,7 +29,7 @@ const BlogRandom = () => {
                         <div key={idx} className="border-b pb-3 last:border-b-0">
                             <Link 
                                 to={dest.slug}
-                                className="text-blue-600 hover:text-blue-800 font-semibold text-sm block hover:underline"
+                                className="text-white hover:text-gray-300 font-semibold text-sm block hover:underline hover:decoration-white"
                             >
                                 {dest.name}
                             </Link>

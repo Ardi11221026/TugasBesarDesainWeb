@@ -219,7 +219,7 @@ const Header = () => {
                     <ul>
                         {searchResults.map((result) => (
                             <li key={result.url} className="border-b border-gray-200 py-2">
-                                <Link to={result.url} className="hover:underline">
+                                <Link to={result.url} className="text-white hover:underline hover:decoration-white">
                                     {result.title}
                                 </Link>
                             </li>

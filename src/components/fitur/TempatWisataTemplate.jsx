@@ -21,10 +21,10 @@ const TempatWisataTemplate = ({ placeKey, placeUrl }) => {
       <div className="flex-grow">
         <div className="max-w-8xl mx-auto px-0 sm:px-0 lg:px-0 py-6 sm:py-8">
           {/* Breadcrumb Navigation - Home > City > Place */}
-          <nav className="text-xs sm:text-sm mb-5 mt-[-10px] text-white ml-8 px-4 sm:px-6 lg:px-8">
-            <Link to="/" className="text-white hover:underline">Home</Link>
+          <nav className="text-xs sm:text-sm mb-5 mt-[-10px] text-white px-4 sm:px-6 lg:px-8">
+            <Link to="/" className="text-white hover:underline hover:decoration-white">Home</Link>
             <span className="mx-2 text-white">{'>>'}</span>
-            <Link to={placeUrl} className="text-white hover:underline">{placeData.city}</Link>
+            <Link to={placeUrl} className="text-white hover:underline hover:decoration-white">{placeData.city}</Link>
             <span className="mx-2 text-white">{'>>'}</span>
             <span className="font-semibold text-white">{placeData.name}</span>
           </nav>

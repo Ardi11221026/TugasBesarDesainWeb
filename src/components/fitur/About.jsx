@@ -23,8 +23,17 @@ const AboutContent = () => {
       </h1>
 
       <div className="about-content flex flex-col lg:flex-row gap-8 items-center w-full mt-5 max-w-full">
-        {/* Left Side Text - Full Width */}
-        <div className="description flex-1 text-sm sm:text-base bg-[#102c1e] p-6 sm:p-8 lg:p-10 rounded-xl shadow-md border border-white order-2 lg:order-1">
+        {/* Right Side Image */}
+        <div className="img-container w-[180px] sm:w-[220px] lg:w-[300px] h-auto flex-shrink-0 order-1 lg:order-1">
+          <img
+            src="img/ragam kaltim.png"
+            alt="Logo Ragam Kaltim"
+            className="w-full h-auto rounded-xl shadow-md"
+          />
+        </div>
+
+        {/* Right Side Text - Full Width */}
+        <div className="description flex-1 text-sm sm:text-base bg-[#2c5845] p-6 sm:p-8 lg:p-10 rounded-xl shadow-md border border-white order-2 lg:order-2">
           <p className="leading-relaxed text-justify text-white font-normal">
             Selamat datang di <strong className="text-orange-400">Ragam Kaltim</strong>, sebuah website informatif yang memberikan
             panduan komprehensif tentang wisata dan budaya yang ada di 10 kota dan kabupaten di
@@ -38,15 +47,6 @@ const AboutContent = () => {
             Tak hanya itu, kami juga merekomendasikan berbagai tempat rekreasi dengan aktivitas seru, mulai dari wisata sejarah, kuliner khas, 
             hingga petualangan outdoor yang memacu adrenalin.
           </p>
-        </div>
-
-        {/* Right Side Image */}
-        <div className="img-container w-[180px] sm:w-[220px] lg:w-[300px] h-auto flex-shrink-0 order-1 lg:order-2">
-          <img
-            src="img/ragam kaltim.png"
-            alt="Logo Ragam Kaltim"
-            className="w-full h-auto rounded-xl shadow-md"
-          />
         </div>
       </div>
 
@@ -158,7 +158,7 @@ const Modal = ({ onClose, image, name, nim, role, technologies, description, lin
 
   return (
     <div
-      className="modal-overlay fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex justify-center items-center z-50"
+      className="modal-overlay fixed inset-0 bg-black/50 backdrop-blur-md flex justify-center items-center z-50 p-4"
       onClick={handleClose}
       style={{
         opacity: isVisible ? 1 : 0,
@@ -166,16 +166,16 @@ const Modal = ({ onClose, image, name, nim, role, technologies, description, lin
       }}
     >
       <div
-        className="modal-content bg-[#102c1e] p-8 sm:p-10 rounded-lg w-50 sm:w-full  border border-white"
+        className="modal-content bg-[#102c1e] p-5 sm:p-5 rounded-lg border border-white w-[500px]"
         onClick={(e) => e.stopPropagation()}
         style={{
           transform: isVisible ? 'scale(1)' : 'scale(0.9)',
           transition: 'transform 0.3s ease-in-out',
         }}
       >
-        <div className="flex flex-col lg:flex-row gap-6">
-          {/* Left - Info */}
-          <div className="flex-1 flex flex-col justify-between order-2 lg:order-1">
+        <div className="flex flex-col gap-3">
+          {/* Info - Centered */}
+          <div className="flex flex-col text-center">
             <div>
               <h3 className="text-2xl sm:text-3xl font-semibold mb-2 text-white">{name}</h3>
               <p className="text-sm text-gray-300 mb-1">{nim}</p>
@@ -184,8 +184,8 @@ const Modal = ({ onClose, image, name, nim, role, technologies, description, lin
               <p className="text-sm text-white leading-relaxed mb-4">{description}</p>
             </div>
             
-            {/* Social Icons */}
-            <div className="flex gap-4 mb-4 lg:mb-0">
+            {/* Social Icons - Centered */}
+            <div className="flex gap-4 justify-center">
               <a href={linkedin} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform duration-200">
                 <FaLinkedin className="text-2xl text-blue-500" />
               </a>
@@ -200,13 +200,6 @@ const Modal = ({ onClose, image, name, nim, role, technologies, description, lin
               </a>
             </div>
           </div>
-
-          {/* Right - Image */}
-          <img
-            src={image}
-            alt={name}
-            className="w-full lg:w-80 h-64 lg:h-80 object-cover rounded-lg flex-shrink-0 order-1 lg:order-2"
-          />
         </div>
 
         {/* Close Button */}

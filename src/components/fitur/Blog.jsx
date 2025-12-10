@@ -83,46 +83,44 @@ const BlogSection = () => {
             {/* First 5 Blog Cards */}
             <div className="flex flex-wrap justify-between gap-5 mt-7 px-5">
                 {firstFive.map((blog, index) => (
-                    <div
-                        key={index}
-                        className="bg-[#102c1e] p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 flex-1 min-w-[280px] max-w-sm border border-gray-700 overflow-hidden"
-                    >
-                        <Link to={blog.link} className="block">
-                            <div className="w-full h-48 bg-[#1a3a2a] rounded-lg mb-4 overflow-hidden">
+                    <Link to={blog.link} key={index} className="block flex-1 min-w-[280px] max-w-sm no-underline">
+                        <div
+                            className="bg-[#102c1e] p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 border border-gray-700 overflow-hidden h-full cursor-pointer"
+                        >
+                            <div className="w-full h-48 bg-[#1a3a2a] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                                 <img
                                     src={blog.image}
                                     alt={blog.name}
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
                             <h3 className="text-sm text-gray-400 mb-2 font-medium">{blog.name}</h3>
                             <p className="text-white font-semibold text-base">{blog.description}</p>
-                            <div className="mt-4 text-orange-400 font-semibold text-sm hover:text-orange-300">Baca Selengkapnya →</div>
-                        </Link>
-                    </div>
+                            <div className="mt-4 text-orange-400 font-semibold text-sm">Baca Selengkapnya →</div>
+                        </div>
+                    </Link>
                 ))}
             </div>
 
             {/* Second 5 Blog Cards */}
-            <div className="flex flex-wrap justify-between gap-5 mt-5 px-5">
+            <div className="flex flex-wrap justify-between gap-5 mt-8 px-5 pb-3">
                 {nextFive.map((blog, index) => (
-                    <div
-                        key={index}
-                        className="bg-[#102c1e] p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 flex-1 min-w-[280px] max-w-sm border border-gray-700 overflow-hidden"
-                    >
-                        <Link to={blog.link} className="block">
-                            <div className="w-full h-48 bg-[#1a3a2a] rounded-lg mb-4 overflow-hidden">
+                    <Link to={blog.link} key={index} className="block flex-1 min-w-[280px] max-w-sm no-underline">
+                        <div
+                            className="bg-[#102c1e] p-6 shadow-md rounded-xl hover:shadow-xl transform hover:-translate-y-3 transition-all duration-300 border border-gray-700 overflow-hidden h-full cursor-pointer"
+                        >
+                            <div className="w-full h-48 bg-[#1a3a2a] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                                 <img
                                     src={blog.image}
                                     alt={blog.name}
-                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                                    className="w-full h-full object-cover"
                                 />
                             </div>
                             <h3 className="text-sm text-gray-400 mb-2 font-medium">{blog.name}</h3>
                             <p className="text-white font-semibold text-base">{blog.description}</p>
-                            <div className="mt-4 text-orange-400 font-semibold text-sm hover:text-orange-300">Baca Selengkapnya →</div>
-                        </Link>
-                    </div>
+                            <div className="mt-4 text-orange-400 font-semibold text-sm">Baca Selengkapnya →</div>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </section>
