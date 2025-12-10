@@ -71,7 +71,7 @@ const BlogSection = () => {
     const nextFive = blogs.slice(5);
 
     return (
-        <section id="blogs" className="py-16 bg-[#2c5845]">
+        <section id="blogs" className="py-[30px] bg-[#2c5845]">
             {/* Heading Section */}
             <div className="text-center">
                 <h1 className="text-4xl font-bold text-orange-400 mb-[20px] tracking-tight">RAGAM KALTIM'S BLOG</h1>
